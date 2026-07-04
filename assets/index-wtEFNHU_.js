@@ -360,3 +360,122 @@ Error generating stack: `+s.message+`
     window.addEventListener("load", startAds);
   }
 })();
+
+/* --- ELECTRIC TECHS UNIFIED ENHANCER (BLOGS + AMAZON + SOCIALS + ADS) --- */
+(function() {
+  // 1. DATA: THE NEW BLOG POSTS
+  const newBlogs = [
+    {
+      id: "E007",
+      title: "Why It's Not Charging: Troubleshooting Battery & Port Faults",
+      subtitle: "From loose pins to dead logic chips—learn to diagnose charging issues.",
+      category: "Wiring Basics",
+      date: "May 12, 2026", readTime: "7 min",
+      image: "https://images.unsplash.com/photo-1591405351990-4726e331f141?w=800&q=80",
+      author: { name: "ElectricTechs Team" },
+      content: { introduction: "Charging issues are the #1 complaint in electronics. Here is how to trace the power path.", sections: [{ heading: "Check the Port", content: "90% of charging issues are physical. Lint or bent pins prevent the handshake." }, { heading: "Voltage Testing", content: "Use your multimeter to check the rails. If 5V enters but 0V hits the battery, your charging IC is dead." }] }
+    },
+    {
+      id: "E008",
+      title: "5V vs 12V: Choosing the Right DC Input for Your Project",
+      subtitle: "Mismatching voltage fries components. Learn how to pick the right power supply.",
+      category: "Wiring Basics",
+      date: "May 11, 2026", readTime: "5 min",
+      image: "https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=800&q=80",
+      author: { name: "ElectricTechs Team" },
+      content: { introduction: "Voltage is pressure. Using 12V on a 5V circuit is like putting a firehose on a garden plant.", sections: [{ heading: "Regulators", content: "If you have a 12V source but 5V parts, use a Buck Converter for efficiency." }] }
+    },
+    {
+      id: "E009",
+      title: "Ceiling Fan Capacitors: Can You Connect Two Together?",
+      subtitle: "Understanding parallel vs. series wiring to get your fan spinning again.",
+      category: "Wiring Basics",
+      date: "May 10, 2026", readTime: "6 min",
+      image: "https://images.unsplash.com/photo-1565151443-32398ff770ff?w=800&q=80",
+      author: { name: "ElectricTechs Team" },
+      content: { introduction: "Is it safe to double up? Yes, if you follow the capacitance rules.", sections: [{ heading: "Parallel Wiring", content: "Wiring two 2.5uF capacitors in parallel gives you 5uF. Ideal for hard-to-find values." }] }
+    },
+    {
+      id: "E010",
+      title: "Audio Amplifier Modules: PAM8403 vs TPA3116 Guide",
+      subtitle: "The best cheap modules for making your own powerful sound systems.",
+      category: "DIY Projects",
+      date: "May 09, 2026", readTime: "9 min",
+      image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+      author: { name: "ElectricTechs Team" },
+      content: { introduction: "These small boards can power huge speakers. Here is what to buy.", sections: [{ heading: "The PAM8403", content: "Small, 5V, perfect for portable battery speakers." }, { heading: "TPA3116", content: "High power 12-24V. Use this for home setups." }] }
+    },
+    {
+      id: "E011",
+      title: "Build This: DIY High-Fidelity Bluetooth Audio Speaker",
+      subtitle: "A complete step-by-step project using reclaimed wood and modern chips.",
+      category: "DIY Projects",
+      date: "May 08, 2026", readTime: "15 min",
+      image: "https://images.unsplash.com/photo-1589003077984-894e133dabd0?w=800&q=80",
+      author: { name: "ElectricTechs Team" },
+      content: { introduction: "Why buy a speaker when you can build one that sounds better for half the price?", sections: [{ heading: "The Bluetooth Module", content: "Use a dedicated BT 5.0 board for zero lag." }, { heading: "The Battery", content: "18650 cells in a 3S configuration provide 12V for maximum volume." }] }
+    }
+  ];
+
+  function enrichSite() {
+    // 2. INJECT NEW BLOGS INTO REACT STATE
+    if (window.Tn && Array.isArray(window.Tn)) {
+      newBlogs.forEach(blog => {
+        if (!window.Tn.find(b => b.id === blog.id)) window.Tn.push(blog);
+      });
+    }
+
+    // 3. INJECT AMAZON STORE SECTION (Above Follow Section)
+    const followSec = document.getElementById('follow');
+    if (followSec && !document.getElementById('amazon-store')) {
+      const az = document.createElement('section');
+      az.id = 'amazon-store';
+      az.className = 'py-16 md:py-20 animate-fade-in';
+      az.innerHTML = `
+        <div class="relative overflow-hidden rounded-[2rem] border border-border bg-[#0a0f1e] p-8 md:p-14 text-center" style="box-shadow: 0 0 40px rgba(56, 189, 248, 0.1);">
+          <div class="relative max-w-2xl mx-auto space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#FF9900]/10 border border-[#FF9900]/30 text-[#FF9900] text-[10px] font-mono uppercase tracking-widest">Official Store</div>
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white">Shop the <span style="color:#FF9900">ElectricTechs</span> Workbench</h2>
+            <p class="text-slate-400 text-base md:text-lg leading-relaxed">We've curated a list of the exact multimeters, audio modules, and wiring tools we use in our guides. Get the right kit, tested by pros.</p>
+            <div class="flex justify-center pt-2">
+              <a href="https://a.co/d/02cpEzRC" target="_blank" class="glow-primary" style="background:#FF9900; color:#000; font-weight:800; padding:15px 40px; border-radius:50px; text-decoration:none; display:flex; align-items:center; gap:10px; font-size:14px; transition:0.3s transform;">Visit Our Amazon Store →</a>
+            </div>
+          </div>
+        </div>`;
+      followSec.parentNode.insertBefore(az, followSec);
+    }
+
+    // 4. ADD PINTEREST TO FOOTER
+    const footerSocials = document.querySelector('footer div.flex.items-center.gap-2.pt-2');
+    if (footerSocials && !document.getElementById('pin-link')) {
+      const pin = document.createElement('a');
+      pin.id = 'pin-link';
+      pin.href = 'https://pin.it/6HUJXSc8G';
+      pin.target = '_blank';
+      pin.className = 'w-9 h-9 rounded-full surface-card flex items-center justify-center text-muted-foreground hover:text-primary transition-all';
+      pin.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.08 3.1 9.44 7.5 11.22-.07-.95-.13-2.39.03-3.41.14-.93.94-3.99.94-3.99s-.24-.48-.24-1.18c0-1.11.64-1.94 1.44-1.94.68 0 1.01.51 1.01 1.12 0 .68-.43 1.7-.66 2.64-.19.8.4 1.45 1.19 1.45 1.43 0 2.53-1.51 2.53-3.68 0-1.92-1.39-3.27-3.35-3.27-2.28 0-3.62 1.71-3.62 3.48 0 .69.26 1.43.59 1.85.07.08.08.14.05.2l-.22.9c-.04.14-.12.17-.28.1-1.02-.48-1.66-1.97-1.66-3.17 0-2.58 1.88-4.96 5.41-4.96 2.84 0 5.05 2.02 5.05 4.73 0 2.82-1.78 5.11-4.25 5.11-1.11 0-2.15-.58-2.51-1.26l-.68 2.6c-.25.95-.92 2.14-1.37 2.87C9.37 23.8 10.65 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg>`;
+      footerSocials.appendChild(pin);
+    }
+
+    // 5. ADS SYSTEM (Retained and optimized)
+    const isDesk = window.innerWidth > 1100;
+    const injectAd = (t, k, w, h, s) => {
+      const wrap = document.createElement('div');
+      wrap.style.cssText = s || `display:flex; justify-content:center; padding:30px 0;`;
+      wrap.innerHTML = `<script>atOptions={'key':'${k}','format':'iframe','height':${h},'width':${w},'params':{}};</script><script src="//www.highperformanceformat.com/${k}/invoke.js"></script>`;
+      t.appendChild(wrap);
+    };
+
+    if (isDesk && !document.getElementById('ad-L')) {
+      const root = document.getElementById('root'); if (root) root.style.margin = '0 180px';
+      const L = document.createElement('div'); L.id='ad-L'; L.style.cssText='position:fixed; left:10px; top:120px; width:160px; height:600px; z-index:99; border:1px solid #222; border-radius:8px;';
+      document.body.appendChild(L); injectAd(L, '86cc9d613b53f518ff7e1075dd44331d', 160, 600, ' ');
+      const R = document.createElement('div'); R.id='ad-R'; R.style.cssText='position:fixed; right:10px; top:120px; width:160px; height:300px; z-index:99; border:1px solid #222; border-radius:8px;';
+      document.body.appendChild(R); injectAd(R, 'c4e742f2ad5ea671b2a39ce0ad496e35', 160, 300, ' ');
+    }
+  }
+
+  // Run on startup and navigation
+  window.addEventListener('load', enrichSite);
+  window.addEventListener('hashchange', enrichSite);
+})();
