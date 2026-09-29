@@ -1,182 +1,274 @@
 [
- {
-  "id": "E000",
-  "title": "Building a DIY RC Car: Transmitter & Receiver from Scratch",
-  "subtitle": "A complete walkthrough of designing the electronics for a custom remote-controlled car — from the transmitter PCB to the receiver wiring.",
-  "category": "DIY Projects",
-  "date": "May 04, 2026",
-  "readTime": "12 min",
-  "image": "rc-build-hero-BnxU8OZB.jpg",
-  "introduction": "RC cars are the perfect playground for learning electronics. In this build we design our own 2.4 GHz transmitter and receiver pair, wire it to a brushed motor controller, and dial in the throttle and steering channels. No proprietary remotes required.",
-  "sections": [
-   {
-    "heading": "Designing the Transmitter",
-    "body": "We're using an Arduino Nano paired with an NRF24L01 radio module. Two thumb joysticks feed the analog inputs — one for steering, one for throttle. The whole thing fits on a small protoboard inside a 3D-printed grip."
-   },
-   {
-    "heading": "Building the Receiver",
-    "body": "On the car side, a second NRF24L01 listens for packets and forwards them to a small microcontroller, which generates PWM for the ESC and servo. Keep the radio at least 2 cm away from the motor wires to avoid noise."
-   },
-   {
-    "heading": "Wiring the Motor & Servo",
-    "body": "Power the logic side from a clean 5V BEC. Power the motor from the main LiPo through the ESC. Common ground is mandatory — half of all 'mystery glitches' in DIY RC cars are missing ground links between battery, ESC and receiver."
-   },
-   {
-    "heading": "Tuning the Channels",
-    "body": "Map joystick centers to PWM 1500 µs, full deflection to 1000 / 2000 µs, then add a small dead-zone in firmware so the car doesn't creep when the sticks are at rest."
-   }
-  ]
- },
- {
-  "id": "E001",
-  "title": "House Wiring 101: A Complete Beginner's Guide",
-  "subtitle": "Understand circuits, gauges and safe practices before you touch a single wire.",
-  "category": "Wiring Basics",
-  "date": "May 02, 2026",
-  "readTime": "8 min",
-  "image": "article-house-wiring-BplzSdwC.jpg",
-  "introduction": "Residential wiring looks intimidating, but every system follows the same simple logic: a source, a path, a load, and protection. Master those four ideas and the rest is just detail.",
-  "sections": [
-   {
-    "heading": "Live, Neutral and Earth Explained",
-    "body": "Live carries current to the load, neutral returns it to the panel, and earth is the safety path that trips the breaker if something goes wrong. Color codes vary by region — always verify locally before working."
-   },
-   {
-    "heading": "Choosing the Right Wire Gauge",
-    "body": "Use 14 AWG for 15 A lighting circuits, 12 AWG for 20 A outlet circuits, and 10 AWG for 30 A appliances. Undersized wire is the #1 cause of overheating in DIY work."
-   },
-   {
-    "heading": "Reading a Simple Circuit",
-    "body": "A circuit diagram is just a map of how electrons travel. Start at the breaker, follow the live wire to the switch, then to the load, and back via neutral. If you can trace it, you can troubleshoot it."
-   },
-   {
-    "heading": "Tools You Actually Need",
-    "body": "A non-contact voltage tester, a quality multimeter, wire strippers, lineman's pliers and a torque screwdriver will handle 95% of home jobs safely."
-   }
-  ]
- },
- {
-  "id": "E002",
-  "title": "Top 7 Electrical Mistakes to Avoid at Home",
-  "subtitle": "These small errors cause most household fires — fix them this weekend.",
-  "category": "Safety Tips",
-  "date": "Apr 28, 2026",
-  "readTime": "6 min",
-  "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
-  "introduction": "Most electrical accidents are not caused by exotic faults — they're caused by five or six mistakes repeated everywhere. Here is what to look for tonight.",
-  "sections": [
-   {
-    "heading": "Overloaded Power Strips",
-    "body": "Daisy-chained extension cords and stacked adapters draw more current than the cable can carry. Use a single, properly rated surge-protected strip per outlet."
-   },
-   {
-    "heading": "Wrong Breaker for the Wire",
-    "body": "A 20 A breaker on 14 AWG wire will let the wire melt before the breaker trips. Always match breaker rating to the smallest wire on the circuit."
-   },
-   {
-    "heading": "Ignoring Warm Outlets",
-    "body": "An outlet that's warm to the touch is a loose connection arcing inside the box. Kill the breaker and re-terminate immediately."
-   },
-   {
-    "heading": "Skipping the GFCI",
-    "body": "Kitchens, bathrooms, garages and outdoor outlets must be on GFCI protection. It's the single best upgrade for shock safety."
-   }
-  ]
- },
- {
-  "id": "E003",
-  "title": "Must-Have Electrical Tools for Every DIYer",
-  "subtitle": "Build a starter kit that handles 95% of jobs without breaking the bank.",
-  "category": "Electrical Tools",
-  "date": "Apr 22, 2026",
-  "readTime": "5 min",
-  "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=1600&q=80",
-  "introduction": "You don't need a van full of gear to do real electrical work — you need eight items, picked carefully.",
-  "sections": [
-   {
-    "heading": "The Essential Eight",
-    "body": "Non-contact voltage tester, true-RMS multimeter, wire strippers (10–22 AWG), lineman's pliers, insulated screwdriver set, headlamp, fish tape, and a quality utility knife."
-   },
-   {
-    "heading": "Where to Spend, Where to Save",
-    "body": "Spend on the multimeter and pliers — they last decades. Save on consumables like electrical tape and wire nuts; just buy reputable brands."
-   },
-   {
-    "heading": "Smart Additions",
-    "body": "A clamp meter for measuring current without breaking the circuit, a thermal camera attachment for finding hot spots, and a label maker for the panel."
-   }
-  ]
- },
- {
-  "id": "E004",
-  "title": "Smart Home Wiring: Plan Before You Pull",
-  "subtitle": "How to future-proof your walls for lights, switches and sensors.",
-  "category": "Smart Home Tech",
-  "date": "Apr 15, 2026",
-  "readTime": "7 min",
-  "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=1600&q=80",
-  "introduction": "Smart switches, sensors and hubs are easy to swap in — if the wiring behind the wall is ready for them. Here is the planning step most people skip.",
-  "sections": [
-   {
-    "heading": "Always Pull a Neutral",
-    "body": "Most smart switches need a neutral wire at the switch box. New work? Pull one to every switch, even if you don't need it today."
-   },
-   {
-    "heading": "Pick a Protocol",
-    "body": "Zigbee and Z-Wave are reliable mesh systems. Matter is unifying the ecosystem. Wi-Fi is simplest but congests fast — keep it for high-bandwidth devices."
-   },
-   {
-    "heading": "Group Circuits Logically",
-    "body": "Put all kitchen lighting on one breaker, living room on another. It makes scenes, troubleshooting and code compliance much easier."
-   }
-  ]
- },
- {
-  "id": "E005",
-  "title": "DIY LED Strip Lighting Under Cabinets",
-  "subtitle": "A clean, hard-wired install that takes one Saturday.",
-  "category": "DIY Projects",
-  "date": "Apr 08, 2026",
-  "readTime": "6 min",
-  "image": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1600&q=80",
-  "introduction": "Stick-on LED strips look great for a week, then sag. Here's how to do it properly with an aluminum channel and a hidden driver.",
-  "sections": [
-   {
-    "heading": "Pick the Right Strip",
-    "body": "24V strips have less voltage drop over long runs. CRI 90+ for kitchens, 2700K for warm or 4000K for task lighting."
-   },
-   {
-    "heading": "Hide the Driver",
-    "body": "Mount the LED driver inside a nearby cabinet with ventilation. Run low-voltage DC through a small hole to the channel below."
-   },
-   {
-    "heading": "Wire the Switch",
-    "body": "Use a wall-mounted dimmer with PWM output rated for your driver. Avoid leading-edge dimmers — they'll flicker."
-   }
-  ]
- },
- {
-  "id": "E006",
-  "title": "How to Use a Multimeter (Without Frying It)",
-  "subtitle": "The five measurements every electrical hobbyist must master.",
-  "category": "Electrical Tools",
-  "date": "Mar 30, 2026",
-  "readTime": "5 min",
-  "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=1600&q=80",
-  "introduction": "A multimeter is a flashlight for electricity. Learn five readings and you'll diagnose 90% of problems in your house.",
-  "sections": [
-   {
-    "heading": "Voltage AC and DC",
-    "body": "Set the dial, probe across the load (parallel). Red to live/positive, black to neutral/ground. Never in series — that's how you blow the fuse."
-   },
-   {
-    "heading": "Continuity",
-    "body": "The beep test. Ideal for tracing wires, checking switches and finding broken connections. Always with the circuit de-energized."
-   },
-   {
-    "heading": "Resistance and Current",
-    "body": "Resistance for component testing. Current measurements go in series and require moving the red probe to the dedicated A jack — a common, costly mistake."
-   }
-  ]
- }
+  {
+    "id": "E000",
+    "title": "Building a DIY RC Car: Transmitter & Receiver from Scratch",
+    "subtitle": "A complete walkthrough of designing the electronics for a custom remote-controlled car — from the transmitter PCB to the receiver wiring.",
+    "category": "DIY Projects",
+    "date": "May 04, 2026",
+    "readTime": "9 min",
+    "image": "rc-build-hero-BnxU8OZB.jpg",
+    "introduction": "Building your own RC car radio system sounds intimidating, but a transmitter and receiver pair is one of the most satisfying beginner electronics projects you can tackle. You will learn how radio control actually works, wire up a real receiver, bind it to a transmitter, and drive something you built with your own hands. This guide walks through every step, including the mistakes most beginners make.",
+    "sections": [
+      {
+        "heading": "How an RC radio system actually works",
+        "body": "Every RC car has the same three-part chain. The transmitter is the controller in your hands. It reads the position of the sticks or wheel and trigger, converts those positions into digital data packets, and broadcasts them over the 2.4 GHz radio band many times per second.\n\nThe receiver is a small board mounted in the car. Its antenna picks up those packets, decodes them, and converts them back into control signals. Each channel on the receiver corresponds to one control: channel 1 usually drives the steering servo, channel 2 drives the electronic speed controller (ESC) that powers the motor.\n\nThe ESC is the muscle. It takes battery power and the throttle signal from the receiver, then feeds the motor exactly the right amount of current to match your trigger finger. Modern 2.4 GHz systems handle all of this with almost no interference, which is why the old days of swapping crystals and fighting for a clean frequency are gone. Understanding this chain matters because every troubleshooting step later comes back to asking: is the problem in the radio link, the signal decoding, or the power stage?"
+      },
+      {
+        "heading": "Parts list: what to buy",
+        "body": "You do not need expensive gear to start. A basic 2.4 GHz pistol-grip transmitter and receiver combo from brands like FlySky or Radiolink costs very little and is perfect for a first build. Make sure the receiver matches the transmitter's protocol; a FlySky receiver will not talk to a Spektrum transmitter, for example.\n\nFor the car itself you need a brushed or brushless motor with a matching ESC, a steering servo (a standard-size analog servo is fine), a 2S LiPo or NiMH battery pack, and a chassis. Many beginners start with an inexpensive 1/10 or 1/16 scale kit chassis and add their own electronics, which teaches far more than buying a ready-to-run car.\n\nOn the bench side, keep a small Phillips screwdriver set, zip ties, double-sided foam tape for mounting the receiver, and a LiPo-safe charging bag. Buy a battery charger that specifically supports your battery chemistry and has balance charging for LiPo packs. Skipping the right charger is the single most dangerous corner to cut in this hobby."
+      },
+      {
+        "heading": "Wiring the receiver and ESC step by step",
+        "body": "Start with everything powered off and the battery disconnected. Mount the receiver with foam tape somewhere central on the chassis, with its antenna routed up and away from the motor and ESC. Metal and carbon fiber block radio signals, so keep the antenna tip in clear air, ideally inside a plastic antenna tube.\n\nPlug the steering servo into channel 1 on the receiver and the ESC's receiver lead into channel 2. Servo plugs only fit one way: the dark wire (ground) goes toward the outside edge of the receiver case on most brands, but check your manual because reversed plugs are a classic first-build error. The ESC's thick red and black wires go to the battery, and its motor wires go to the motor. For a brushed motor, polarity just decides direction; for brushless, swapping any two of the three wires reverses direction.\n\nKeep the wiring tidy with zip ties, leaving gentle loops rather than tight bends. Vibration is the enemy of RC electronics, and a wire pulled taut will eventually fatigue and break at the connector. Double-check every plug before the battery goes anywhere near the car."
+      },
+      {
+        "heading": "Binding the transmitter to the receiver",
+        "body": "Binding is the handshake that teaches your receiver to listen only to your transmitter. The exact sequence varies by brand, but the pattern is universal: put the receiver into bind mode first, then the transmitter.\n\nTypically you hold a small bind button on the receiver (or insert a bind plug) while powering it on. Its LED will start flashing rapidly, which means it is listening. Then hold the bind button on the transmitter while switching it on. Within a few seconds the receiver LED should go solid, meaning the link is established. Power everything off, remove the bind plug if you used one, and power on normally with the transmitter on first.\n\nAlways power on in the same order: transmitter first, then the car. This guarantees the receiver hears a valid signal the moment it wakes up instead of latching onto noise. Set the failsafe during binding if your system supports it; the failsafe decides what the car does if the signal is lost, and you want the answer to be full brakes, not full throttle into traffic."
+      },
+      {
+        "heading": "First power-on test and troubleshooting",
+        "body": "For the first test, put the car on a stand so the wheels spin freely. Power on the transmitter, then connect the battery. The ESC will play a short beep sequence confirming it sees the battery and the receiver signal. Gently pull the trigger: the wheels should spin forward. Push it: they should brake, then reverse.\n\nIf nothing happens, work the chain backwards. Is the receiver LED solid? If it is flashing, the bind did not hold; repeat the binding steps. Is the ESC beeping an error code? Count the beeps and check the manual; most codes mean wrong battery voltage or no throttle signal. If the steering works but the throttle does not, the ESC lead is probably in the wrong channel or plugged in backwards.\n\nIf the motor runs backwards, swap two motor wires (brushless) or reverse the throttle channel on the transmitter. If the car glitches at distance, the antenna is likely touching carbon fiber or routed alongside the motor wires. Fix the routing before you blame the radio."
+      },
+      {
+        "heading": "Range, interference and safety tips",
+        "body": "A healthy 2.4 GHz system gives you far more range than you can use visually, but a few habits keep it reliable. Never drive with a low transmitter battery; weak transmitter power is the most common cause of mysterious glitches. Do a range check before each session: with the car on the ground, walk 30 meters away and confirm steering and throttle still respond crisply.\n\nTreat LiPo batteries with respect. Never charge unattended, always balance-charge in a LiPo-safe bag, and store packs at storage voltage rather than full charge. A puffed or damaged pack goes straight to battery recycling, never in the trash.\n\nFinally, remember that a DIY RC car is a real machine with real speed. Test in open areas away from people, pets, and traffic. Set your dual-rate or throttle endpoint lower while learning; you can always turn the speed up once your thumbs catch up with the car. The goal is a build you are proud of, not a trip to buy replacement parts on day one."
+      }
+    ]
+  },
+  {
+    "id": "E001",
+    "title": "House Wiring 101: A Complete Beginner's Guide",
+    "subtitle": "Understand circuits, gauges and safe practices before you touch a single wire.",
+    "category": "Wiring Basics",
+    "date": "May 02, 2026",
+    "readTime": "9 min",
+    "image": "article-house-wiring-BplzSdwC.jpg",
+    "introduction": "House wiring looks mysterious from the outside, but it follows a small set of logical rules. Once you understand how power flows from the utility pole to your outlets, and what each wire color and breaker actually does, the whole system starts to make sense. This guide gives beginners that mental model, plus the safety rules that professionals never break.",
+    "sections": [
+      {
+        "heading": "How your home's electrical system works",
+        "body": "Power arrives at your house through a service drop or underground lateral and enters the main breaker panel, the gray metal box that is the heart of the system. Inside, two hot bus bars each carry 120 volts relative to neutral. A standard breaker taps one bus bar to make a 120-volt circuit for outlets and lights; a double-pole breaker taps both to make a 240-volt circuit for heavy appliances like dryers and ovens.\n\nFrom each breaker, a cable runs out to serve one circuit, which is simply a loop: hot wire carries power out to the devices, neutral wire carries it back, and a bare or green ground wire provides a safety path that should normally carry no current at all. Every outlet, switch, and light in your home sits on one of these circuits. When a breaker trips, it is doing its job: it detected more current than the wires can safely carry and cut the power before the wires overheated.\n\nThe panel also has a main breaker that kills power to everything. Learn where your panel is and label every breaker. In an emergency, or before any electrical work, you want to find the right breaker in seconds, not minutes."
+      },
+      {
+        "heading": "Wire colors and gauges explained",
+        "body": "In modern North American wiring, colors have standard meanings. Black (or red as a second hot) is the hot wire carrying power. White is neutral, the return path. Bare copper or green is ground, the safety path. These colors are a convention, not a guarantee, especially in older homes, so always verify with a tester before touching anything.\n\nWire gauge, measured in AWG, tells you how thick the conductor is, and lower numbers mean thicker wire. The two sizes you will see most are 14 AWG, used for 15-amp lighting and outlet circuits, and 12 AWG, used for 20-amp circuits in kitchens, bathrooms, and garages. Thicker wire safely carries more current, which is why the breaker size must always match the wire: a 20-amp breaker on 14-gauge wire is a fire waiting to happen because the wire will overheat before the breaker ever trips.\n\nCable sheathing has its own language too. Non-metallic sheathed cable, commonly called Romex, has a printed label like 12/2, meaning 12-gauge with two current-carrying conductors plus ground. Read the label before you buy; grabbing the wrong roll at the store is an expensive mistake."
+      },
+      {
+        "heading": "Breakers, outlets and switches basics",
+        "body": "A circuit breaker is a reusable safety switch. Unlike the old screw-in fuses, you reset it by flipping it fully off and then on. Breakers protect wires, not people and not your electronics; that distinction matters when we talk about GFCI outlets later.\n\nStandard duplex outlets have brass screws for hot wires, silver screws for neutral, and a green screw for ground. The smaller slot is hot, the larger slot is neutral, which is why some plugs are polarized and only fit one way. A basic light switch simply interrupts the hot wire to a fixture; when it is off, the fixture has no power, but the box itself may still have live wires, so never assume a box is dead because the switch is off.\n\nThree-way switches, the pairs that control one light from two locations, confuse beginners because both switches have three terminals plus ground. The trick is the common terminal, usually a darker screw: the hot feed or the wire to the light lands there, and the two traveler wires connect the switches to each other. Take a photo before disconnecting anything, and label each wire with tape."
+      },
+      {
+        "heading": "Planning a simple circuit the right way",
+        "body": "Before adding anything, do the load math. Add up the wattage of everything the circuit will serve and divide by 120 to get amps. A bedroom circuit with a few lights and phone chargers might draw 3 amps; a space heater alone draws 12.5. Keep continuous loads under 80 percent of the breaker rating: 12 amps on a 15-amp circuit, 16 on a 20-amp circuit.\n\nMap the circuit on paper first. Decide where the homerun cable enters from the panel, then daisy-chain devices in a logical order that minimizes cable runs through finished walls. Keep high-draw appliances on dedicated circuits rather than sharing with general outlets. Kitchens and bathrooms need 20-amp small-appliance circuits by code, and for good reason.\n\nBuy a little more cable than you measured; fishing wire through walls always takes more than the straight-line distance. And check your local code before you start. Many jurisdictions allow homeowners to do their own wiring with a permit and inspection, while some require a licensed electrician for panel work. The permit is not bureaucracy for its own sake; the inspector catches the mistakes that burn houses down."
+      },
+      {
+        "heading": "Safety rules professionals never break",
+        "body": "Rule one is absolute: turn off the breaker, then verify with a non-contact voltage tester that the wires are actually dead. Test the tester on a known-live outlet first so you know it works. People get hurt trusting a mislabeled breaker panel.\n\nRule two: never work alone on anything beyond swapping an outlet. Have someone nearby who knows where the panel is. Rule three: keep one hand in your pocket when probing live circuits is unavoidable during testing; it is an old electrician's habit that keeps current from crossing your chest.\n\nUse insulated tools rated for the voltage, wear safety glasses when cutting into boxes, and never stand on a wet floor while doing electrical work. Aluminum wiring, found in many homes built in the late 1960s and 1970s, needs special connectors and is a job to discuss with an electrician rather than DIY. Respect the limits of your knowledge; electricity rewards humility and punishes confidence."
+      },
+      {
+        "heading": "When to call a licensed electrician",
+        "body": "DIY has a clear boundary, and knowing it is what separates a smart homeowner from a dangerous one. Call a professional for anything inside the main panel beyond flipping breakers, for new circuits run from the panel, for 240-volt appliance circuits, and for any work where you are unsure what you are looking at.\n\nAlso call one if you find scorched wire insulation, melted outlet faces, breakers that trip repeatedly, lights that flicker across multiple rooms, or a buzzing panel. Those are symptoms of problems that simple part-swapping will not fix, and they can indicate loose service connections that are genuinely dangerous.\n\nA good electrician will also pull the permit and arrange the inspection, which protects you twice: the work gets a second pair of expert eyes, and you have documentation that the work was done to code, which matters for insurance and resale. The service call fee is the cheapest insurance you will ever buy."
+      }
+    ]
+  },
+  {
+    "id": "E002",
+    "title": "Top 7 Electrical Mistakes to Avoid at Home",
+    "subtitle": "These small errors cause most household fires — fix them this weekend.",
+    "category": "Safety Tips",
+    "date": "Apr 28, 2026",
+    "readTime": "8 min",
+    "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
+    "introduction": "Most home electrical fires and shocks trace back to a short list of preventable mistakes. They are not exotic failures; they are ordinary errors made by ordinary people, often with the best intentions. Here are the seven we see most often, why each one is dangerous, and exactly how to avoid it.",
+    "sections": [
+      {
+        "heading": "Mistake 1: Working on live circuits",
+        "body": "The most common and most unforgiving mistake is trusting a breaker label instead of testing. Panels get mislabeled during renovations, breakers get moved, and shared neutrals can keep a supposedly dead circuit energized. Every year, competent DIYers get shocked this way.\n\nThe fix is a ritual, not a suggestion: switch off the breaker, then check every wire in the box with a non-contact voltage tester. Test the tester on a known-live outlet first, because a dead battery in your tester can lie to you just as dangerously as a wrong label. Only when the tester stays silent do you touch anything.\n\nMake it a habit to say out loud what you are about to touch and why you believe it is dead. It feels silly until the day it catches you reaching into the wrong box."
+      },
+      {
+        "heading": "Mistake 2: Using the wrong wire gauge",
+        "body": "Wire gauge must match the breaker protecting it: 14 AWG for 15-amp breakers, 12 AWG for 20-amp breakers, no exceptions. The breaker protects the wire, and an oversized breaker on undersized wire means the wire becomes the fuse, overheating inside your walls long before the breaker trips.\n\nThis mistake usually happens during repairs, when someone extends a circuit with whatever cable is lying around, or replaces a breaker with a bigger one to stop nuisance tripping. A breaker that trips repeatedly is telling you the circuit is overloaded; the answer is less load or a new properly-wired circuit, never a bigger breaker.\n\nWhen buying cable, read the sheath printing carefully: 12/2 means 12-gauge, two conductors plus ground. If you are ever unsure what gauge is already in the wall, a cheap wire gauge tool settles it in seconds."
+      },
+      {
+        "heading": "Mistake 3: Loose connections and backstabbed outlets",
+        "body": "Loose connections cause arcing, and arcing causes heat, and heat causes fires. The notorious shortcut is backstabbing: pushing stripped wire into the push-in holes on the back of an outlet instead of wrapping it around the side screws. It is fast, it is legal in many places, and it is the connection electricians love to hate because spring pressure loosens over years of thermal cycling.\n\nThe reliable method is the screw terminal: strip the right length, curl the wire clockwise around the screw so tightening pulls the loop closed, and tighten firmly. For joining wires, twist-on wire nuts are fine when sized correctly and twisted tight; lever-style connectors are even more forgiving and reusable.\n\nAfter making any connection, give each wire a firm tug. If it moves, it was not tight enough. Then fold the wires neatly into the box without forcing them; cramming creates pressure that works connections loose over time."
+      },
+      {
+        "heading": "Mistake 4: Overloading circuits and power strips",
+        "body": "A standard 15-amp circuit safely delivers about 1440 watts continuously (80 percent of 1800). One space heater draws 1500 watts by itself. Plug that heater into a power strip already feeding a computer setup and you are running a overloaded circuit that the breaker may or may not catch in time, because breakers respond to sustained overload slowly.\n\nDaisy-chaining power strips multiplies the hazard: each connection adds resistance and another point of failure, and cheap strips often have thinner internal wiring than the wall circuit feeding them. Never plug a space heater, air conditioner, or any heating appliance into a power strip, and never chain strips together.\n\nDo the wattage math before you plug in. Add up the devices, divide by 120 for amps, and keep the total under 80 percent of the breaker rating. If the numbers do not fit, the honest fix is a new circuit, not a bigger strip."
+      },
+      {
+        "heading": "Mistake 5: Skipping GFCI protection where it matters",
+        "body": "Ground fault circuit interrupters save lives in wet locations by detecting tiny current leaks, as small as 5 milliamps, and cutting power in a fraction of a second. Code requires them in bathrooms, kitchens, garages, outdoors, and unfinished basements, yet older homes often lack them.\n\nThe mistake is not just missing GFCIs but misunderstanding them. A GFCI outlet protects everything downstream on its load terminals, so one properly wired GFCI can protect a whole string of regular outlets. But wire it backwards, with the feed on the load terminals, and nothing downstream is protected while the GFCI itself looks normal.\n\nTest every GFCI monthly with its test button, and replace any that will not trip or will not reset. They wear out. A GFCI that cannot trip is just an expensive regular outlet giving you false confidence."
+      },
+      {
+        "heading": "Mistake 6: Miswiring switches and outlets",
+        "body": "Swapping line and load, reversing hot and neutral, or miswiring a three-way switch are the classic wiring errors, and they often produce symptoms that look fine at first. An outlet with reversed polarity will still power your lamp; it just leaves the threaded bulb socket energized, waiting for a finger during a bulb change.\n\nThree-way switches cause the most head-scratching because travelers and the common terminal all look alike. The fix is documentation: photograph everything before disconnecting, label each wire with tape, and identify the common terminal, usually the odd-colored screw, before you start.\n\nAfter any device replacement, test with a three-light outlet tester. It takes ten seconds and instantly shows reversed polarity, open ground, and open neutral. For switches, verify the light responds correctly from every location before you button up the boxes."
+      },
+      {
+        "heading": "Mistake 7: Burying junction boxes behind drywall",
+        "body": "Every wire splice must live inside an accessible junction box, and accessible means you can reach it without cutting drywall. Burying a box behind new drywall during a renovation is unfortunately common, and it is both a code violation and a genuine hazard: connections loosen over decades, and the next person troubleshooting has no way to find the splice.\n\nIf a renovation leaves you with a splice in an awkward spot, the code-compliant options are to reroute so the box lands somewhere accessible, like a closet or unfinished space, or use a listed splice device rated for concealed use where your local code allows it. The lazy option, drywalling over it, trades an hour of rerouting for a permanent hidden fire risk.\n\nWhen in doubt, add an access panel. A small removable panel in a closet wall is invisible in daily life and keeps every connection inspectable for the life of the house."
+      }
+    ]
+  },
+  {
+    "id": "E003",
+    "title": "Must-Have Electrical Tools for Every DIYer",
+    "subtitle": "Build a starter kit that handles 95% of jobs without breaking the bank.",
+    "category": "Electrical Tools",
+    "date": "Apr 22, 2026",
+    "readTime": "8 min",
+    "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=1600&q=80",
+    "introduction": "You do not need a truck full of gear to do safe, competent electrical work at home. A short list of quality tools covers nearly every DIY electrical task, from swapping an outlet to troubleshooting a dead circuit. Here is what to buy, what each tool actually does, and what to look for so you buy once.",
+    "sections": [
+      {
+        "heading": "Non-contact voltage tester: your first purchase",
+        "body": "If you buy one electrical tool, make it this one. A non-contact voltage tester detects live AC voltage through insulation: hold the tip near a wire or outlet slot and it beeps and lights up if power is present. It is how you verify a circuit is actually dead before touching it, which is the foundation of every other safe practice.\n\nLook for a tester rated for your voltage range with both audible and visual alerts, since jobsites are noisy and panels are dark. Test it on a known-live outlet before every use; a tester with a dead battery tells you everything is safe, which is exactly the lie that gets people hurt.\n\nKeep one in your pocket whenever you do electrical work, not in the toolbox across the room. The best safety tool is the one you actually use, and that means it has to be within reach at the moment of truth."
+      },
+      {
+        "heading": "Multimeter: the diagnostic workhorse",
+        "body": "A digital multimeter measures voltage, resistance, and continuity, and better ones measure current and capacitance too. It answers the questions a voltage tester cannot: how much voltage is here, is this wire continuous back to the panel, and is this component actually failed?\n\nFor home use, you want a CAT III 600V rated meter with fused current jacks, a backlit display, and a continuity mode with an audible beeper. You do not need a professional-grade meter; reliable entry-level models from established brands cost less than a service call and last for years.\n\nLearn the dial positions before you need them: AC voltage for outlets, DC voltage for electronics and batteries, continuity for checking fuses and tracing wires, resistance for testing components with power off. The most expensive mistake is measuring current with the leads in the voltage jacks, so build the habit of checking lead position every time you change modes."
+      },
+      {
+        "heading": "Wire strippers and cutters",
+        "body": "Clean stripping is a skill and a safety issue: nicked conductors break, and nicked insulation invites shorts. A good self-adjusting or gauge-marked stripper removes insulation without scoring the copper, which matters because a nicked wire is a future break point hidden inside a wire nut.\n\nGet a stripper with clearly marked gauge holes from 10 to 20 AWG, a cutting edge, and a looping hole for forming the hook that goes around screw terminals. Combination tools that strip, cut, and crimp cover most tasks in one handle.\n\nPractice on scrap wire first. The right technique is a firm squeeze and a straight pull, not a twist. If you see copper shining through a score mark, cut back and start over; that damaged section does not belong inside your walls."
+      },
+      {
+        "heading": "Insulated screwdrivers and nut drivers",
+        "body": "Standard screwdrivers conduct electricity through the shaft, which is fine until the day your hand slips inside a live panel. Insulated screwdrivers rated to 1000V have the shaft coated except for the very tip, so a slip does not become a shock.\n\nYou need surprisingly few: a #2 Phillips and a medium flathead handle most devices, panels, and fixtures. A dedicated 6-in-1 or 11-in-1 electrician's multi-driver covers the common sizes in one tool and lives happily in a kitchen drawer kit.\n\nInsulation is a backup, not a permission slip. Always de-energize first and treat insulated tools as the second layer of defense. Inspect the coating before use; a cracked or gouged shaft belongs in the trash, not in a panel."
+      },
+      {
+        "heading": "Fish tape and glow rods: reaching through walls",
+        "body": "Running new cable means fishing it through walls, and that is where fish tape earns its keep. It is a stiff steel or fiberglass ribbon that you push through a wall cavity or conduit, attach the cable, and pull back. Fiberglass versions are non-conductive, which is a meaningful safety upgrade when fishing near live circuits.\n\nGlow rods are rigid, luminous fiberglass sticks that screw together in sections. They shine in open spaces like attics and drop ceilings where you can see and steer them, and their glow makes them easy to spot in dark cavities.\n\nThe technique that saves hours: push from the destination toward the source when possible, because pulling cable downhill and with gravity is easier than against it. Tape the cable to the fish tape with a smooth tapered wrap of electrical tape so it does not snag, and have a helper feed while you pull."
+      },
+      {
+        "heading": "The supporting cast: tape, connectors, light",
+        "body": "A few cheap items round out the kit. Quality electrical tape, not the dollar-store kind that unpeels in a year, for insulating and labeling. An assortment of twist-on wire nuts in the common sizes, or better yet a set of lever-style connectors that are reusable and nearly foolproof. A headlamp, because every panel and crawlspace is dark and you need both hands free.\n\nAdd a three-light outlet tester for instant verification of your work, a cable ripper for cleanly opening sheathed cable, and a permanent marker plus white tape for labeling wires and breakers. Labeling is the habit that pays off for decades: the next person to open that panel, possibly you in five years, will be grateful.\n\nStore it all in one dedicated bag or box. Electrical work goes wrong when you improvise with the wrong tool because the right one was somewhere else."
+      },
+      {
+        "heading": "What not to buy yet",
+        "body": "Beginners often overspend on the wrong things. Skip the giant 200-piece kit full of mystery tools; half of it will never touch a wire, and the quality is usually poor. Buy the core list above individually from reputable brands instead.\n\nHold off on specialty tools until a project demands them. A thermal camera is wonderful for finding overloaded breakers, but it is a luxury, not a starter tool. A full knockout punch set, conduit benders, and circuit tracers earn their place once you are running new circuits regularly, not before.\n\nThe one exception to frugality is safety gear: a decent non-contact tester and insulated screwdrivers are non-negotiable from day one. Everything else can wait until the work in front of you requires it. Your toolkit should grow with your skills, not ahead of them."
+      }
+    ]
+  },
+  {
+    "id": "E004",
+    "title": "Smart Home Wiring: Plan Before You Pull",
+    "subtitle": "How to future-proof your walls for lights, switches and sensors.",
+    "category": "Smart Home Tech",
+    "date": "Apr 15, 2026",
+    "readTime": "8 min",
+    "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=1600&q=80",
+    "introduction": "Smart home gear is easy to buy and frustrating to wire as an afterthought. The difference between a clean, reliable smart home and a pile of half-working gadgets is planning done before a single cable is pulled. Here is how to think about wiring for a home that stays smart for the next twenty years.",
+    "sections": [
+      {
+        "heading": "Why planning beats pulling cable twice",
+        "body": "Every smart device needs two things: power and a path for data. Wi-Fi handles data for many gadgets, but Wi-Fi is shared airspace that gets congested, and some devices like cameras and access points genuinely need wired connections to perform. Power is the harder constraint: a smart switch needs a neutral wire, a camera needs either an outlet nearby or PoE, and a tablet dashboard needs a USB feed inside the wall.\n\nWalk every room on paper before buying anything. Mark where switches, cameras, access points, speakers, and sensors will live, then ask what each location needs: just power, power plus network, or power plus network plus a neutral at the switch. This single planning session prevents the classic regret of finishing drywall and realizing the camera location has no outlet.\n\nPlan for the devices you will add in five years, not just the ones you own today. Cable is cheap during construction and ruinously expensive after it. An extra run of Cat6 to each room costs almost nothing now and future-proofs everything."
+      },
+      {
+        "heading": "Neutral wires at every switch box",
+        "body": "This is the single most important smart-home wiring rule. Most smart switches and dimmers need a neutral wire in the box to power their own electronics. Older switch loops ran only hot and switched-hot to the switch, with the neutral staying up at the light fixture, which leaves no neutral for a smart switch to use.\n\nIf you are wiring new or rewiring, run 14/3 or 12/3 to every switch location so a neutral is always present, even for simple switches you might upgrade later. The extra conductor costs pennies per foot during rough-in.\n\nFor existing homes without neutrals, you have three options: use smart switches designed to work without a neutral (they exist but can flicker with LED loads), have an electrician pull new cable, or use smart bulbs with a wireless switch instead. Know which situation you are in before ordering a dozen switches."
+      },
+      {
+        "heading": "Network: run Cat6 everywhere",
+        "body": "Wi-Fi is convenient and wired is reliable; a smart home wants both. Run Cat6 Ethernet to every room, to every TV location, to the office, and to ceiling spots where Wi-Fi access points will mount. Terminate everything at a central panel with a switch, and you have a backbone that never congests no matter how many gadgets join the Wi-Fi.\n\nFor cameras and access points, plan for Power over Ethernet. A PoE switch at the central panel sends both power and data down a single Cat6 cable, which means a camera needs only one wire and no nearby outlet. It is the professional way to do cameras and the difference between a clean install and a tangle of adapters.\n\nLabel both ends of every cable and test each run before drywall. A ten-dollar cable tester and an hour of labeling saves a weekend of tone-and-probe detective work later. Future you, troubleshooting at midnight, will consider this the best money the project spent."
+      },
+      {
+        "heading": "Hubs, protocols and power planning",
+        "body": "Smart devices speak several languages: Wi-Fi, Zigbee, Z-Wave, Thread, and Matter, the newer standard trying to unify them. You do not need to master the politics, but you do need one coherent plan, because a house split across four incompatible ecosystems is a support nightmare.\n\nPick one primary ecosystem and make new purchases fit it. A single hub or a border router that speaks your chosen protocols keeps automations local and fast instead of bouncing through distant clouds. Local control also keeps working when the internet hiccups, which cloud-only devices do not.\n\nPlan power for the hub location too: a small UPS at the central panel keeps the router, hub, and PoE switch alive through short outages, so your smart locks and cameras keep working when the grid blinks. Resilience is a feature, and it is designed at the panel, not bought later."
+      },
+      {
+        "heading": "Conduit and future-proofing",
+        "body": "The cheapest future-proofing ever invented is empty conduit. Wherever cable runs through an inaccessible path, an attic-to-basement chase, or an exterior wall, pull a spare empty conduit or at least a pull string alongside the real cables. When the next standard arrives, you fish new wire in minutes instead of opening walls.\n\nOversize your central panel space as well. A structured media enclosure with room to grow holds the switch, hub, and power distribution with space for additions. Cramming gear into a too-small box guarantees a rewiring project the first time you add cameras.\n\nDocument everything. A simple floor plan showing cable routes, panel schedules, and device locations, saved digitally and taped inside the panel door, turns every future project from archaeology into routine maintenance."
+      },
+      {
+        "heading": "Safety and code notes",
+        "body": "Low-voltage cable like Cat6 and speaker wire can share routes with each other but must stay separated from line-voltage wiring by code, usually in different stud bays or with proper dividers. Never run Ethernet inside the same conduit as mains wiring.\n\nLine-voltage work for smart switches follows all the normal rules: permits where required, proper boxes and connectors, neutrals handled correctly. If your plan involves panel changes or new circuits, that is electrician territory in most jurisdictions.\n\nFinally, remember that smart does not mean safe by default. Keep firmware updated, use a separate IoT network or VLAN for cheap gadgets, and change default passwords. A well-wired home with sloppy network security just gives attackers a faster connection to your cameras."
+      },
+      {
+        "heading": "Retrofitting an existing home",
+        "body": "Most people do not get to wire during construction, so here is the retrofit playbook. Start with what needs no new wire at all: smart bulbs, plug-in sensors, and wireless switches can transform a home with zero drywall damage. Battery-powered sensors for doors, leaks, and motion fill the gaps where running wire is impractical.\n\nFor network, a mesh Wi-Fi system with wired backhaul over your existing coax, using MoCA adapters, gets you most of the benefit of Cat6 without opening walls. If you have accessible attic or basement, running a few strategic Cat6 drops to access-point and camera locations is a weekend project with outsized payoff.\n\nTackle switch boxes one room at a time, checking for neutrals before ordering hardware. And keep a running document of what you installed where; retrofits evolve over years, and the map matters even more when the wiring grew organically instead of from a plan."
+      }
+    ]
+  },
+  {
+    "id": "E005",
+    "title": "DIY LED Strip Lighting Under Cabinets",
+    "subtitle": "A clean, hard-wired install that takes one Saturday.",
+    "category": "DIY Projects",
+    "date": "Apr 08, 2026",
+    "readTime": "8 min",
+    "image": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1600&q=80",
+    "introduction": "Under-cabinet LED strips are the highest-impact lighting upgrade per dollar in a kitchen. They turn dark counters into bright workspaces and make the whole room look professionally designed. But the difference between a gorgeous install and a flickering disappointment is in the details: strip choice, power sizing, and mounting. Here is the complete guide.",
+    "sections": [
+      {
+        "heading": "Choosing the right strip",
+        "body": "LED strips come in 12V and 24V versions. For under-cabinet runs, 24V is the better choice: it suffers less voltage drop over distance, which means the far end of a long run stays as bright as the near end, and it can run longer continuous lengths from one power feed.\n\nDensity matters more than most people expect. Strips are sold by LEDs per meter, and cheap 30 LED/m strips show visible dots, especially on reflective counters. For smooth, dot-free light, choose 60 LED/m minimum, or go premium with COB (chip-on-board) strips that produce a continuous line of light with no dots at all.\n\nCheck the color temperature and CRI. Warm white around 2700K to 3000K suits kitchens and feels cozy; 4000K looks clean and modern but can feel clinical. CRI, the color rendering index, should be 90 or higher so food looks like food instead of gray. For damp areas near sinks, choose IP65 or higher water resistance."
+      },
+      {
+        "heading": "Sizing the power supply correctly",
+        "body": "This is where most DIY installs fail. Every strip has a wattage per meter rating, printed on the reel. Multiply watts per meter by your total meters, then add 20 percent headroom, and buy a power supply rated for at least that. A 5-meter run of 14.4 W/m strip needs 72 watts, so buy a 90 to 100-watt supply.\n\nAn undersized supply overheats, shortens its own life, and causes dimming and flicker. An oversized supply is perfectly fine; the strip only draws what it needs. Always match voltage exactly: a 24V strip on a 12V supply glows dimly, and a 12V strip on a 24V supply dies instantly and dramatically.\n\nBuy a supply from a reputable brand with proper safety certifications, not the cheapest no-name brick. It runs for thousands of hours inside a cabinet, and this is not the component to gamble on. If the supply will live in an enclosed space, confirm it is rated for it and give it ventilation."
+      },
+      {
+        "heading": "Wiring and connectors",
+        "body": "Plan the layout so power feeds the strip from the best point. For runs longer than about 5 meters at 24V, feed power from the middle or both ends rather than one end; this defeats voltage drop, the gradual dimming toward the far end that plagues long single-fed runs.\n\nYou have two connection options: solder or snap-on connectors. Soldering gives the most reliable joint and the slimmest profile, and it is worth learning for a permanent install. Snap-on connectors are fast and tool-free but can work loose over time, especially in warm cabinets; if you use them, secure each joint with a dab of hot glue for strain relief.\n\nKeep the low-voltage wiring neat and separated from mains wiring. Where the strip turns a corner, use a flexible corner connector or make a small loop rather than creasing the strip; sharp folds crack the copper traces and create dead sections."
+      },
+      {
+        "heading": "Dimming and controls",
+        "body": "On/off is fine, but dimming is what makes under-cabinet lighting feel luxurious. LED strips dim on the low-voltage DC side, so you need a dimmer or controller rated for your strip's voltage and total wattage, installed between the power supply and the strip.\n\nThe simplest upgrade is an inline PWM dimmer knob hidden under the cabinet. For smart control, Wi-Fi or Zigbee LED controllers let you dim and schedule from your phone or voice assistant; just confirm the controller handles your wattage with headroom to spare.\n\nNever dim the AC side of the power supply with a standard wall dimmer unless both the supply and dimmer are explicitly rated for it. Mismatched dimming causes the flicker and buzzing that give LED retrofits a bad name. When everything is matched on the DC side, dimming is perfectly smooth down to a glow."
+      },
+      {
+        "heading": "Mounting for a professional look",
+        "body": "Bare adhesive strips stuck to cabinet bottoms look fine for a month, then gravity and kitchen heat win. The professional method is an aluminum channel with a diffuser cover. The channel acts as a heat sink that extends LED life, the diffuser softens the light and hides the dots, and the whole assembly mounts with screws or strong clips that never sag.\n\nPosition the channel toward the front edge of the cabinet, set back just enough that you cannot see the strip from a normal standing position. The goal is to see the light, not the source; visible diodes are the hallmark of an amateur install.\n\nHide the power supply inside a cabinet or in the basement below, with the low-voltage wire fished discreetly to the strip. If local code requires the mains side in a junction box, do it properly. The last ten percent of tidiness is what separates a DIY job from a designer job."
+      },
+      {
+        "heading": "Troubleshooting flicker and dead sections",
+        "body": "Flicker almost always means a power problem. Check that the supply is large enough, that all connections are tight, and that no dimmer mismatch exists. Flicker that appears when an appliance starts elsewhere in the house points to the mains side; a better supply with proper filtering usually cures it.\n\nA dead section in the middle of a run means a cracked trace or a failed solder joint, often at a corner fold. You can usually bridge the break with a short soldered jumper or a connector, restoring the run without replacing the whole strip.\n\nIf one end is dimmer than the other, that is voltage drop: feed power from both ends or shorten the run per feed. And if colors look wrong on an RGB strip, check that the controller's RGB order matches the strip; a simple setting swap fixes the classic red-shows-as-green confusion."
+      },
+      {
+        "heading": "Choosing color: white, tunable, or RGB",
+        "body": "Single-color warm white strips are the right choice for task lighting under cabinets; they are the brightest per dollar and the simplest to dim. If you want flexibility, tunable white strips let you shift from warm evening light to cool daylight task light, which is genuinely useful in a kitchen that serves as both workspace and gathering place.\n\nRGB strips trade brightness for color. They are fun for accent lighting but produce weaker, lower-CRI white light than dedicated white strips, so they make poor primary task lighting. RGBW strips add a dedicated white channel and solve this compromise, at a higher price.\n\nWhatever you choose, buy the controller and strip as a matched set in voltage and protocol. Mixing a 24V strip with a 12V controller's output stage is a common ordering mistake. And keep a spare meter of strip from the same batch; LED color varies slightly between production runs, and a future repair will match perfectly only with the original batch."
+      }
+    ]
+  },
+  {
+    "id": "E006",
+    "title": "How to Use a Multimeter (Without Frying It)",
+    "subtitle": "The five measurements every electrical hobbyist must master.",
+    "category": "Electrical Tools",
+    "date": "Mar 30, 2026",
+    "readTime": "8 min",
+    "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=1600&q=80",
+    "introduction": "A multimeter is the most useful diagnostic tool in electronics, and also the easiest to destroy in five seconds. Beginners fry meters by measuring current like voltage or probing mains on the wrong setting. This guide teaches the right way from the start, so your meter survives your learning curve.",
+    "sections": [
+      {
+        "heading": "Know your meter: dial, jacks, display",
+        "body": "Every digital multimeter has three parts to understand before you measure anything. The dial selects what you measure: AC voltage, DC voltage, resistance, continuity, and current ranges. The jacks at the bottom decide how the leads connect inside the meter, and this is where beginners get into trouble. The display simply shows the result.\n\nLook at the jacks now. One is always COM, the black lead's home. The red lead usually lives in the jack labeled V-ohm, used for voltage, resistance, and continuity. The separate current jack, often labeled A or mA, connects the leads through a low-resistance shunt with a fuse; plugging into it changes the meter's behavior completely.\n\nThe golden habit: every time you move the dial, glance at the jacks and confirm the leads match the mode. Professionals do this unconsciously. Beginners who skip it learn about the fuse, or the lack of one, the exciting way."
+      },
+      {
+        "heading": "Measuring voltage: the safe first skill",
+        "body": "Voltage is measured in parallel, meaning the meter connects across the two points you want to compare, and the meter draws almost no current doing it. This makes voltage the safest measurement to learn first.\n\nSet the dial to DC voltage, usually marked V with a straight line, for batteries and electronics. Touch the red probe to the positive point and black to the negative. A 9V battery should read around 9 volts; if it reads negative 9, your probes are simply swapped, which is harmless information, not an error.\n\nFor wall outlets, switch to AC voltage, marked V with a wavy line, and keep your fingers on the insulated probe handles only. Insert the probes firmly into the slots. Expect around 120 volts in North America. If the reading jumps around, your probe contact is poor; steady pressure gives steady numbers. Never measure voltage with the leads in the current jack; that creates a short circuit through the meter."
+      },
+      {
+        "heading": "Measuring continuity and resistance",
+        "body": "Continuity mode is the beeper, and it is the most-used function in real troubleshooting. It asks one question: is there an unbroken electrical path between these two probes? Touch the probes together and it beeps. Touch each end of a good wire and it beeps. Touch across a blown fuse and it stays silent.\n\nThe critical rule: continuity and resistance are measured with the power OFF. The meter supplies its own tiny test current, and external voltage confuses it at best and damages it at worst. Disconnect power, and for capacitors, discharge them first.\n\nResistance mode quantifies what continuity only hints at. A heating element might read 15 ohms, a good switch reads near zero, and an open circuit reads OL, overload, meaning infinite. Learn what OL looks like on your meter now, because you will see it constantly, and it is a valid answer, not an error."
+      },
+      {
+        "heading": "Measuring current: where beginners fry meters",
+        "body": "Current is measured in series: the meter becomes part of the circuit, and all the circuit's current flows through it. This is fundamentally different from voltage measurement, and treating them the same is how meters die.\n\nTo measure current, you must move the red lead to the current jack, select the current mode, then break the circuit and insert the meter in the gap. For a small LED circuit, that means disconnecting one wire and bridging the gap with your probes. Start on the highest current range and work down.\n\nThe classic destruction sequence goes like this: leads left in the current jack, dial turned to voltage, probes touched across a battery or outlet. The meter's low-resistance shunt becomes a dead short, hundreds of amps try to flow, and the best case is a blown internal fuse. Always return the red lead to the V-ohm jack the moment you finish a current measurement, so the next measurement starts safe."
+      },
+      {
+        "heading": "Beginner mistakes that kill meters",
+        "body": "Beyond the current-jack trap, a few more habits destroy meters. Measuring resistance on a live circuit is one; the external voltage fights the meter's test signal and can damage the input. Probing mains voltage on a low-voltage-only range is another; respect the dial.\n\nCheap meters sometimes lack proper input protection or have unfused current ranges. If your meter has no fuse on the current jack, treat current measurement as an advanced skill and learn on low-voltage DC circuits only, never mains.\n\nReplace the internal fuse only with the exact specified type and rating. Wrapping a blown fuse in foil or substituting a higher rating removes the one component standing between a mistake and a melted meter. Keep a spare fuse in the meter's case; you will need it exactly once, and you will be glad it is there."
+      },
+      {
+        "heading": "Safety: CAT ratings and fused leads",
+        "body": "Multimeters carry CAT safety ratings that describe what transient voltage spikes they can survive. CAT II covers appliance-level outlets, CAT III covers distribution panels and fixed building wiring, and CAT IV covers the utility service entrance. For home electrical work, CAT III 600V is the minimum you should accept.\n\nThe rating applies to the whole measurement chain: meter, leads, and probes. A CAT III meter with bargain unrated leads is not a CAT III setup. Buy leads rated to match the meter, with finger guards and shrouded plugs that cannot expose metal.\n\nFinally, treat every measurement with the same respect regardless of experience. Check the dial, check the jacks, keep one hand behind your back on live circuits, and never measure anything you do not understand. The meter is a tool for answering questions, and the most important question is always whether you should be probing that circuit at all."
+      },
+      {
+        "heading": "Five-minute practice drills",
+        "body": "Skill with a meter comes from repetition on safe, low-voltage targets. Drill one: measure every battery in the house and write down the readings. You will learn probe pressure, range selection, and what a dying battery looks like, a 9V reading 7.2 volts is done, with zero risk.\n\nDrill two: continuity detective. Unplug a lamp, set the meter to continuity, and trace the path from plug prong through the switch to the bulb socket, flipping the switch to hear the beep come and go. This teaches you to think in circuits, not just numbers.\n\nDrill three: find the voltage drop. With a small DC circuit on a breadboard, measure across each component and confirm the readings add up to the supply voltage. This is Kirchhoff's voltage law in your hands, and it is the foundation of all real troubleshooting. Fifteen minutes of drills teaches more than an hour of videos."
+      }
+    ]
+  }
 ]
