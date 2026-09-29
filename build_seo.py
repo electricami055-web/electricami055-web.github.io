@@ -11,6 +11,14 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE_NAME = "ElectricTechs"
 SOCIAL_BAR = '<script src="https://pl29415251.profitablecpmratenetwork.com/bc/c9/c1/bcc9c1f2044fb1a300b55a62c069a50e.js"></script>'
 
+def slug_for(a):
+    """Slug for an article: fixed map for legacy IDs, generated otherwise."""
+    if a["id"] in SLUGS:
+        return SLUGS[a["id"]]
+    s = a["title"].lower()
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return re.sub(r"-{2,}", "-", s)[:70]
+
 SLUGS = {
     "E000": "building-diy-rc-car-transmitter-receiver-from-scratch",
     "E001": "house-wiring-101-complete-beginners-guide",
@@ -104,7 +112,7 @@ def page_shell(title, desc, url, body_html, schema=None, og_image=None):
 </html>"""
 
 def article_page(a, prev_a, next_a):
-    slug = SLUGS[a["id"]]
+    slug = slug_for(a)
     url = f"{BASE}/articles/{slug}/"
     img = a["image"] if a["image"].startswith("http") else f"{BASE}/assets/{a['image']}"
     desc = (a["subtitle"] or a["introduction"])[:155]
@@ -123,8 +131,8 @@ def article_page(a, prev_a, next_a):
     body += """<div class="disclaimer">&#9888;&#65039; <strong>Safety first:</strong> Electrical work can be dangerous. Always turn off power at the breaker, verify with a tester, and follow local codes. When in doubt, call a licensed electrician.</div>"""
     body += """<div class="author"><div class="av">E</div><div><strong>ElectricTechs Team</strong><br/><span style="color:#9aa7b8;font-size:14px">Hands-on electricians sharing practical, real-world tips.</span></div></div>"""
     body += '<div class="pn">'
-    body += f'<a href="{BASE}/articles/{SLUGS[prev_a["id"]]}/"><small>&larr; Previous</small>{esc(prev_a["title"])}</a>' if prev_a else '<span></span>'
-    body += f'<a href="{BASE}/articles/{SLUGS[next_a["id"]]}/" style="text-align:right"><small>Next &rarr;</small>{esc(next_a["title"])}</a>' if next_a else ''
+    body += f'<a href="{BASE}/articles/{slug_for(prev_a)}/"><small>&larr; Previous</small>{esc(prev_a["title"])}</a>' if prev_a else '<span></span>'
+    body += f'<a href="{BASE}/articles/{slug_for(next_a)}/" style="text-align:right"><small>Next &rarr;</small>{esc(next_a["title"])}</a>' if next_a else ''
     body += '</div>'
     schema = {
         "@context": "https://schema.org", "@type": "Article",
@@ -139,7 +147,7 @@ def article_page(a, prev_a, next_a):
 def hub_page(arts):
     cards = ""
     for a in arts:
-        slug = SLUGS[a["id"]]
+        slug = slug_for(a)
         img = a["image"] if a["image"].startswith("http") else f"{BASE}/assets/{a['image']}"
         cards += f"""<a class="card" href="{BASE}/articles/{slug}/"><img src="{img}" alt="{esc(a['title'])}" loading="lazy"/><div class="b"><div class="cat">{esc(a['category'])}</div><h3>{esc(a['title'])}</h3><p>{esc((a['subtitle'] or '')[:120])}</p></div></a>\n"""
     body = f"""<div class="crumb"><a href="{BASE}/">Home</a> &rsaquo; Articles</div>
@@ -157,7 +165,7 @@ def main():
     arts = json.load(open(os.path.join(ROOT, "articles.json")))
     # 1. article pages
     for idx, a in enumerate(arts):
-        slug = SLUGS[a["id"]]
+        slug = slug_for(a)
         d = os.path.join(ROOT, "articles", slug)
         os.makedirs(d, exist_ok=True)
         prev_a = arts[idx - 1] if idx > 0 else None
@@ -192,7 +200,7 @@ def main():
     urls = [("", "2026-09-29"), ("articles/", "2026-09-29"), ("about/", "2026-09-29"),
             ("contact/", "2026-09-29"), ("privacy-policy/", "2026-09-29")]
     for a in arts:
-        urls.append((f"articles/{SLUGS[a['id']]}/", parse_date(a["date"])))
+        urls.append((f"articles/{slug_for(a)}/", parse_date(a["date"])))
     sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for path, lm in urls:
         sm += f"  <url><loc>{BASE}/{path}</loc><lastmod>{lm}</lastmod><changefreq>weekly</changefreq></url>\n"
