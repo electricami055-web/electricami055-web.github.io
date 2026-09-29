@@ -1,0 +1,182 @@
+[
+ {
+  "id": "E000",
+  "title": "Building a DIY RC Car: Transmitter & Receiver from Scratch",
+  "subtitle": "A complete walkthrough of designing the electronics for a custom remote-controlled car — from the transmitter PCB to the receiver wiring.",
+  "category": "DIY Projects",
+  "date": "May 04, 2026",
+  "readTime": "12 min",
+  "image": "rc-build-hero-BnxU8OZB.jpg",
+  "introduction": "RC cars are the perfect playground for learning electronics. In this build we design our own 2.4 GHz transmitter and receiver pair, wire it to a brushed motor controller, and dial in the throttle and steering channels. No proprietary remotes required.",
+  "sections": [
+   {
+    "heading": "Designing the Transmitter",
+    "body": "We're using an Arduino Nano paired with an NRF24L01 radio module. Two thumb joysticks feed the analog inputs — one for steering, one for throttle. The whole thing fits on a small protoboard inside a 3D-printed grip."
+   },
+   {
+    "heading": "Building the Receiver",
+    "body": "On the car side, a second NRF24L01 listens for packets and forwards them to a small microcontroller, which generates PWM for the ESC and servo. Keep the radio at least 2 cm away from the motor wires to avoid noise."
+   },
+   {
+    "heading": "Wiring the Motor & Servo",
+    "body": "Power the logic side from a clean 5V BEC. Power the motor from the main LiPo through the ESC. Common ground is mandatory — half of all 'mystery glitches' in DIY RC cars are missing ground links between battery, ESC and receiver."
+   },
+   {
+    "heading": "Tuning the Channels",
+    "body": "Map joystick centers to PWM 1500 µs, full deflection to 1000 / 2000 µs, then add a small dead-zone in firmware so the car doesn't creep when the sticks are at rest."
+   }
+  ]
+ },
+ {
+  "id": "E001",
+  "title": "House Wiring 101: A Complete Beginner's Guide",
+  "subtitle": "Understand circuits, gauges and safe practices before you touch a single wire.",
+  "category": "Wiring Basics",
+  "date": "May 02, 2026",
+  "readTime": "8 min",
+  "image": "article-house-wiring-BplzSdwC.jpg",
+  "introduction": "Residential wiring looks intimidating, but every system follows the same simple logic: a source, a path, a load, and protection. Master those four ideas and the rest is just detail.",
+  "sections": [
+   {
+    "heading": "Live, Neutral and Earth Explained",
+    "body": "Live carries current to the load, neutral returns it to the panel, and earth is the safety path that trips the breaker if something goes wrong. Color codes vary by region — always verify locally before working."
+   },
+   {
+    "heading": "Choosing the Right Wire Gauge",
+    "body": "Use 14 AWG for 15 A lighting circuits, 12 AWG for 20 A outlet circuits, and 10 AWG for 30 A appliances. Undersized wire is the #1 cause of overheating in DIY work."
+   },
+   {
+    "heading": "Reading a Simple Circuit",
+    "body": "A circuit diagram is just a map of how electrons travel. Start at the breaker, follow the live wire to the switch, then to the load, and back via neutral. If you can trace it, you can troubleshoot it."
+   },
+   {
+    "heading": "Tools You Actually Need",
+    "body": "A non-contact voltage tester, a quality multimeter, wire strippers, lineman's pliers and a torque screwdriver will handle 95% of home jobs safely."
+   }
+  ]
+ },
+ {
+  "id": "E002",
+  "title": "Top 7 Electrical Mistakes to Avoid at Home",
+  "subtitle": "These small errors cause most household fires — fix them this weekend.",
+  "category": "Safety Tips",
+  "date": "Apr 28, 2026",
+  "readTime": "6 min",
+  "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
+  "introduction": "Most electrical accidents are not caused by exotic faults — they're caused by five or six mistakes repeated everywhere. Here is what to look for tonight.",
+  "sections": [
+   {
+    "heading": "Overloaded Power Strips",
+    "body": "Daisy-chained extension cords and stacked adapters draw more current than the cable can carry. Use a single, properly rated surge-protected strip per outlet."
+   },
+   {
+    "heading": "Wrong Breaker for the Wire",
+    "body": "A 20 A breaker on 14 AWG wire will let the wire melt before the breaker trips. Always match breaker rating to the smallest wire on the circuit."
+   },
+   {
+    "heading": "Ignoring Warm Outlets",
+    "body": "An outlet that's warm to the touch is a loose connection arcing inside the box. Kill the breaker and re-terminate immediately."
+   },
+   {
+    "heading": "Skipping the GFCI",
+    "body": "Kitchens, bathrooms, garages and outdoor outlets must be on GFCI protection. It's the single best upgrade for shock safety."
+   }
+  ]
+ },
+ {
+  "id": "E003",
+  "title": "Must-Have Electrical Tools for Every DIYer",
+  "subtitle": "Build a starter kit that handles 95% of jobs without breaking the bank.",
+  "category": "Electrical Tools",
+  "date": "Apr 22, 2026",
+  "readTime": "5 min",
+  "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=1600&q=80",
+  "introduction": "You don't need a van full of gear to do real electrical work — you need eight items, picked carefully.",
+  "sections": [
+   {
+    "heading": "The Essential Eight",
+    "body": "Non-contact voltage tester, true-RMS multimeter, wire strippers (10–22 AWG), lineman's pliers, insulated screwdriver set, headlamp, fish tape, and a quality utility knife."
+   },
+   {
+    "heading": "Where to Spend, Where to Save",
+    "body": "Spend on the multimeter and pliers — they last decades. Save on consumables like electrical tape and wire nuts; just buy reputable brands."
+   },
+   {
+    "heading": "Smart Additions",
+    "body": "A clamp meter for measuring current without breaking the circuit, a thermal camera attachment for finding hot spots, and a label maker for the panel."
+   }
+  ]
+ },
+ {
+  "id": "E004",
+  "title": "Smart Home Wiring: Plan Before You Pull",
+  "subtitle": "How to future-proof your walls for lights, switches and sensors.",
+  "category": "Smart Home Tech",
+  "date": "Apr 15, 2026",
+  "readTime": "7 min",
+  "image": "https://images.unsplash.com/photo-1558002038-1055907df827?w=1600&q=80",
+  "introduction": "Smart switches, sensors and hubs are easy to swap in — if the wiring behind the wall is ready for them. Here is the planning step most people skip.",
+  "sections": [
+   {
+    "heading": "Always Pull a Neutral",
+    "body": "Most smart switches need a neutral wire at the switch box. New work? Pull one to every switch, even if you don't need it today."
+   },
+   {
+    "heading": "Pick a Protocol",
+    "body": "Zigbee and Z-Wave are reliable mesh systems. Matter is unifying the ecosystem. Wi-Fi is simplest but congests fast — keep it for high-bandwidth devices."
+   },
+   {
+    "heading": "Group Circuits Logically",
+    "body": "Put all kitchen lighting on one breaker, living room on another. It makes scenes, troubleshooting and code compliance much easier."
+   }
+  ]
+ },
+ {
+  "id": "E005",
+  "title": "DIY LED Strip Lighting Under Cabinets",
+  "subtitle": "A clean, hard-wired install that takes one Saturday.",
+  "category": "DIY Projects",
+  "date": "Apr 08, 2026",
+  "readTime": "6 min",
+  "image": "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1600&q=80",
+  "introduction": "Stick-on LED strips look great for a week, then sag. Here's how to do it properly with an aluminum channel and a hidden driver.",
+  "sections": [
+   {
+    "heading": "Pick the Right Strip",
+    "body": "24V strips have less voltage drop over long runs. CRI 90+ for kitchens, 2700K for warm or 4000K for task lighting."
+   },
+   {
+    "heading": "Hide the Driver",
+    "body": "Mount the LED driver inside a nearby cabinet with ventilation. Run low-voltage DC through a small hole to the channel below."
+   },
+   {
+    "heading": "Wire the Switch",
+    "body": "Use a wall-mounted dimmer with PWM output rated for your driver. Avoid leading-edge dimmers — they'll flicker."
+   }
+  ]
+ },
+ {
+  "id": "E006",
+  "title": "How to Use a Multimeter (Without Frying It)",
+  "subtitle": "The five measurements every electrical hobbyist must master.",
+  "category": "Electrical Tools",
+  "date": "Mar 30, 2026",
+  "readTime": "5 min",
+  "image": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=1600&q=80",
+  "introduction": "A multimeter is a flashlight for electricity. Learn five readings and you'll diagnose 90% of problems in your house.",
+  "sections": [
+   {
+    "heading": "Voltage AC and DC",
+    "body": "Set the dial, probe across the load (parallel). Red to live/positive, black to neutral/ground. Never in series — that's how you blow the fuse."
+   },
+   {
+    "heading": "Continuity",
+    "body": "The beep test. Ideal for tracing wires, checking switches and finding broken connections. Always with the circuit de-energized."
+   },
+   {
+    "heading": "Resistance and Current",
+    "body": "Resistance for component testing. Current measurements go in series and require moving the red probe to the dedicated A jack — a common, costly mistake."
+   }
+  ]
+ }
+]
