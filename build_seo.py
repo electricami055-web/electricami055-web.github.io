@@ -10,6 +10,10 @@ BASE = "https://electricami055-web.github.io"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE_NAME = "ElectricTechs"
 SOCIAL_BAR = '<script src="https://pl29415251.profitablecpmratenetwork.com/bc/c9/c1/bcc9c1f2044fb1a300b55a62c069a50e.js"></script>'
+GA_MEASUREMENT_ID = "G-THL3MKP9E0"  # GA4 property "ElectricTechs Website", created 2026-09-30
+GA_SNIPPET = (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_MEASUREMENT_ID}"></script>\n'
+              f'<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}};'
+              f"gtag('js',new Date());gtag('config','{GA_MEASUREMENT_ID}');</script>") if GA_MEASUREMENT_ID else ""
 
 def slug_for(a):
     """Slug for an article: fixed map for legacy IDs, generated otherwise."""
@@ -94,6 +98,7 @@ def page_shell(title, desc, url, body_html, schema=None, og_image=None):
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
 <style>{CSS}</style>{sch}
+{GA_SNIPPET}
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -188,6 +193,7 @@ def main():
         "privacy-policy": ("Privacy Policy | ElectricTechs", "Privacy Policy for ElectricTechs.", "Privacy Policy",
                     ["Last updated: September 2026.",
                      "ElectricTechs does not collect personal information directly. We use third-party advertising partners (such as Adsterra) that may use cookies to serve ads based on your visits to this and other sites.",
+                     "We use Google Analytics to understand how visitors use the site (pages viewed, approximate location, device type). Google Analytics uses cookies; you can opt out via Google's opt-out tools or by disabling cookies in your browser.",
                      "You can disable cookies in your browser settings. Third-party vendors use cookies to serve ads; you may opt out of personalized advertising via your browser or device settings.",
                      "This site contains affiliate links (including Amazon). As an Amazon Associate we earn from qualifying purchases, at no extra cost to you.",
                      "If you have questions about this policy, contact us via the Contact page."]),
