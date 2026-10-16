@@ -6,7 +6,7 @@ Reusable for daily posts: add entry to articles.json, re-run, commit, push.
 import json, os, re, html
 from datetime import datetime
 
-BASE = "https://electricami055-web.github.io"
+BASE = "https://electrictechsusa.com"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE_NAME = "ElectricTechs"
 SOCIAL_BAR = '<script src="https://pl29415251.profitablecpmratenetwork.com/bc/c9/c1/bcc9c1f2044fb1a300b55a62c069a50e.js"></script>'
@@ -214,7 +214,7 @@ def main():
     open(os.path.join(ROOT, "sitemap.xml"), "w").write(sm)
     # 5. robots.txt
     open(os.path.join(ROOT, "robots.txt"), "w").write(
-        "User-agent: *\nAllow: /\n\nSitemap: https://electricami055-web.github.io/sitemap.xml\n")
+        "User-agent: *\nAllow: /\n\nSitemap: https://electrictechsusa.com/sitemap.xml\n")
     # 6. remove popunder from index.html (keep social bar)
     idx = os.path.join(ROOT, "index.html")
     h = open(idx).read()
