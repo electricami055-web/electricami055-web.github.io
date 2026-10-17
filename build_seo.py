@@ -60,6 +60,16 @@ ul,ol{margin:0 0 18px 22px;color:#d5dce6}li{margin-bottom:8px}
 .pn{display:flex;justify-content:space-between;gap:12px;margin:30px 0;flex-wrap:wrap}
 .pn a{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;color:var(--txt);text-decoration:none;font-size:14px;flex:1;min-width:200px}
 .pn a:hover{border-color:var(--acc)}.pn small{display:block;color:var(--mut);font-size:12px}
+.partsbox{background:#0f1a12;border:1px solid #2c5a34;border-radius:12px;padding:20px 22px;margin:30px 0}
+.partsbox h3{margin:0 0 6px;font-size:19px;color:#7de08a}
+.partsbox p.sub{margin:0 0 14px;font-size:14px;color:#9aa7b8}
+.partsbox ul{list-style:none;margin:0;padding:0}
+.partsbox li{margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #1d3524}
+.partsbox li:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.partsbox a.prod{color:#ffd479;font-weight:700;text-decoration:none;font-size:16px}
+.partsbox a.prod:hover{text-decoration:underline}
+.partsbox .why{display:block;font-size:14px;color:#c6d2de;margin-top:2px}
+.partsbox .affdisc{margin-top:14px;font-size:12px;color:#9aa7b8}
 .cards{display:grid;gap:16px;margin:20px 0}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--txt);display:block}
 .card:hover{border-color:var(--acc)}.card img{width:100%;height:180px;object-fit:cover}
@@ -116,6 +126,26 @@ def page_shell(title, desc, url, body_html, schema=None, og_image=None):
 </body>
 </html>"""
 
+SITE_AFFILIATE_TAG = "nomanahmad0e-20"  # website uses the main/default Associates tag
+
+def parts_box(a):
+    """Affiliate 'parts you'll need' box. Reads a['parts'] = [{name, asin, why}]."""
+    parts = a.get("parts") or []
+    parts = [p for p in parts if p.get("asin")]
+    if not parts:
+        return ""
+    items = ""
+    for p in parts:
+        url = f"https://www.amazon.com/dp/{p['asin']}?tag={SITE_AFFILIATE_TAG}"
+        items += f'<li><a class="prod" href="{url}" target="_blank" rel="nofollow sponsored noopener">{esc(p["name"])}</a>'
+        if p.get("why"):
+            items += f'<span class="why">{esc(p["why"])}</span>'
+        items += "</li>\n"
+    return f"""<div class="partsbox"><h3>&#128722; Parts you'll need for this project</h3>
+<p class="sub">Hand-picked gear that matches this guide — buying through these links supports the site at no extra cost to you.</p>
+<ul>{items}</ul>
+<p class="affdisc">As an Amazon Associate we earn from qualifying purchases.</p></div>"""
+
 def article_page(a, prev_a, next_a):
     slug = slug_for(a)
     url = f"{BASE}/articles/{slug}/"
@@ -133,6 +163,7 @@ def article_page(a, prev_a, next_a):
         if s["heading"]:
             body += f"<h2>{esc(s['heading'])}</h2>\n"
         body += paras(s["body"]) + "\n"
+    body += parts_box(a)
     body += """<div class="disclaimer">&#9888;&#65039; <strong>Safety first:</strong> Electrical work can be dangerous. Always turn off power at the breaker, verify with a tester, and follow local codes. When in doubt, call a licensed electrician.</div>"""
     body += """<div class="author"><div class="av">E</div><div><strong>ElectricTechs Team</strong><br/><span style="color:#9aa7b8;font-size:14px">Hands-on electricians sharing practical, real-world tips.</span></div></div>"""
     body += '<div class="pn">'
