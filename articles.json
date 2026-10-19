@@ -997,9 +997,14 @@
     ],
     "parts": [
       {
+        "name": "Siemens FS140 Whole House Surge Protection Device (140kA)",
+        "asin": "B013WINMK6",
+        "why": "The actual unit this guide installs \u2014 Type 2 SPD, 140,000A capacity, 10-year warranty"
+      },
+      {
         "name": "AstroAI Digital Clamp Meter TRMS 6000 Counts (CM600)",
         "asin": "B0BRPP58LS",
-        "why": "Clamp around any wire for an instant current reading \u2014 the fastest way to diagnose overloads and faults."
+        "why": "Verify the panel is dead before you touch anything"
       }
     ]
   },
