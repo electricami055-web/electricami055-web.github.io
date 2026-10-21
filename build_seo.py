@@ -76,12 +76,42 @@ ul,ol{margin:0 0 18px 22px;color:#d5dce6}li{margin-bottom:8px}
 .card .b{padding:16px}.card h3{font-size:18px;margin:6px 0}.card p{font-size:14px;color:var(--mut);margin:0}
 footer.site{border-top:1px solid var(--line);margin-top:44px;padding:26px 0 60px;color:var(--mut);font-size:14px}
 footer.site a{color:var(--mut);text-decoration:none;margin-right:16px}footer.site a:hover{color:var(--acc)}
+.faq{margin:34px 0}
+.faq h3{font-size:18px;margin:20px 0 6px;font-weight:700}
+.faq p{margin-bottom:12px}
+table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:#1a2433;color:var(--txt)}
+td{color:#d5dce6}
 """
 
 def esc(t): return html.escape(t or "")
+def _table(block):
+    """Render a markdown pipe-table block as HTML; return None if not a table."""
+    rows = []
+    for ln in block.split("\n"):
+        ln = ln.strip()
+        if not ln.startswith("|"):
+            return None
+        cells = [c.strip() for c in ln.strip("|").split("|")]
+        if all(re.fullmatch(r":?-{3,}:?", c) for c in cells):
+            continue  # separator row
+        rows.append(cells)
+    if len(rows) < 2:
+        return None
+    head = "".join(f"<th>{esc(c)}</th>" for c in rows[0])
+    body = ""
+    for r in rows[1:]:
+        body += "<tr>" + "".join(f"<td>{esc(c)}</td>" for c in r) + "</tr>\n"
+    return f"<table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table>"
+
 def paras(text):
     parts = [p.strip() for p in re.split(r'\n\s*\n', text.strip()) if p.strip()]
-    return "\n".join(f"<p>{esc(p)}</p>" for p in parts)
+    out = []
+    for p in parts:
+        t = _table(p)
+        out.append(t if t else f"<p>{esc(p)}</p>")
+    return "\n".join(out)
 
 def parse_date(d):
     try: return datetime.strptime(d, "%b %d, %Y").strftime("%Y-%m-%d")
@@ -146,6 +176,16 @@ def parts_box(a):
 <ul>{items}</ul>
 <p class="affdisc">As an Amazon Associate we earn from qualifying purchases.</p></div>"""
 
+def faq_block(a):
+    """GEO: FAQ section rendered from a['faqs'] = [{q, a}]."""
+    faqs = a.get("faqs") or []
+    if not faqs:
+        return ""
+    items = ""
+    for f in faqs:
+        items += f"<h3>{esc(f['q'])}</h3>\n{paras(f['a'])}\n"
+    return f'<div class="faq"><h2>Frequently Asked Questions</h2>\n{items}</div>'
+
 def article_page(a, prev_a, next_a):
     slug = slug_for(a)
     url = f"{BASE}/articles/{slug}/"
@@ -163,6 +203,7 @@ def article_page(a, prev_a, next_a):
         if s["heading"]:
             body += f"<h2>{esc(s['heading'])}</h2>\n"
         body += paras(s["body"]) + "\n"
+    body += faq_block(a)
     body += parts_box(a)
     body += """<div class="disclaimer">&#9888;&#65039; <strong>Safety first:</strong> Electrical work can be dangerous. Always turn off power at the breaker, verify with a tester, and follow local codes. When in doubt, call a licensed electrician.</div>"""
     body += """<div class="author"><div class="av">E</div><div><strong>ElectricTechs Team</strong><br/><span style="color:#9aa7b8;font-size:14px">Hands-on electricians sharing practical, real-world tips.</span></div></div>"""
@@ -170,14 +211,23 @@ def article_page(a, prev_a, next_a):
     body += f'<a href="{BASE}/articles/{slug_for(prev_a)}/"><small>&larr; Previous</small>{esc(prev_a["title"])}</a>' if prev_a else '<span></span>'
     body += f'<a href="{BASE}/articles/{slug_for(next_a)}/" style="text-align:right"><small>Next &rarr;</small>{esc(next_a["title"])}</a>' if next_a else ''
     body += '</div>'
-    schema = {
-        "@context": "https://schema.org", "@type": "Article",
+    article_schema = {
+        "@type": "Article",
         "headline": a["title"], "description": desc, "image": img,
         "datePublished": d_iso, "dateModified": d_iso,
         "author": {"@type": "Organization", "name": "ElectricTechs", "url": BASE},
         "publisher": {"@type": "Organization", "name": "ElectricTechs", "url": BASE},
         "mainEntityOfPage": url,
     }
+    graph = [article_schema]
+    faqs = a.get("faqs") or []
+    if faqs:
+        graph.append({
+            "@type": "FAQPage",
+            "mainEntity": [{"@type": "Question", "name": f["q"],
+                            "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in faqs],
+        })
+    schema = {"@context": "https://schema.org", "@graph": graph}
     return page_shell(f"{a['title']} | ElectricTechs", desc, url, body, schema, img)
 
 def hub_page(arts):
@@ -243,9 +293,26 @@ def main():
         sm += f"  <url><loc>{BASE}/{path}</loc><lastmod>{lm}</lastmod><changefreq>weekly</changefreq></url>\n"
     sm += "</urlset>\n"
     open(os.path.join(ROOT, "sitemap.xml"), "w").write(sm)
-    # 5. robots.txt
-    open(os.path.join(ROOT, "robots.txt"), "w").write(
-        "User-agent: *\nAllow: /\n\nSitemap: https://electrictechsusa.com/sitemap.xml\n")
+    # 5. robots.txt — explicitly allow AI crawlers (GEO: AI engines must be able to read the site)
+    ai_bots = ["GPTBot", "ChatGPT-User", "OAI-SearchBot", "ClaudeBot", "Claude-Web",
+               "PerplexityBot", "Perplexity-User", "Google-Extended", "CCBot",
+               "Applebot-Extended", "Meta-ExternalAgent", "cohere-ai", "Bytespider"]
+    robots = "".join(f"User-agent: {b}\nAllow: /\n\n" for b in ai_bots)
+    robots += "User-agent: *\nAllow: /\n\nSitemap: https://electrictechsusa.com/sitemap.xml\n"
+    open(os.path.join(ROOT, "robots.txt"), "w").write(robots)
+    # 5b. llms.txt — GEO: a plain-language map of the site for AI models
+    llms = ["# ElectricTechs", "",
+            "> Practical DIY electrical and electronics guides — house wiring, electrical tools, safety, smart home and beginner projects — written by hands-on electricians and explained simply, with real specs, product comparisons and step-by-step instructions.",
+            "",
+            "## Key pages",
+            f"- [All Articles]({BASE}/articles/): every guide on the site",
+            f"- [About ElectricTechs]({BASE}/about/): who runs the site",
+            f"- [Contact]({BASE}/contact/): how to reach the team",
+            "", "## Articles"]
+    for a in arts:
+        sub = (a.get("subtitle") or "").strip()
+        llms.append(f"- [{a['title']}]({BASE}/articles/{slug_for(a)}/)" + (f": {sub}" if sub else ""))
+    open(os.path.join(ROOT, "llms.txt"), "w").write("\n".join(llms) + "\n")
     # 6. remove popunder from index.html (keep social bar)
     idx = os.path.join(ROOT, "index.html")
     h = open(idx).read()
