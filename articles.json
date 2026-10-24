@@ -1674,5 +1674,80 @@
         "why": "The practice material: breadboard, jumper wires, LEDs, resistors and solderable PCB kits for your first hundred joints at ~$33. Your mistakes happen on these, not on your real project boards."
       }
     ]
+  },
+  {
+    "id": "E032",
+    "title": "How Long Does a Whole-House Surge Protector Last? Signs It's Time to Replace It",
+    "subtitle": "A whole-house surge protector lasts 5 to 10 years on average, but a single big surge can end it early. Learn the warning signs, the lifespan by model, and when to call an electrician.",
+    "category": "Safety Tips",
+    "date": "Oct 24, 2026",
+    "readTime": "9 min",
+    "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
+    "introduction": "A whole-house surge protector (SPD) typically lasts 5 to 10 years, and you should replace it as soon as its status light goes out, its alarm sounds, or it reaches about 10 years old \u2014 whichever comes first. A single severe surge, such as a nearby lightning strike, can also wear one out in a day, even if it looks fine from the outside. Because most SPDs fail silently \u2014 your power keeps flowing while the protection is gone \u2014 the only reliable approach is to check the indicator lights twice a year and treat the device as a consumable, not a fit-and-forget installation.",
+    "sections": [
+      {
+        "heading": "Why a surge protector wears out even when nothing seems wrong",
+        "body": "Most whole-house SPDs protect your home with metal oxide varistors, or MOVs. An MOV sits quietly across the power lines at normal voltage, doing nothing at all. When a surge arrives, it clamps in under a nanosecond, shunting the excess voltage to ground and sacrificing a tiny piece of itself in the process. That sacrifice is the whole design: the component absorbs energy so your refrigerator, HVAC controls, and televisions do not have to.\n\nThe catch is that the damage is cumulative. The big, dramatic surges from lightning get all the attention, but the slow wear comes from the small ones \u2014 motors switching on and off, air-conditioner compressors cycling, and utility switching on the grid. A typical home sees dozens of these small surges a year. Each one erodes the MOVs a little, and there is no way to top them back up.\n\nThat is why there is no fixed expiry date printed on the box, only a warranty period. A protector in a lightning-prone area with frequent storms may be heavily worn in 5 years, while the same model on a stable grid with few storms can still be healthy at 10. The honest rule is therefore a range, not a date: plan on 5 to 10 years, check the indicators regularly, and replace on evidence, not on hope."
+      },
+      {
+        "heading": "The 5 signs your surge protector needs replacing",
+        "body": "The first sign is the simplest: the status light is out. Nearly every whole-house SPD has at least one green LED that means protection is present. If it is dark while the panel has power, the protection is gone or the unit has failed. Do not assume a loose bulb or a quirk \u2014 treat a dead indicator as a dead protector until an electrician proves otherwise.\n\nThe second sign is an audible alarm. Better units, such as the Siemens FS140, beep and flash a red service light when their protection is spent or when they detect a ground-reference problem. If your SPD starts beeping, do not just silence it and move on. The alarm is the device telling you, in the clearest terms it has, that it has done its job and needs replacing.\n\nThe third sign is an event, not a symptom: a direct or nearby lightning strike, a major utility fault, or a surge that damaged other equipment in the house. After an event like that, check the SPD immediately. Even if the light is still on, a severe surge can degrade the MOVs enough that the next surge gets through. Many electricians recommend replacing the unit after a confirmed major strike regardless of what the lights say, because the cost of a new SPD is small compared with a second strike hitting unprotected equipment.\n\nThe final two signs are age and pattern. If the unit is past 10 years old, replace it on age alone \u2014 its MOVs have absorbed a decade of small surges even in a quiet area. And if you start noticing unexplained appliance or electronics failures, flickering control boards, or tripping breakers after storms, a spent SPD belongs on the suspect list. None of these proves the SPD is dead on its own, but together with an old install date they are a strong case for replacement."
+      },
+      {
+        "heading": "Lifespan, warning signals, and warranty: the three big models compared",
+        "body": "Not all SPDs warn you the same way, and that difference matters more than most buyers realise. A unit with a single LED gives you one binary signal. A unit with staged diagnostics tells you whether the problem is a spent protector or a wiring hazard \u2014 two very different situations. Here is how the three most common replacement models compare:\n\n| Model | Surge capacity | Warning signals | Product warranty |\n|---|---|---|---|\n| Siemens FS140 | 140kA per phase | Green LEDs, audible alarm, flashing red service light, ground-reference monitoring | 10 years |\n| Eaton CHSPT2ULTRA | 108kA per phase | LED status indication | See manufacturer terms |\n| Square D HEPD80 | 80kA per phase | Single green LED | 5 years |\n\nSurge capacity, measured in kiloamps (kA), is not a lifespan rating \u2014 it is headroom. A 140kA unit can absorb larger and more numerous surges before its MOVs are spent than an 80kA unit in the same house, which is one reason the FS140 is the usual recommendation for storm-prone areas. But capacity alone does not decide lifespan: installation quality, grounding, and how surge-heavy your local grid is matter just as much.\n\nWarranty length is a useful proxy but not a guarantee. A 10-year warranty means the manufacturer expects the unit to survive that long under normal conditions, not that it will protect you for exactly 10 years and then stop. Treat the warranty as the outside edge of planning, not a promise to ignore the lights until the warranty letter arrives. And keep your receipt and install date: connected-equipment warranty claims, where they exist, usually require proof of purchase and professional installation."
+      },
+      {
+        "heading": "How to check yours in 5 minutes (without opening the panel)",
+        "body": "Checking an SPD is a visual job, not a hands-on one. Find the unit \u2014 it is usually mounted beside or below your main breaker panel, or wired into it \u2014 and look at its indicator lights in normal daylight. Green and steady means protection is present. Dark, red, or flashing means call an electrician. If the unit has an alarm, listen for beeping when you are nearby; a beep that started after a storm is a report, not background noise.\n\nNext, find the install date. Write it on a label on or near the unit if it is not already there, and photograph the label for your records. While you are there, note the model number too \u2014 it saves a second trip when you eventually order a replacement. Put a twice-yearly reminder in your calendar, ideally at the start of storm season and again six months later, so the check actually happens.\n\nWhat you must not do is open the breaker panel cover or touch the SPD's wiring to test it. Panel interiors carry lethal voltage even when individual breakers are off, and there is no meaningful homeowner test for an MOV \u2014 a multimeter cannot tell you how much surge life is left. The indicator lights are the test. If they are ambiguous, or if you are unsure what you are looking at, that uncertainty is itself the answer: get a licensed electrician to inspect it. Never remove a panel cover, never poke at SPD wiring, and never assume a quiet unit is a healthy one."
+      },
+      {
+        "heading": "Replacing it: what to expect, and what to choose",
+        "body": "A surge protector is replaced as a whole unit, not repaired. There are no user-serviceable parts inside, and opening one voids any warranty and risks a device that looks fine but protects nothing. Replacement is a job for a licensed electrician: the work is inside or beside the main panel, the main breaker must be switched off, and the electrician must verify the wiring, breaker size, and grounding before the new unit is energised. If you are ever unsure about any mains-electricity work, stop and call a licensed electrician \u2014 this is exactly the kind of job where confidence is not a substitute for training.\n\nThe good news is that a like-for-like replacement is usually quicker and cheaper than the first installation, because the breaker space, wiring route, and mounting are already there. Expect the device itself to be the main cost, with labour for a straightforward swap typically well below a first-time install. If your old unit was undersized for your area \u2014 a small 25kA or 50kA unit in a lightning-heavy region, for example \u2014 a replacement visit is the right moment to step up to an 80kA or 140kA model rather than repeating the same choice.\n\nWhen choosing the replacement, match three things: your panel brand and breaker type, the SPD type your installation requires (Type 1 units can sit ahead of the main disconnect; Type 2 units connect through a dedicated breaker), and the surge capacity your area justifies. A universal-fit unit such as the Eaton CHSPT2ULTRA or Square D HEPD80 suits most panels, while the Siemens FS140 is the pick when you want the clearest end-of-life warning \u2014 its alarm and ground-reference monitoring remove the guesswork that makes silent failure so risky."
+      },
+      {
+        "heading": "How to make the next one last longer",
+        "body": "Layered protection is the single best way to extend an SPD's life. A whole-house unit at the panel handles the big external surges; quality point-of-use surge strips at expensive electronics handle the smaller residual surges that get through. Splitting the work means the panel unit absorbs fewer events, and your most sensitive gear gets a second line of defence. It is the same logic as our earlier guides on choosing and installing whole-house protection: one layer is good, two layers are far better.\n\nGrounding matters too. An SPD can only shunt surge energy somewhere safe if the home's grounding and bonding are sound. If your electrician is already on site for a replacement, ask them to check the grounding electrode connections and the neutral-to-ground bond \u2014 a compromised bond is both a safety hazard and a reason SPDs die young, and some premium units will actually warn you about it.\n\nFinally, build two cheap habits. First, unplug the most valuable electronics during a severe storm if you can do so safely before it arrives \u2014 no protector is a substitute for physical disconnection during a direct strike. Second, re-check the SPD after any major storm, outage, or utility work on your street. A two-minute look at the lights after an event is what turns a 5-to-10-year guess into a device you can actually trust."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How long does a whole-house surge protector last?",
+        "a": "Typically 5 to 10 years. The MOVs inside wear out a little with every surge they absorb, so lifespan depends on how surge-heavy your area is: lightning-prone homes may wear one out in 5 years, while a stable grid can stretch one past 10. Replace on evidence \u2014 a dead indicator light, an alarm, or a major surge event \u2014 and on age alone once it passes about 10 years."
+      },
+      {
+        "q": "How do I know if my whole-house surge protector is still working?",
+        "a": "Check its indicator lights: a steady green LED on most units means protection is present, while a dark, red, or flashing light means it has failed or is spent. Some units, like the Siemens FS140, also sound an audible alarm and flash a red service light at end of life. There is no homeowner test beyond the indicators \u2014 a multimeter cannot measure remaining surge life \u2014 so if the lights are unclear, have an electrician inspect it."
+      },
+      {
+        "q": "Does a surge protector stop working after one big surge?",
+        "a": "It can. A severe surge, such as a nearby lightning strike, can exhaust the MOVs in a single event even if the unit still looks intact. That is why you should check the indicator lights immediately after any major strike or surge that damaged other equipment, and why many electricians recommend replacing the unit after a confirmed major strike regardless of the lights."
+      },
+      {
+        "q": "Can a whole-house surge protector be repaired, or do you replace the whole unit?",
+        "a": "You replace the whole unit. There are no user-serviceable parts inside an SPD, and opening one voids the warranty. Replacement is a job for a licensed electrician, since the work involves the main panel: the main breaker is switched off, the old unit is removed, and the new unit's wiring, breaker size, and grounding are verified before it is energised."
+      },
+      {
+        "q": "Do I need an electrician to replace a whole-house surge protector?",
+        "a": "Yes \u2014 this is licensed-electrician work. The SPD connects inside or beside the main breaker panel, where lethal voltage is present even with individual breakers off. A straightforward like-for-like replacement is usually quicker than the original installation, since the breaker space and wiring route already exist, but panel work should never be a DIY job."
+      }
+    ],
+    "parts": [
+      {
+        "name": "Siemens FS140 Whole House Surge Protection Device (140kA)",
+        "asin": "B013WINMK6",
+        "why": "The clearest end-of-life warning of any common SPD: green LEDs, an audible alarm, a flashing red service light, and ground-reference monitoring that also flags a compromised neutral-to-ground bond. 140kA per phase and a 10-year product warranty make it the default replacement in storm-prone areas."
+      },
+      {
+        "name": "Eaton CHSPT2ULTRA Ultimate Surge Protection Device (108kA, Type 2)",
+        "asin": "B01AQAKRSS",
+        "why": "A universal-fit Type 2 unit that connects to any manufacturer's load center, with LED status indication. 108kA per phase is solid headroom for most homes, and it is a straightforward like-for-like replacement when the old unit was also a Type 2 device."
+      },
+      {
+        "name": "Square D HEPD80 Whole House Surge Protective Device (80kA, Type 1)",
+        "asin": "B00CONA1OQ",
+        "why": "The budget-friendly replacement: a compact Type 1 unit with a single green status LED, 80kA per phase, and a 5-year product warranty. A good pick when the panel and installation suit a Type 1 device and you want proven protection without the premium price."
+      }
+    ]
   }
 ]
