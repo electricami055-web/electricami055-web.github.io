@@ -1749,5 +1749,80 @@
         "why": "The budget-friendly replacement: a compact Type 1 unit with a single green status LED, 80kA per phase, and a 5-year product warranty. A good pick when the panel and installation suit a Type 1 device and you want proven protection without the premium price."
       }
     ]
+  },
+  {
+    "id": "E033",
+    "title": "Type 1 vs Type 2 Surge Protectors: Which One Does Your Home Need?",
+    "subtitle": "Type 1 surge protectors connect on the line side of your main disconnect; Type 2 connect on the load side. Learn which type fits your panel, your wiring, and your local code.",
+    "category": "Safety Tips",
+    "date": "Oct 25, 2026",
+    "readTime": "9 min",
+    "image": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1600&q=80",
+    "introduction": "For most homes, a Type 2 surge protector is the right choice: it mounts in or beside your main breaker panel, connects through a dedicated breaker, and satisfies the surge-protection requirement for dwelling units. Choose a Type 1 device instead \u2014 or as an added first layer \u2014 when your electrician can install protection on the line side of the main disconnect, such as at the meter base, which is the best position for stopping large external surges before they reach your panel. The two types are not a good-better-best ranking; they describe where the device connects, and that location decides which one your home can actually use.",
+    "sections": [
+      {
+        "heading": "The short answer: the type describes where it connects, not how strong it is",
+        "body": "Every whole-house surge protector is a surge protective device, or SPD, and the National Electrical Code (NEC) sorts SPDs into types by their position relative to the service disconnect \u2014 the main breaker that separates your home's wiring from the utility supply. A Type 1 SPD is intended for installation between the secondary of the service transformer and the line side of the service disconnect. A Type 2 SPD is intended for installation on the load side of the service disconnect, which includes the main panel and any subpanel.\n\nThat single distinction explains almost everything else about the two types. A Type 1 device can also be installed on the load side, so it is the more flexible of the two, while a Type 2 device can only ever go on the load side. It also explains why the choice is rarely yours alone to make: anything on the line side of the disconnect is upstream of the point where you can switch your home's power off, so it involves the utility's equipment and rules, and it is always licensed-electrician work.\n\nIt is equally important to understand what the type number does not mean. A higher type number is not a higher quality tier, and a Type 2 device is not a weaker version of a Type 1. Protection strength is set by ratings such as surge current capacity in kiloamps (kA) and voltage protection rating (VPR) in volts \u2014 a 140kA Type 2 unit absorbs far more surge energy than a 25kA Type 1 unit. When you shop, compare the type for placement, then compare kA, VPR, and warranty for strength."
+      },
+      {
+        "heading": "Type 1 surge protectors: protection at the service entrance",
+        "body": "A Type 1 SPD sits as close to where power enters your home as the code allows \u2014 at the service entrance, often in or at the meter base, or wired ahead of the main disconnect. Because it intercepts surges before they travel through your panel's bus bars and breakers, it is the best position for dealing with large external events: nearby lightning strikes, utility switching surges, and faults on the distribution lines feeding your street.\n\nThe practical advantage of a Type 1 device is that, when installed on the line side, it typically does not require a dedicated breaker or fuse of its own; it is built and listed to connect there safely. That also makes it the answer for homes where the panel has no spare breaker spaces, or where the panel itself is old, full, or due for replacement. Many Type 1 devices are dual-rated for Type 2 applications as well, which means an electrician can install the same unit on the load side if the line-side route is not available.\n\nThe trade-off is access. Line-side work means working on conductors that cannot be de-energised by flipping your main breaker, and meter-base installations usually need the utility's involvement \u2014 a scheduled disconnect, a seal, or an approved meter-socket adapter. That is why a Type 1 installation is never a homeowner project, and why it can cost more in labour even when the device itself is modestly priced. If your electrician proposes a Type 1 unit, ask them to confirm the utility's requirements and whether your meter setup allows it before you buy anything."
+      },
+      {
+        "heading": "Type 2 surge protectors: the standard panel-mounted choice",
+        "body": "A Type 2 SPD is the device most homeowners end up with, and for good reason. It mounts inside or beside the main breaker panel and connects through a dedicated two-pole breaker, with short, straight leads to the breaker, neutral bus, and ground bus. Installation is straightforward panel work: the main breaker goes off, the unit is wired in, and the panel is closed up again. No utility coordination is needed, and the device can be checked at a glance from its indicator lights.\n\nType 2 is also the type behind the code requirement most homeowners now encounter. Since the 2020 NEC, surge protection has been required for dwelling-unit services (NEC 230.67), which in practice means a new or replaced service panel in a home gets an SPD \u2014 and that SPD is almost always a Type 2 unit in the panel. Your local code adoption and your authority having jurisdiction decide exactly what applies to your home, so treat the NEC as the baseline and your electrician's advice as the final word.\n\nThe range of Type 2 devices is wide, which is a benefit and a trap. At the budget end, a 25kA or 36kA unit covers the minimum, but for a home full of electronics, an HVAC system, and smart appliances, an 80kA to 140kA unit is the more sensible buy \u2014 the extra headroom means the device survives more and larger surges before its protective components wear out. Look for a UL 1449 listing, a voltage protection rating of 600V line-to-neutral or better, and clear end-of-life signalling: at minimum a green status LED, and ideally an audible alarm like the one on the Siemens FS140, so a spent protector cannot fail silently."
+      },
+      {
+        "heading": "Type 1 vs Type 2 vs Type 3, side by side",
+        "body": "The full picture has a third member. Type 3 SPDs are point-of-use devices \u2014 the surge strips and receptacle-type protectors that sit at your television, computer, or home office desk. They are installed at least 10 metres (about 30 feet) of conductor away from the service equipment, and they handle the smaller residual surges that get past the panel-level device. They do not replace a whole-house SPD; they complete it.\n\n| Type | Where it connects | Needs its own breaker? | Typical install | Best for |\n|---|---|---|---|---|\n| Type 1 | Line side of main disconnect, or load side | No, when line-side | Service entrance or meter base | Large external surges, no spare breaker space |\n| Type 2 | Load side of main disconnect | Yes, dedicated breaker | Main panel or subpanel | Most homes, new or replaced panels |\n| Type 3 | At the equipment, 10 m+ from service | No | Surge strip or protected receptacle | Sensitive electronics, second layer |\n\nRead the table as layers, not rivals. The standard, well-protected home is a Type 2 SPD at the panel plus Type 3 strips at the most valuable electronics. A Type 1 device upgrades the outer layer: it moves the first line of defence to the service entrance, which matters most for homes with overhead service lines, frequent nearby lightning, or a history of surge damage. Adding a Type 1 on top of a Type 2 is a legitimate layered design, not overkill, provided an electrician confirms the installation is allowed at your meter and panel."
+      },
+      {
+        "heading": "Which type does your home actually need?",
+        "body": "Start with the simplest case. If you have a modern panel with spare breaker spaces and you are adding protection to an existing home, a Type 2 SPD is almost certainly the answer. It is the easiest install, the easiest to inspect, and the easiest to replace in 5 to 10 years when its protective components wear out. Pick a capacity of at least 80kA for a typical electronics-filled home, or 108kA to 140kA if you live in a storm-prone area, and make sure the unit fits your panel brand \u2014 universal-fit units such as the Eaton CHSPT2ULTRA and Siemens FS140 work with any manufacturer's load centre.\n\nConsider a Type 1 device when one of three conditions applies. First, your panel has no free breaker spaces and you do not want a panel upgrade just to fit surge protection. Second, your service is overhead or your area sees frequent lightning, so the biggest surges arrive from outside and you want them stopped at the entrance. Third, you are already having meter or service-entrance work done, so the line-side installation costs little extra. In all three cases, the deciding conversation is with your electrician, not with a product page: they will check your meter type, your utility's rules, and your local code.\n\nTwo cautions apply whichever type you choose. First, no SPD \u2014 Type 1, 2, or 3 \u2014 fully protects a home against a direct lightning strike to the structure itself; that risk needs a dedicated lightning protection system installed by a certified specialist, and unplugging valuable electronics before a severe storm remains the only certain defence. Second, match the device voltage to your service: a standard North American home needs a 120/240V single-phase unit, and connecting the wrong voltage SPD can destroy it instantly. If anything about your service type, panel brand, or meter setup is unclear, that uncertainty is the signal to stop and call a licensed electrician."
+      },
+      {
+        "heading": "Safety first: panel work is licensed-electrician work",
+        "body": "Whole-house surge protection is not a beginner DIY project, and the type you choose does not change that. A Type 2 installation requires opening the breaker panel, where lethal voltage is present on the incoming lugs even with the main breaker switched off. A Type 1 line-side installation is more hazardous still, because the conductors involved cannot be de-energised from inside your home at all. Turning off the breaker and calling a licensed electrician when unsure is not cautious advice here \u2014 it is the only safe procedure.\n\nWhat you can do yourself is everything around the installation: choose the type with your electrician's guidance, confirm the device's ratings and warranty before purchase, photograph your panel and meter setup for the quote, and check the indicator lights twice a year once the unit is in. Keep the install date and receipt with your home records, since warranty and connected-equipment claims usually require proof of purchase and professional installation.\n\nIf your home has no surge protection at all, do not let the Type 1 versus Type 2 question delay you. A Type 2 unit in the panel, installed by an electrician, covers the overwhelming majority of homes and can usually be fitted in a single visit. You can always add a Type 1 layer later during the next round of service work. The expensive mistake is not choosing the wrong type \u2014 it is leaving the house unprotected while you decide."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I install a Type 1 surge protector myself?",
+        "a": "No. A Type 1 SPD connects on the line side of the main disconnect, where the conductors stay live even when your main breaker is off, and meter-base work usually requires your utility's involvement. Installation must be done by a licensed electrician, who will confirm the utility's requirements and your local code before any work starts."
+      },
+      {
+        "q": "Do I need both a Type 1 and a Type 2 surge protector?",
+        "a": "Not necessarily. A Type 2 SPD at the panel plus Type 3 surge strips at sensitive electronics is a complete layered system for most homes. Adding a Type 1 device at the service entrance upgrades the outer layer, and it is worth considering for overhead services, lightning-prone areas, or panels with no spare breaker space \u2014 but it is an enhancement, not a requirement for every home."
+      },
+      {
+        "q": "Is a Type 2 surge protector enough for a new home?",
+        "a": "Yes, in most cases. Since the 2020 NEC, surge protection is required for dwelling-unit services (NEC 230.67), and that requirement is normally met with a Type 2 SPD in the panel. Pair it with quality point-of-use strips at your most valuable electronics, and have an electrician confirm the capacity \u2014 80kA to 140kA suits most modern homes \u2014 for your area."
+      },
+      {
+        "q": "What is a Type 3 surge protector?",
+        "a": "A Type 3 SPD is a point-of-use device, such as a surge strip or a surge-protected receptacle, installed at the equipment itself and at least 10 metres (about 30 feet) of conductor from the service equipment. It catches the smaller residual surges that get past your panel-level SPD. It is the second layer of protection, not a substitute for a whole-house Type 1 or Type 2 device."
+      },
+      {
+        "q": "Will a Type 1 surge protector stop a direct lightning strike?",
+        "a": "No surge protective device, of any type, fully protects a home against a direct lightning strike to the structure. SPDs are designed for the far more common indirect surges: nearby strikes, utility switching, and internal switching transients. For direct-strike risk, you need a dedicated lightning protection system from a certified specialist, and unplugging valuable electronics before a severe storm remains the safest single step."
+      }
+    ],
+    "parts": [
+      {
+        "name": "Siemens FS140 Whole House Surge Protection Device (140kA, Type 2)",
+        "asin": "B013WINMK6",
+        "why": "The default Type 2 pick for most homes: 140kA per phase, UL 1449 listed, fits any brand of load centre, and its audible alarm plus flashing red service light mean a spent protector can never fail silently. 10-year product warranty."
+      },
+      {
+        "name": "Eaton CHSPT2ULTRA Ultimate Surge Protection Device (108kA, Type 2)",
+        "asin": "B01AQAKRSS",
+        "why": "A universal-fit Type 2 unit that connects to any manufacturer's load centre, with LED status indication and a NEMA 4X indoor/outdoor enclosure. 108kA per phase is solid headroom for a typical electronics-filled home."
+      },
+      {
+        "name": "Square D HEPD80 Whole House Surge Protective Device (80kA, Type 1)",
+        "asin": "B00CONA1OQ",
+        "why": "The Type 1 option: UL 1449 Type 1 listed, 80kA per phase, mounts to any brand of load centre, and can be installed on the line side or the load side. Single green LED status indicator and a 5-year product warranty."
+      }
+    ]
   }
 ]
