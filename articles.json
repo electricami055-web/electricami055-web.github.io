@@ -927,14 +927,36 @@
     ],
     "parts": [
       {
-        "name": "AstroAI Digital Clamp Meter TRMS 6000 Counts (CM600)",
-        "asin": "B0BRPP58LS",
-        "why": "Clamp around any wire for an instant current reading \u2014 the fastest way to diagnose overloads and faults."
+        "name": "Lutron Maestro PRO LED+ Tap Dimmer Switch (MA-PRO-WH, single-pole/multi-location)",
+        "asin": "B07SG7JJ91",
+        "why": "An LED-rated dimmer with phase-select and adjustable low-end trim \u2014 the exact features that stop LED flicker and buzzing."
       },
       {
-        "name": "Filluck 945pcs Crimping Tool Kit (ratcheting crimper + terminals)",
-        "asin": "B0F28N9BRS",
-        "why": "Pro-grade crimped terminals for every wiring job \u2014 no more twisted, taped connections."
+        "name": "Klein Tools NCVT-4IR Non-Contact Voltage Tester with IR Thermometer",
+        "asin": "B074LSSD94",
+        "why": "Confirms the circuit is truly dead before you touch a wire \u2014 the single most important safety check in this job."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I wire a dimmer switch?",
+        "a": "For a standard single-pole switch, turn the breaker off and confirm the wires are dead with a non-contact tester, then connect the hot wire coming from the panel to the dimmer's line terminal, the wire going to the light to its load terminal, and join all bare copper ground wires together under the dimmer's green screw. Most modern dimmers do not need a neutral wire, so cap any white neutral wires in the box separately and leave them untouched. If the wire colours do not match this pattern, stop and call a licensed electrician rather than guessing."
+      },
+      {
+        "q": "How do I install an LED dimmer switch?",
+        "a": "Buy a dimmer explicitly rated for LEDs, such as a trailing-edge or LED+ model, because an old incandescent-only dimmer will usually make LEDs flicker, buzz, or refuse to dim below about 50 percent. Check the dimmer maker's bulb-compatibility list before you buy, and after installation use the dimmer's low-end trim adjustment to set the lowest flicker-free brightness. Keep the total LED wattage within the dimmer's LED rating, which is typically 150 watts, not the higher incandescent rating printed on the same box."
+      },
+      {
+        "q": "How do I hook up a dimmer switch with only two wires?",
+        "a": "A two-wire hookup is normal for a single-pole dimmer: one black wire brings power in and the other carries it out to the light, plus a bare copper ground wire for safety. Connect the incoming hot wire to the dimmer's line terminal and the outgoing wire to the load terminal, then join the grounds together. If your box has no ground wire at all, or the two wires are not both black, do not improvise: have an electrician check the circuit before you proceed."
+      },
+      {
+        "q": "How do I connect a dimmer switch in a 3-way setup?",
+        "a": "A 3-way setup, where two switches control the same light, needs a dimmer designed for 3-way use plus a matching companion switch at the other location; a basic single-pole dimmer will not work there. The two traveller wires that run between the switches must land on the dimmer's traveller terminals, while the common wire goes to the common terminal, so photograph and label every wire before you disconnect the old switch. If the traveller and common wires are not clearly identifiable, call an electrician, because swapping them is the most common cause of a 3-way circuit that only works from one end."
+      },
+      {
+        "q": "Can I install a dimmer switch myself, or should I call an electrician?",
+        "a": "A confident DIYer can safely swap a single-pole dimmer in a modern, grounded box: switch the breaker off, verify the wires are dead, and follow the dimmer's wiring diagram exactly. Call a licensed electrician if you find aluminium wiring, a box with no ground wire, a 3-way or 4-way circuit you cannot map, or any scorching, melted insulation, or loose connections. The cost of a professional visit is far lower than the cost of a wiring mistake hidden behind a wall."
       }
     ]
   },
