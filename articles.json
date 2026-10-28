@@ -1601,6 +1601,26 @@
       {
         "q": "Will a whole-house surge protector stop lightning damage?",
         "a": "It greatly reduces the risk but cannot stop a direct lightning strike \u2014 no SPD can. Whole-house SPDs are designed to divert and clamp transient overvoltages from utility switching, power-restoration surges, and nearby strikes. For maximum protection, layer a Type 1 or Type 2 panel device with Type 3 plug-in protectors at your expensive gear, and consider a dedicated lightning protection system in extreme-risk areas."
+      },
+      {
+        "q": "How is a whole-house surge protector installed, step by step?",
+        "a": "A licensed electrician first switches off the main breaker and verifies the panel is dead with a tester, then removes the panel cover and mounts the SPD either inside the panel or in an enclosure beside it. The device wires to a dedicated two-pole breaker in the first available slots near the main, with its leads kept as short and straight as possible, because long or coiled leads degrade protection. The electrician then replaces the cover, restores power, and confirms the green indicator LEDs show the unit is actively protecting. The whole job usually takes one to two hours, and the homeowner's only preparation is clearing access to the panel and expecting a brief power outage."
+      },
+      {
+        "q": "Where is a whole-house surge protector installed?",
+        "a": "A Type 2 SPD mounts in or directly beside your main breaker panel, wired to a dedicated two-pole breaker in the slots closest to the main breaker so its leads are short. A Type 1 SPD mounts at the service entrance, ahead of the main disconnect, where it intercepts external spikes before they enter the home. Mounting location matters more than it looks: every extra inch of lead wire adds impedance that lets more surge voltage through, so a unit mounted far from the panel protects measurably worse than one mounted right beside it."
+      },
+      {
+        "q": "How long does whole-house surge protector installation take?",
+        "a": "Most straightforward Type 2 installs take one to two hours from the electrician's arrival to power restored. The job stretches longer if the panel is crowded with no spare breaker spaces, if the panel is old or has brittle wiring that needs careful handling, or if a permit inspection requires a second visit. Type 1 service-entrance installs take longer and may involve coordinating with the utility, since the work happens ahead of the main disconnect."
+      },
+      {
+        "q": "Does the power have to be turned off to install a whole-house surge protector?",
+        "a": "Yes. The electrician switches off the main breaker before opening the panel, so the whole house loses power for the duration of the install, typically under two hours. Even with the main breaker off, the service conductors feeding the panel from the meter stay live, which is why this is licensed-electrician work and not a DIY job. Plan the outage for a convenient time and unplug sensitive electronics beforehand so the restoration surge itself does not damage them."
+      },
+      {
+        "q": "Do I need a permit to install a whole-house surge protector?",
+        "a": "It depends on your jurisdiction. Many areas require an electrical permit for panel-level work, typically $50 to $150, and some require an inspection afterwards, which adds a return visit. Your electrician will know the local rules and usually rolls the permit fee into the quote. If a quote seems unusually low, ask whether the permit is included, because an unpermitted install can complicate a future home sale or insurance claim."
       }
     ],
     "parts": [
