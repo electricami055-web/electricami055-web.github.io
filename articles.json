@@ -1692,6 +1692,10 @@
       {
         "q": "Is soldering safe for beginners?",
         "a": "Yes, with basic precautions: the tip is 350\u00b0C, so it burns instantly \u2014 always use the stand, never lay the iron on the bench. Ventilate your workspace or use a fume fan, since solder smoke is irritating flux vapor. With leaded solder, wash your hands after soldering and keep food, drink, children and pets away from the bench."
+      },
+      {
+        "q": "How do you solder electronics properly?",
+        "a": "Heat the joint, not the solder: set your iron to about 350\u00b0C (660\u00b0F) for lead-free solder or 320\u00b0C for 60/40 leaded solder, tin the tip, then hold the tip against the pad and component lead for a second or two before feeding solder into the heated joint \u2014 never onto the iron tip alone. Feed just enough solder for a smooth, shiny, concave fillet, remove the solder first and the iron a moment later, and hold the joint perfectly still while it cools so it does not turn dull and grainy. Clean or re-tin the tip between joints, work in a ventilated area, and inspect each joint: a good one is shiny and cone-shaped, while a dull, blobby or cracked joint is a cold joint that should be reheated and redone."
       }
     ],
     "parts": [
