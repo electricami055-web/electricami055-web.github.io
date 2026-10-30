@@ -1945,5 +1945,80 @@
         "why": "Cheap sacrificial parts for practice: solder these components onto a spare board, then desolder them again. Repeating the cycle on parts you do not care about is the fastest way to build a damage-free technique."
       }
     ]
+  },
+  {
+    "category": "Safety Tips",
+    "date": "Oct 30, 2026",
+    "faqs": [
+      {
+        "a": "Often more so, because older homes now run modern electronics on older wiring. Have an electrician check two things first: that the panel has two spare slots for the dedicated breaker, and that the home's grounding is sound, since an SPD diverts surge energy to ground. If the panel itself is obsolete or damaged, fix that first \u2014 surge protection belongs on a sound electrical system.",
+        "q": "Is a whole-house surge protector worth it for an older home?"
+      },
+      {
+        "a": "It greatly reduces the risk from nearby strikes and the grid surges lightning causes, but no residential device can survive a direct strike, which carries millions of volts. The realistic goal is stopping the far more common indirect surges. For the highest level of protection, layer a panel SPD with point-of-use strips and unplug valuable gear during severe storms when you are home.",
+        "q": "Will a whole-house surge protector protect against lightning?"
+      },
+      {
+        "a": "Yes, for your most sensitive gear. The panel SPD absorbs the large surge at the entrance, and a quality plug-in strip adds a second clamping stage right at the TV, computer, or router. Keep strips on those devices even after the panel unit is installed, and replace strips every two to three years or after a surge event.",
+        "q": "Do I still need plug-in surge strips if I have whole-house protection?"
+      },
+      {
+        "a": "Most homeowners pay $250 to $800 all-in: $70 to $300 for the device plus $150 to $500 for one to two hours of electrician labor. Panel work beyond the install itself, such as adding breaker space, costs extra and should be quoted before work starts. Spread over a 5\u201310 year device life, that is roughly $30 to $160 per year.",
+        "q": "How much does a whole-house surge protector cost installed?"
+      },
+      {
+        "a": "Check its status lights: green means it is protecting, while red, flashing, or dark indicators mean it has worn out and needs replacing. Some units also sound an audible alarm when protection is lost. Check monthly and after major storms, and plan on replacement every 5\u201310 years or after a known major surge event.",
+        "q": "How do I know if my whole-house surge protector is still working?"
+      }
+    ],
+    "id": "E035",
+    "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80",
+    "introduction": "Yes \u2014 for most homeowners, a whole-house surge protector is worth it. A professionally installed unit costs roughly $300 to $800 all-in, while a single serious surge can destroy a $2,000\u2013$5,000 HVAC system, a $500\u2013$1,500 refrigerator, and every smart device in the house in the same instant. Industry estimates say 60 to 80 percent of surges actually start inside the home, when large appliances like air conditioners and well pumps cycle on and off \u2014 so this is not only about lightning. And since the 2020 National Electrical Code began requiring surge protection on new dwelling-unit services, the code itself has effectively answered the question. The honest exceptions are renters, who cannot modify the panel, and homes with almost nothing electronic worth protecting. This guide runs the real numbers so you can decide which side of the line your home falls on.",
+    "parts": [
+      {
+        "asin": "B013WINMK6",
+        "name": "Siemens FS140 Whole House Surge Protection Device (140kA, Type 2)",
+        "why": "The highest-capacity option here at 140kA per phase, with a 10-year product and connected-equipment warranty, audible alarm plus LED status lights, and a NEMA 4X enclosure that fits any brand of load center."
+      },
+      {
+        "asin": "B01AQAKRSS",
+        "name": "Eaton CHSPT2ULTRA Ultimate Surge Protection Device (108kA, Type 2)",
+        "why": "A strong mid-price choice at 108kA with LED status indicators and a NEMA 4 enclosure for indoor or outdoor mounting \u2014 the best value for most average-exposure homes."
+      },
+      {
+        "asin": "B00CONA1OQ",
+        "name": "Square D HEPD80 Whole House Surge Protective Device (80kA, Type 1)",
+        "why": "The budget whole-house option at around $73: compact, mounts to any brand of load center, and 80kA is a solid baseline rating for a home with moderate surge exposure."
+      }
+    ],
+    "readTime": "9 min",
+    "sections": [
+      {
+        "body": "A whole-house surge protector is a Type 2 surge protective device (SPD) mounted at your main electrical panel. When voltage on the incoming lines spikes above a safe threshold, it diverts the excess energy to ground in under a nanosecond, clamping the surge before it travels through your home's wiring. A typical unit clamps at a voltage protective rating (VPR) of about 600 volts line-to-neutral, compared with the normal 120 volts your outlets deliver.\n\nThe key difference from a plug-in strip is reach. A panel-mounted SPD protects everything on every circuit, including hardwired equipment that can never plug into a strip: the HVAC system, water heater, oven, well pump, and EV charger. That is the gap most homeowners do not realize they have until a surge finds it.\n\nThere are two honest limits to understand up front. First, the protection is sacrificial: the metal-oxide components inside absorb surge energy and wear down with every hit, which is why units carry a 5\u201310 year service life and a status light. Second, no residential SPD can stop a direct lightning strike, which delivers millions of volts. What it does stop is the far more common threat: nearby strikes, utility switching, and the constant small surges generated inside your own home.",
+        "heading": "What a whole-house surge protector actually does"
+      },
+      {
+        "body": "Start with the cost side, because it is the smaller number. A quality whole-house SPD runs $70 to $300 for the device, and professional installation typically adds $150 to $500 for one to two hours of an electrician's time, depending on panel access and local rates. All-in, most homeowners pay $250 to $800. If your panel needs work first \u2014 no spare breaker slots, for example \u2014 that adds cost, and your electrician should quote it before starting.\n\nNow the other side. A single large surge can take out several systems at once: an HVAC control board costs several hundred dollars to replace, a full HVAC system $2,000 to $5,000, a modern refrigerator $500 to $1,500, plus TVs, computers, routers, smart thermostats, and video doorbells. A typical electrified home easily holds $10,000 or more of surge-vulnerable equipment. Insurers paid over $1 billion in lightning-related homeowner claims in 2024 alone, across more than 50,000 claims \u2014 and with deductibles commonly set at $500 to $2,000, smaller surge damage often comes straight out of your pocket anyway.\n\nSpread over a 5\u201310 year device life, $300 to $800 works out to roughly $30 to $160 per year. That is the insurance framing, and it is the right one: surge protection is not an investment with a guaranteed payback, it is a small fixed cost that caps a large, unpredictable loss. If your home's electronics are worth less than the device, the math flips \u2014 which brings us to the decision test.",
+        "heading": "The real math: $300\u2013$800 once vs. thousands in one bad day"
+      },
+      {
+        "body": "Answer these five questions honestly, and the decision mostly makes itself. First, is your home exposed? Houses in lightning-heavy regions, rural homes at the end of a long overhead utility line, and homes with frequent flickers or brief outages face measurably higher surge risk than a city condo on underground service.\n\nSecond, what is actually at risk? Add up the replacement cost of your HVAC system, refrigerator, washer and dryer, EV charger, home-office computer, and smart-home gear. If that total is several thousand dollars, a $300\u2013$800 device is protecting an asset worth many times its price. If you own almost nothing electronic beyond a TV and a phone charger, the case is weaker.\n\nThird, do you have internal surge sources? Air conditioners, well pumps, and other large motors create small surges every time they cycle. Remember the 60\u201380 percent figure: most surges come from inside the house, so even a home that never sees lightning still benefits.\n\nFourth, can you modify the panel? Homeowners usually can; renters cannot, and should invest in quality point-of-use protection instead. Your panel also needs two spare slots for the dedicated two-pole breaker most SPDs require, which your electrician confirms in minutes.\n\nFifth, is panel work already planned? If you are renovating, upgrading service, or already have an electrician opening the panel, the marginal cost of adding an SPD is tiny \u2014 that is the cheapest time to do it. Score two or more yes answers and the device is worth it for your home.",
+        "heading": "The 5-question decision test"
+      },
+      {
+        "body": "This is the comparison most articles get wrong by framing it as either-or. A panel SPD and a plug-in strip do different jobs, and the strongest setup layers them: the panel device absorbs the big surge at the entrance, and the point-of-use strip clamps the smaller residual voltage right at your sensitive gear.\n\n| Protection layer | What it covers | Hardwired appliances | Typical cost | Lifespan |\n|---|---|---|---|---|\n| Whole-house SPD (Type 2) | Every circuit in the home | Yes | $250\u2013$800 installed | 5\u201310 years |\n| Plug-in strip (Type 3) | Only what is plugged into it | No | $10\u2013$50 each | 2\u20133 years |\n| Both layers together | Whole home plus extra clamping at sensitive gear | Yes | $300\u2013$900 total | Varies by layer |\n\nA strip alone leaves your HVAC, water heater, and oven completely unprotected, and strips wear out faster \u2014 most need replacing every two to three years, especially after a surge event. A panel SPD alone still leaves long wire runs between the panel and your TV or computer, where residual voltage can do damage. Keep your best strips on the TV, computer, and router even after the panel device goes in; the combination is what the layered-protection standard is designed around.",
+        "heading": "Whole-house vs. plug-in strips: why you actually want both"
+      },
+      {
+        "body": "Buy a UL 1449-listed Type 2 device from a recognized electrical brand \u2014 Siemens, Eaton, and Square D dominate this market for a reason. For surge current rating, 80kA per phase is a solid baseline for an average home; 100kA to 140kA makes sense in high-lightning regions or rural end-of-line homes. Check the voltage protective rating too: lower is better, and 600 volts line-to-neutral is the common benchmark.\n\nInsist on status indicators. A green LED that says the unit is protecting, plus an audible alarm or flashing red light when it is not, is the difference between a device you trust and a dead box you assume is working. Some premium units add a connected-equipment warranty \u2014 Siemens' FS140, for example, carries a 10-year product and connected-equipment warranty \u2014 which is real money if a surge ever gets through.\n\nIgnore the marketing superlatives. Claims of unlimited protection or lifetime immunity are meaningless on a sacrificial device, and inflated joule ratings on plug-in strips are not comparable to a panel SPD's kA rating. Match the device to your panel: most whole-house units fit any brand of load center, but confirm the breaker type and the two-pole slot requirement with your electrician before ordering.",
+        "heading": "What to buy (and what to ignore on the box)"
+      },
+      {
+        "body": "A whole-house SPD will not make your home lightning-proof, it will not fix bad wiring, and it will not protect anything if its indicator shows it has already sacrificed itself. Check the status lights monthly and after every major storm, and replace the unit when the indicator changes or after a known major surge event \u2014 a dead SPD looks identical to a live one from the outside.\n\nInstallation is a licensed-electrician job, full stop. The inside of a breaker panel contains exposed live bus bars, and the service conductors feeding the panel stay energized even with the main breaker switched off \u2014 one wrong move can kill. If you are ever unsure about your panel's condition, grounding, or available breaker space, call a licensed electrician rather than opening the panel yourself. The same rule applies to any home with an obsolete panel or questionable grounding: get the panel assessed first, then add surge protection to a sound system.\n\nFinally, keep perspective. During a severe electrical storm, unplugging your most valuable electronics remains the only near-perfect protection, and it costs nothing. A whole-house SPD is the protection that works while you are asleep, at work, or away on vacation \u2014 which is exactly when most surges do their damage.",
+        "heading": "The honest limits \u2014 and the safety rules"
+      }
+    ],
+    "subtitle": "A $300\u2013$800 panel device versus thousands in fried appliances: the real cost-benefit math, the 5-question decision test, and when to skip it.",
+    "title": "Is a Whole-House Surge Protector Worth It? A Cost-Benefit Guide"
   }
 ]
