@@ -45,7 +45,29 @@
         "asin": "B01D8KOZF4",
         "why": "The standard first Arduino kit \u2014 board, sensors, LEDs and step-by-step tutorials in one box."
       }
-    ]
+    ],
+    "faqs": [
+      {
+            "q": "How do you make a transmitter and receiver for an RC car?",
+            "a": "You have two realistic routes. The reliable route is buying a matched 2.4 GHz pistol-grip transmitter and receiver combo from one brand, such as FlySky or Radiolink, and binding them following the steps in this guide. The DIY route is building your own pair with two Arduino boards and nRF24L01 radio modules: one Arduino reads a joystick and sends throttle and steering values, and the other Arduino receives them and drives a motor driver and a steering servo. The DIY route teaches far more, but a ready-made radio gives longer range and a failsafe, so most first builds should start with a matched combo."
+      },
+      {
+            "q": "What frequency do RC car transmitters use?",
+            "a": "Modern hobby RC cars use the 2.4 GHz band with spread-spectrum technology, which automatically hops between channels to dodge interference from other radios. Older toy-grade cars used 27 MHz or 49 MHz AM radios, which are far more prone to glitching when another transmitter is nearby. If you are buying or building a radio today, 2.4 GHz is the only sensible choice, and it is why a transmitter and receiver must use the same protocol, not just the same frequency."
+      },
+      {
+            "q": "How do I bind an RC transmitter to a receiver?",
+            "a": "Binding teaches your receiver to listen only to your transmitter. Put the receiver into bind mode first, usually by holding its bind button or inserting a bind plug while powering it on, until its LED flashes rapidly. Then switch the transmitter on in bind mode and wait for the receiver LED to go solid, which confirms the link, before removing the bind plug. If the LED keeps flashing, the pair is not bound yet: check that both units are the same brand and protocol, move them a metre apart, and repeat the sequence."
+      },
+      {
+            "q": "Why is my RC receiver not responding to the transmitter?",
+            "a": "Work through the chain in order. First confirm the receiver LED is solid, which means it is bound; a flashing LED means it is still waiting for a bind. Next check the wiring: the steering servo belongs on channel 1 and the ESC lead on channel 2 on most pistol-grip systems, and a reversed or offset plug kills one control entirely. Then check power on both ends, keep the receiver antenna clear of metal and carbon fibre, and re-bind if the transmitter and receiver came from different brands, since mismatched protocols never talk to each other."
+      },
+      {
+            "q": "How far can a 2.4 GHz RC car transmitter reach?",
+            "a": "A typical hobby-grade 2.4 GHz system reaches 100 to 300 metres in open ground, which is far beyond the distance you can still see and steer a small car accurately. Range drops sharply if the antenna is buried inside a metal or carbon-fibre chassis, if the transmitter battery is low, or if you drive behind buildings or dense trees. Always do a range check before a session: walk about 30 metres away with the car on the ground and confirm steering and throttle still respond crisply before driving further."
+      }
+]
   },
   {
     "id": "E001",
