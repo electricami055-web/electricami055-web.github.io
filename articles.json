@@ -2311,5 +2311,71 @@
         "why": "A precise digital station with a 392-896\u00b0F range, LCD display, memory channels, and sleep mode \u2014 ideal for holding 320\u00b0C for leaded work and 370\u00b0C for lead-free without drifting."
       }
     ]
+  },
+  {
+    "id": "E040",
+    "title": "Does a Whole-House Surge Protector Protect Against Lightning?",
+    "subtitle": "A whole-house surge protector stops lightning-induced surges from nearby strikes, but no panel device can survive a direct hit. Here is what it really covers.",
+    "category": "Safety Tips",
+    "date": "Nov 5, 2026",
+    "readTime": "9 min",
+    "image": "https://images.unsplash.com/photo-1763568972598-02eeb63efce1?w=1600&q=80",
+    "introduction": "No \u2014 not against a direct lightning strike on your house. A whole-house surge protector will stop the surges lightning causes indirectly, when a strike hits a power line or the ground nearby and sends a voltage spike down the wires into your home, but the Electrical Safety Foundation International states it plainly: no surge protection device can handle a direct lightning strike. That distinction matters, because most lightning damage to homes comes from those indirect surges, and a properly sized Type 2 SPD at your panel \u2014 rated for 80,000 to 140,000 amps of surge current \u2014 is the best defense against them. This guide explains what a whole-house unit can and cannot do, the numbers behind the ratings, and the layered setup that gives your home real protection when a storm rolls in.",
+    "sections": [
+      {
+        "heading": "The short answer: indirect surges yes, direct strikes no",
+        "body": "A whole-house surge protector (SPD) sits at your main panel and watches the voltage. When a spike arrives it diverts the excess current to ground in nanoseconds, clamping the voltage before it reaches your circuits. That works for the surges that travel in on the service wires \u2014 a strike to a utility pole a street away, a transformer hit, or a ground strike that induces voltage in buried lines. It does not work for a direct strike to your roof or service drop, because the energy is orders of magnitude beyond what any residential device is built to absorb. Eaton says its SPDs \"do not safeguard equipment against direct lightning strikes,\" and State Farm puts it just as plainly: whole-house surge protection will not protect you from a direct strike on your house.\n\nThe numbers explain why. A typical lightning stroke carries about 30,000 amps, and powerful strokes can exceed 200,000 amps at hundreds of millions of volts. The best residential SPDs, like the Siemens FS140, are rated to divert up to 140,000 amps of surge current per phase \u2014 an impressive number that still describes controlled test conditions under UL 1449, not a lightning bolt hitting your roof. Think of the SPD as a pressure-relief valve rated for the surges your wiring will realistically see, not as a lightning rod.\n\nThe good news is that the direct strike is the rarest scenario. Most homes never take one. The surges that actually damage electronics day to day \u2014 and the ones that spike during storm season \u2014 are the indirect ones, and those are exactly what a whole-house SPD is designed to catch. It is a real layer of protection, just not a force field."
+      },
+      {
+        "heading": "How lightning actually damages a home",
+        "body": "Lightning damages electronics through four paths. A direct strike to the structure or the service drop. A strike to a power line or transformer some distance away, which sends a surge down the line and through your meter into the panel. A strike to the ground nearby, which induces a voltage spike in buried or overhead lines. And strikes to cable, phone, or data lines, which carry surges in through a different door entirely. The National Weather Service notes that lightning can enter a home through wires or pipes that extend outside the structure, then travel through the electrical, phone, and plumbing systems once inside.\n\nThe second and third paths are the ones homeowners actually face. A bolt does not need to hit your house to destroy your television: it hits a pole two blocks away, the surge rides the service wires, and your panel sees several thousand volts for a fraction of a second. That is long enough to fry a refrigerator control board, an HVAC compressor, a garage door opener, or every LED driver in the house. Hardwired equipment is the most exposed, because unlike a television it cannot be unplugged from a strip \u2014 it is wired straight into the panel the surge just entered.\n\nKeep the scale in perspective. According to the National Electrical Manufacturers Association, 60 to 80 percent of all surges originate inside the home \u2014 air conditioners, well pumps, and large appliances cycling on and off. Lightning is the dramatic minority of surge events, but it is the most destructive single event your wiring is likely to see, which is why storm season is when most homeowners first think about protection."
+      },
+      {
+        "heading": "The numbers: lightning energy vs SPD ratings",
+        "body": "Ratings are where marketing gets slippery, so here is how to read them. Surge current capacity, measured in kiloamps (kA), is the maximum surge current the device can divert under UL 1449 testing \u2014 36 kA for a basic unit, 80 kA for a mid-range one, 108 kA for the Eaton CHSPT2ULTRA, and 140 kA per phase for the Siemens FS140. Voltage protection rating (VPR) is the voltage the device lets through during a test surge: lower is better, and 600 volts line-to-neutral is the standard figure for good residential units. A higher kA rating means the device survives bigger and more repeated surges; a lower VPR means less voltage reaches your electronics.\n\n| Threat | Typical size | What a whole-house SPD does |\n|---|---|---|\n| Direct strike to the house | ~30,000 A, peaks over 200,000 A | Cannot absorb it \u2014 damage likely even with an SPD |\n| Nearby strike, surge on power lines | Thousands of volts at the panel | Clamps it \u2014 this is the SPD's core job |\n| Utility switching and restoration spike | Hundreds to ~2,000 V | Diverts it before it reaches your circuits |\n| Internal appliance surge | Hundreds of volts, low energy | Reduces it; point-of-use protectors help too |\n\nOne honest caveat: even a good whole-house unit lets some voltage through. Industry guidance notes that a panel SPD may allow up to roughly 15 percent of a surge's excess voltage past it, which is why the same sources that recommend whole-house protection also recommend point-of-use protectors for sensitive electronics. The panel device takes the big hit; the strip at the outlet catches what is left. Neither replaces the other."
+      },
+      {
+        "heading": "The layered setup that actually protects a home",
+        "body": "Real protection is layered, and the layers have standard names. A Type 1 SPD sits at the service entrance on the utility side of the main disconnect and catches the biggest external spikes before they enter the home. A Type 2 SPD \u2014 the most common whole-house unit \u2014 mounts at or near the main panel and protects everything downstream. A Type 3 SPD is the plug-in protector at the outlet, guarding one television or computer against what gets past the first two layers and against surges born inside the house. Since the 2020 National Electrical Code, NEC section 230.67 has required a Type 1 or Type 2 SPD in new dwellings and service replacements, so a modern panel should already have at least one layer.\n\nNone of those layers is a lightning protection system, and that is a different product entirely. A lightning protection system, installed to NFPA 780, uses air terminals (lightning rods) on the roof, down conductors, and a dedicated grounding electrode system to give a direct strike a safe path into the earth outside your walls. It is the only system designed for a direct hit, it is installed by specialists, and it complements an SPD rather than replacing it: the rods handle the bolt, the SPD handles the surges that still get into the wiring.\n\nGrounding is the quiet part of the system that decides whether any of it works. An SPD protects by diverting surge current to ground, so a compromised ground \u2014 a loose bond, a corroded electrode, a damaged neutral-to-ground connection \u2014 leaves the surge with nowhere safe to go. Some premium units, like the Siemens FS140, include ground-reference monitoring that warns you if the neutral-to-ground bond is compromised. If your home has old or questionable grounding, fix that before or alongside the SPD, and have the work done by a licensed electrician: panel work means live busbars, and the main breaker must be off before anyone opens the panel."
+      },
+      {
+        "heading": "What to do before, during, and after a storm",
+        "body": "Before storm season, check whether you have a whole-house SPD at all \u2014 look for a small box mounted beside or inside the main panel, usually with green LED status lights. If there is none, budget $150 to $500 for the device plus $200 to $500 for professional installation, and have a licensed electrician install it; this is not a beginner DIY job, because it involves working inside a live panel. Confirm the unit's LEDs are green and, if it has an audible alarm, that it is silent \u2014 a red light or alarm means the protection is gone and the unit needs replacing.\n\nDuring a severe thunderstorm, the single most effective thing you can do is unplug your most valuable sensitive electronics \u2014 televisions, computers, gaming consoles, and network gear. The Electrical Safety Foundation International is direct about this: the best protection against a surge you know is coming is to unplug the device entirely. A whole-house SPD plus unplugging is the combination that actually holds up; an SPD alone is a bet that the storm stays indirect.\n\nAfter a storm \u2014 especially one with a strike nearby \u2014 inspect the SPD's indicator lights and test your major appliances. Metal-oxide varistors inside an SPD wear out a little with every surge they absorb, so a unit that has taken several big hits may be silently dead even if the power is fine. If the LEDs are out, the alarm is sounding, or anything smells of burnt electronics near the panel, call an electrician before resetting anything. And check your insurance: lightning is a standard covered peril in most homeowners policies, so document any damage with photos and keep the failed SPD and receipts for the claim."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Will a whole-house surge protector stop lightning damage completely?",
+        "a": "No. It stops the indirect surges that lightning causes when it hits power lines or the ground nearby \u2014 the most common way lightning damages a home. But no panel-mounted device can absorb a direct strike to your house, which carries far more energy than any residential SPD is rated for. For a direct hit, only a lightning protection system built to NFPA 780 gives the bolt a safe path to ground, and unplugging sensitive electronics during a severe storm is still the most reliable protection."
+      },
+      {
+        "q": "Do I still need plug-in surge protectors if I have a whole-house unit?",
+        "a": "Yes. A whole-house SPD is the first layer: it clamps the big spikes at the panel, but it lets some voltage through, and it cannot catch surges that start downstream of the panel when large appliances cycle. Plug-in Type 3 protectors at the outlet are the second layer, and they are the only layer that guards a television or computer against those leftover and internal surges."
+      },
+      {
+        "q": "Is a lightning rod the same thing as a surge protector?",
+        "a": "No, they solve different problems. A lightning rod system \u2014 air terminals, down conductors, and grounding electrodes installed to NFPA 780 \u2014 gives a direct strike a safe path into the earth outside your home. A surge protector diverts voltage spikes inside your wiring to ground. A home in a lightning-prone area benefits from both, but one does not replace the other."
+      },
+      {
+        "q": "Can lightning damage my home if it strikes nearby instead of my house?",
+        "a": "Yes \u2014 that is actually the most common lightning-damage scenario. A strike to a power line, transformer, or the ground nearby sends a surge along the service wires into your panel, and it can destroy control boards, HVAC compressors, and electronics without the bolt ever touching your roof. A whole-house SPD is rated for exactly this kind of induced surge."
+      },
+      {
+        "q": "Does homeowners insurance cover lightning damage?",
+        "a": "In most cases, yes. Lightning is a standard covered peril in most homeowners insurance policies, and a claim can cover damaged electronics, appliances, and even the home itself, subject to your deductible. Photograph any damage, keep the failed surge protector and receipts, and report the claim promptly \u2014 some policies also cover the cost of the damaged SPD."
+      }
+    ],
+    "parts": [
+      {
+        "name": "Siemens FS140 Whole House Surge Protection Device",
+        "asin": "B013WINMK6",
+        "why": "140,000-amp surge capacity per phase, UL 1449 Type 2, NEMA 4X enclosure for indoor or outdoor mounting, and a 10-year product and connected-equipment warranty \u2014 the highest-capacity residential SPD for lightning-prone areas."
+      },
+      {
+        "name": "Eaton CHSPT2ULTRA Ultimate Surge Protection",
+        "asin": "B01AQAKRSS",
+        "why": "108,000-amp surge capacity per phase, UL 1449 Type 2, fits any brand of load center, LED status indicators, and a lifetime warranty with up to $75,000 in connected-equipment coverage."
+      }
+    ]
   }
 ]
