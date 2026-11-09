@@ -2593,5 +2593,85 @@
         "a": "Only if it is a window or portable unit on a standard 120-volt outlet, and only with a properly rated plug-in protector \u2014 at least 15 amps and 1,800 watts for a typical 12,000 BTU unit, UL 1449 listed, and never daisy-chained or run through an extension cord. A central air conditioner or heat pump must never go through a power strip: it is hardwired to a dedicated 240-volt circuit, and it needs a hardwired SPD installed by a licensed electrician at the disconnect or panel."
       }
     ]
+  },
+  {
+    "category": "Electrical Tools",
+    "date": "Nov 9, 2026",
+    "faqs": [
+      {
+        "a": "Start with 1206 and 0805 passives. An 0805 resistor is 2.0 x 1.25 mm, large enough to see under 3.5x magnification and to handle with tweezers, and it is the size used in most beginner kits. Move to 0603 (1.6 x 0.8 mm) after about 50 clean 0805 joints, and leave 0402 parts (1.0 x 0.5 mm) until you are confident, since they are barely wider than a grain of sand.",
+        "q": "What size SMD components should a beginner start with?"
+      },
+      {
+        "a": "Set a soldering iron to 315-350\u00b0C (600-660\u00b0F): about 320\u00b0C for leaded 63/37 solder, which melts at 183\u00b0C, and about 350\u00b0C for lead-free SAC305, which melts at 217\u00b0C. For hot air rework, use 350-380\u00b0C with low airflow. Never run the iron above 400\u00b0C on SMD work, since excessive heat lifts pads and damages components.",
+        "q": "What temperature should I solder SMD components at?"
+      },
+      {
+        "a": "No, not to start. A temperature-controlled iron with a fine chisel tip, flux and tweezers handles 0805 and 0603 passives, SOIC chips and most QFPs, which covers about 90% of beginner projects. A hot air station becomes necessary for QFN and BGA packages whose pads are hidden under the chip, and for removing multi-pin parts without damaging the board.",
+        "q": "Do I need a hot air station to solder SMD parts?"
+      },
+      {
+        "a": "Yes. A regular temperature-controlled iron of about 60 W with a 1.2-1.6 mm chisel tip is the standard tool for hand-soldering SMD parts. The rest is technique: 0.5 mm solder wire, liquid flux on every joint, fine ESD-safe tweezers, and at least 3.5x magnification. A $40 station with those accessories is enough to solder 0805 parts cleanly.",
+        "q": "Can I solder SMD components with a regular soldering iron?"
+      },
+      {
+        "a": "Apply liquid flux over the bridge, lay a strip of 2 mm solder wick on top, and press the iron onto the wick at about 350\u00b0C for 2-3 seconds. The wick absorbs the excess solder. Lift the wick while the solder is still molten so it does not stick to the board. Inspect under magnification afterwards, and if a bridge remains, repeat with fresh wick and flux rather than holding the iron on the joint longer.",
+        "q": "How do I fix a solder bridge between SMD pins?"
+      }
+    ],
+    "id": "E044",
+    "image": "https://images.pexels.com/photos/6755083/pexels-photo-6755083.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "introduction": "Yes, you can solder SMD components with a regular temperature-controlled soldering iron. Start with large 0805-size parts (2.0 x 1.25 mm), set the iron to 315-350\u00b0C (600-660\u00b0F), use 0.5 mm solder wire and liquid flux, and hold the board steady in a PCB holder while you work under 3.5x magnification. The core technique is simple: tin one pad, slide the part into place with tweezers while the solder is molten, then solder the other side. Multi-pin chips such as SOIC and QFP packages are soldered the same way with a drag technique, and only QFN and BGA packages with hidden pads truly need a hot air station. This guide walks through the tools, both methods step by step, and the mistakes that ruin most first attempts.",
+    "parts": [
+      {
+        "asin": "B07SCPZJYS",
+        "name": "YIHUA 8786D-I 2-in-1 Hot Air Rework + Soldering Station (740W)",
+        "why": "The single best upgrade for SMD work: the 740W hot air gun (100-480\u00b0C) reflows paste and removes multi-pin chips, while the 40W iron handles two-terminal parts \u2014 one box covers both methods in this guide."
+      },
+      {
+        "asin": "B082F1WKP9",
+        "name": "YIHUA 926 III 60W Digital Soldering Iron Station Kit (11-in-1)",
+        "why": "Temperature-controlled 60W iron with fine tips, helping hands, tweezers and solder included \u2014 everything needed for the iron method at 315-350\u00b0C."
+      },
+      {
+        "asin": "B07C577S21",
+        "name": "KOTTO Third Hand Professional Soldering Stand, Five Arms Helping Hands",
+        "why": "A weighted five-arm stand holds the PCB rock-steady while both your hands are busy with iron and tweezers \u2014 the difference between a clean joint and a smeared one."
+      },
+      {
+        "asin": "B08KDLR6P6",
+        "name": "Soldering Practice Kit, 3 Kits SMD SMT Skills Training Board (0805, SOP, TQFP44)",
+        "why": "Three practice boards with 0805 resistors, capacitors, SOP and TQFP44 chips and 274+ solder joints \u2014 burn through these before touching a real board."
+      }
+    ],
+    "readTime": "9 min",
+    "sections": [
+      {
+        "body": "SMD stands for surface-mount device. Instead of leads passing through holes in the board, SMD parts sit flat on copper pads and are soldered on the surface. A resistor that used to be a 6 mm cylinder with two wire legs is now a tiny ceramic chip 2 mm long. That is the whole difference, and it is why modern boards pack hundreds of parts into the space of a postage stamp.\n\nThe size codes look cryptic until you decode them once. The common passive sizes are 1206 (3.2 x 1.6 mm), 0805 (2.0 x 1.25 mm), 0603 (1.6 x 0.8 mm) and 0402 (1.0 x 0.5 mm), where the number is the length and width in hundredths of an inch. Beware one trap: the same part is labelled 2012 in metric, so an 0805 imperial part is a 2012 metric part. Buy kits labelled with the imperial code and you will get the size you expect. Integrated circuits follow the same idea: SOIC chips have gull-wing leads on a 1.27 mm pitch, QFP chips go down to 0.5 mm pitch, and QFN and BGA packages hide their contacts underneath the body.\n\nIt looks harder than it is for two reasons, and both disappear with practice. First, the parts are small, so you need tweezers and magnification instead of fingers and naked eyes. Second, everything happens fast: a joint takes 2-3 seconds, so there is no time to think mid-joint. The reassuring part is that solder surface tension works for you. A slightly misaligned 0805 resistor will pull itself straight as the solder melts, and liquid flux makes solder flow exactly where it should. Start with 1206 and 0805 passives plus SOIC chips, and leave 0402 parts, 0.5 mm-pitch QFPs and anything with hidden pads until you have fifty clean joints behind you.",
+        "heading": "What SMD soldering actually is (and why it looks harder than it is)"
+      },
+      {
+        "body": "You need less gear than the internet suggests, but the few items you do need are non-negotiable. First is a temperature-controlled soldering iron of about 60 W. A fixed-temperature dollar-store iron runs too hot or too cold and will lift pads; a station that holds 315-350\u00b0C steadily is the single best purchase in this guide. Fit it with a fine chisel tip, 1.2-1.6 mm wide. A chisel tip carries far more solder than a needle-point conical tip, which is why experienced builders use it even for tiny parts.\n\nSecond is the consumables: 0.5-0.8 mm solder wire and liquid flux. Thin solder matters because one millimetre of 0.5 mm wire is a small, controllable amount of metal, while the same length of 1 mm wire floods an 0805 pad. For learning, use 63/37 leaded solder, which melts at 183\u00b0C and freezes crisply; lead-free SAC305 melts at 217\u00b0C, needs a hotter iron, and is noticeably harder to get right. Keep a flux pen or a small bottle of no-clean liquid flux on the bench and use it on every joint. Flux is the single biggest quality factor in SMD work: it strips oxides, lets solder wet the pad, and is what makes drag soldering possible at all.\n\nThird is handling and seeing. Buy ESD-safe tweezers with a fine curved tip; straight, sharp tweezers flick parts across the room. Get magnification of at least 3.5x, whether that is a helping-hands lens, a headband magnifier or a cheap USB microscope. For 0603 and smaller you will want 10x. Add a PCB holder or a five-arm helping-hands stand so the board cannot move while both your hands are busy, plus brass wool for cleaning the tip, a 2 mm solder wick for fixing bridges, and 99% isopropyl alcohol with a stiff brush for cleaning flux residue. A hot air rework station is the only big-ticket item, and it is optional at first: it becomes essential only when you move to QFN, BGA or dense rework.",
+        "heading": "The tools that actually matter"
+      },
+      {
+        "body": "Clean the board first. Wipe the pads with 99% isopropyl alcohol and let them dry, then clamp the board in your holder so it cannot shift. A board that moves a millimetre mid-joint is how parts end up tombstoned or bridged. Set the iron to 320\u00b0C for leaded solder or 350\u00b0C for lead-free, tin the tip with a small amount of solder, and wipe it on brass wool so the tip is shiny.\n\nFor a two-terminal part such as an 0805 resistor, tin one pad only: touch the iron to the pad, feed a millimetre of 0.5 mm solder, and lift. You want a small shiny dome, not a blob. Pick the part up with tweezers, hold it centred over its two pads, and reheat the tinned pad. The solder melts, the part settles, and surface tension pulls it into alignment. Remove the iron while holding the part still for one second, then let go and check the alignment under magnification. If it is crooked, reheat and nudge it; never force it.\n\nNow solder the second side. Touch the iron tip so it contacts both the pad and the metal end of the part at once, feed a small amount of solder into the joint (not onto the iron), and hold for 2-3 seconds until the solder flows into a shiny, concave fillet. Lift the iron straight up. A good joint is bright, smooth and shaped like a tiny ski slope from pad to part; a dull, grainy or ball-shaped joint is a cold joint and needs to be redone with fresh flux.\n\nMulti-pin chips use the same idea, scaled up. Apply flux to all the pads, align the chip, and tack two opposite corner pins with a tiny amount of solder. Check the alignment under magnification, correct it by reheating a corner, then tack the other two corners. Now comes drag soldering: load the iron tip with a small bead of solder, and draw it slowly across a row of pins at about 1-2 mm per second. The flux keeps the solder from bridging, and any small bridges left behind are cleaned up with solder wick. Finish by inspecting every pin under magnification and checking continuity with a multimeter between neighbouring pins.",
+        "heading": "Method 1: soldering SMD parts with an iron, step by step"
+      },
+      {
+        "body": "Hot air is the right tool when the iron cannot reach the joint: QFN and BGA packages with pads hidden under the chip, connectors with dozens of pins, or a section of board you want to reflow all at once. The consumable changes from wire solder to solder paste, a grey cream of tiny solder balls suspended in flux. Apply it sparingly with a syringe or a stencil, one small dot per pad. Too much paste is the number one beginner error with this method: it squeezes out, bridges neighbouring pads, and turns into a clean-up job.\n\nPlace the parts with tweezers. The paste is tacky enough to hold them in place, which is a real advantage over the iron method. Then preheat the board. Hold the hot air gun 2-3 cm away on a low setting for 30-60 seconds, or set the board on a hot plate at about 150\u00b0C, so the whole area warms evenly. A cold board with a hot chip is how pads lift and parts crack from thermal shock.\n\nNow reflow. Set the hot air station to 350-380\u00b0C with airflow at about 30-40% of maximum, and move the nozzle in slow circles over the part. Within 10-20 seconds the paste will slump, turn shiny, and pull the part into alignment by itself. The moment every joint is shiny, remove the heat. Do not keep blowing hot air to admire the result: more than about 30 seconds on one spot risks lifting pads, melting nearby plastic connectors, and cooking the component. Let the board cool completely undisturbed for 1-2 minutes, because a part moved while its solder is molten will end up misaligned. Work with ventilation or a small fume extractor, and remember the gun's nozzle and the board stay hot enough to burn for minutes after you stop.",
+        "heading": "Method 2: hot air and solder paste for chips and dense boards"
+      },
+      {
+        "body": "Most beginners should learn the iron first. It is cheaper, it teaches you what a good joint looks like, and it covers roughly 90% of hobbyist SMD work: passives, LEDs, SOIC chips, most QFPs, and all repairs. Hot air is the second tool, bought when you hit your first QFN or need to remove a chip without destroying the board. A hot plate or skillet is a niche third option for reflowing a whole small board at once, and it is not needed to start.\n\n| Method | Best for | Cost to start | Difficulty | Main risk |\n|---|---|---|---|---|\n| Soldering iron | 0805/0603 passives, SOIC, QFP | $40-$85 (station + tips) | Easy | Solder bridges on fine pitch |\n| Hot air + paste | QFN, BGA, dense boards, rework | $85-$150 (station + paste) | Medium | Overheating parts, lifted pads |\n| Hot plate / skillet | Whole small boards at once | $30-$60 | Medium | Uneven heating, no control |\n\nMatch the method to the package, not to your ambition. If every pad is visible and reachable, the iron is faster and safer. If the pads are hidden under the chip or there are more than 40 pins, reach for hot air. And if you are only ever going to solder a handful of 0805 resistors onto a practice board, a $40 iron station plus flux is genuinely all you need.",
+        "heading": "Which method should you use?"
+      },
+      {
+        "body": "Too much solder is the most common mistake, and it shows up as bridges between neighbouring pins. The fix is solder wick and flux: lay the wick over the bridge, press the iron onto it at about 350\u00b0C, and watch the wick drink the excess. Add flux first and the wick works twice as fast. Prevent it next time by feeding less wire and using 0.5 mm solder.\n\nA cold joint is dull, grainy or ball-shaped instead of shiny and concave, and it will fail intermittently or crack. It happens when the iron is too cool, the tip is dirty, or you lifted the iron too soon. Reheat the joint with fresh flux at 320\u00b0C for a full 2-3 seconds until the solder flows and goes bright. If the tip looks black instead of shiny, clean it on brass wool and re-tin it before continuing.\n\nTombstoning is when a two-terminal part stands on one end like a tiny gravestone. It happens when one pad melts before the other, usually because the paste or solder amounts were uneven or the board was heated from one side. Prevent it by tinning both pads evenly, preheating the board, and never nudging a part while one side is still molten. A tombstoned part is removed with hot air and re-soldered; do not try to push it flat with the iron.\n\nLifted pads are the expensive mistake. A pad rips off the board when a part is forced off while the solder is solid, or when a pad is heated past about 350\u00b0C for more than a few seconds. Never pull or pry a component; melt the solder fully first, then lift gently. Keep the iron under 350\u00b0C and under 3 seconds per pad, and use hot air for removal whenever the part has more than a few pins.\n\nSkipping flux is the quiet mistake that makes everything else harder. Without flux, solder balls up, refuses to wet the pad, and leaves dull joints even at the right temperature. Use flux on every joint, not just the difficult ones, and clean the residue with isopropyl alcohol when you finish. Finally, mind static: modern CMOS chips are damaged by discharges you cannot feel. Use ESD-safe tweezers, a grounded wrist strap or mat when handling bare ICs, and store loose chips in anti-static bags, not in your pocket.",
+        "heading": "The 6 mistakes that ruin SMD joints (and the fix for each)"
+      }
+    ],
+    "subtitle": "Start with 0805 parts, a 315-350\u00b0C iron, 0.5 mm solder and liquid flux: tin one pad, place the part with tweezers, then solder the other side.",
+    "title": "How to Solder SMD Components: A Beginner's Step-by-Step Guide"
   }
 ]
