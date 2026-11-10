@@ -2673,5 +2673,80 @@
     ],
     "subtitle": "Start with 0805 parts, a 315-350\u00b0C iron, 0.5 mm solder and liquid flux: tin one pad, place the part with tweezers, then solder the other side.",
     "title": "How to Solder SMD Components: A Beginner's Step-by-Step Guide"
+  },
+  {
+    "id": "E045",
+    "title": "Do Solar Panels Need a Surge Protector? Lightning Protection Explained",
+    "subtitle": "Yes \u2014 a Type 2 DC SPD on the PV strings plus a Type 2 AC SPD at the inverter is the standard setup, and it protects a $1,500\u2013$8,000 inverter from nearby lightning.",
+    "category": "Safety Tips",
+    "date": "Nov 10, 2026",
+    "readTime": "9 min",
+    "image": "https://images.pexels.com/photos/8457868/pexels-photo-8457868.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "introduction": "Yes \u2014 solar panels need surge protection. A lightning strike landing up to 1 kilometre away can induce thousands of volts into your PV wiring, and the inverter \u2014 a $1,500\u2013$8,000 component \u2014 is usually the first thing to fail. The standard setup is a Type 2 DC surge protective device (SPD) on the PV strings plus a Type 2 AC SPD at the inverter output, and the US National Electrical Code has required SPDs on PV systems since the 2020 edition (Article 690.35). The panels themselves rarely die from a surge: it is the inverter, the charge controller and the monitoring electronics that take the hit. This guide explains what actually damages a solar system, where each protector goes, what the code requires, and what the whole setup costs.",
+    "sections": [
+      {
+        "heading": "What actually damages a solar system (it is rarely a direct hit)",
+        "body": "A direct lightning strike on a roof array is rare, and it is not the damage most solar owners ever face. The real threat is the induced surge: a strike landing anywhere within roughly 1 kilometre creates a fast-changing electromagnetic field, and the long DC cable runs from the roof to the inverter \u2014 often 10 to 30 metres \u2014 act as antennas that pick it up. The induced voltage can reach several kilovolts and travels straight down the strings into the inverter.\n\nGrid switching transients are the second route in. A fault or switching event on the utility network sends a spike through the AC connection, and the inverter takes it on the grid side. Inside the inverter, the MPPT tracker and the power semiconductors (MOSFETs and IGBTs rated for hundreds of volts, not kilovolts) fail first; the communication and monitoring boards are usually next.\n\nThe panels themselves are comparatively rugged. A surge typically passes through the module junction box and bypass diodes without killing the panel, which is why \u201cmy panels survived but the inverter is dead\u201d is the classic story after a storm. Expect a replacement string inverter to cost $1,500\u2013$3,000, and a hybrid or battery inverter $5,000\u2013$8,000 \u2014 plus days without solar generation while it is swapped."
+      },
+      {
+        "heading": "DC surge protection: the first line of defence",
+        "body": "A DC SPD sits between the array and the inverter, either in the combiner box or in a dedicated enclosure near the inverter. Under normal voltage it does nothing at all; when a spike arrives it clamps within nanoseconds and shunts the surge energy safely to earth. Type 2 is the standard class for induced surges. Type 1 or Type 1+2 devices only come into play when the building has an external lightning protection system, such as air terminals and down conductors.\n\nSizing starts with voltage. The SPD's maximum continuous operating voltage (Ucpv) must exceed the string's open-circuit voltage (Voc): residential strings typically run 300\u2013600 VDC, larger residential arrays reach 1,000 VDC, and commercial systems go to 1,500 VDC. A 1,000 VDC SPD covers most homes. The ratings to look for are a nominal discharge current (In) of 20 kA, a maximum discharge current (Imax) of 40 kA on the 8/20 \u00b5s waveform, and a voltage protection level (Up) of roughly 2.5\u20134 kV.\n\nOne placement rule matters: if the DC cable run is longer than 10 metres, fit SPDs at both ends \u2014 one near the array and one near the inverter. And buy a unit with replaceable plug-in modules and a visible status window (green means healthy, red means replace it), because a spent SPD looks identical to a working one from the outside."
+      },
+      {
+        "heading": "AC surge protection: do not forget the grid side",
+        "body": "Surges do not only arrive through the panels. A strike on a nearby distribution line, or a switching event on the grid, sends a transient in through the inverter's AC connection \u2014 and that path is completely invisible to a DC SPD. A Type 2 AC SPD at the inverter's AC disconnect, or in the main panel, handles this side.\n\nSince the 2020 NEC, Article 230.67 has required a Type 1 or Type 2 SPD at the service equipment of every new dwelling, so many newer homes already have one \u2014 and it protects the inverter's AC side along with every other circuit in the house. If your home predates that rule, adding a whole-house SPD is the same job, and it is the single highest-value surge upgrade a homeowner can make.\n\nLayered protection is the whole point. The DC SPD guards the PV strings, the AC SPD guards the grid connection, and the inverter's own built-in SPD is the last line of defence, not the first. A single device on one side leaves the other side fully exposed, which is how most \u201cprotected\u201d systems still lose an inverter."
+      },
+      {
+        "heading": "DC SPD vs AC SPD vs whole-house SPD: what each one covers",
+        "body": "The three devices look similar on a DIN rail, but they protect different parts of the system and none of them substitutes for the others. Use the table below to see where each one goes and what it costs.\n\n| Device | Protects | Installed at | Typical rating | Typical device cost |\n|---|---|---|---|---|\n| Type 2 DC SPD | PV strings and inverter DC input | Combiner box or near inverter | 600\u20131,500 VDC, 40 kA Imax | $25\u2013$80 |\n| Type 2 AC SPD | Inverter AC output and home circuits | Main panel or AC disconnect | 120/240 V, 40\u201380 kA | $60\u2013$150 |\n| Whole-house SPD | Entire home, including solar AC side | Main service panel | 80\u2013140 kA | $100\u2013$300 |\n\nCosts above are for the device alone, before an electrician's labour. The DC SPD is the device most solar owners are missing: installers fit them on new systems, but arrays installed before the 2020 NEC change often have no DC protection at all. If you are unsure what your system has, open the combiner box (with the system isolated) and look for a DIN-rail device with a green or red status window \u2014 or ask your installer for the as-built diagram."
+      },
+      {
+        "heading": "What the code and standards actually require",
+        "body": "In the United States, NEC 2020 Article 690.35 requires surge protection on PV systems, on the DC side. NEC Article 230.67 separately requires a Type 1 or Type 2 SPD at the service equipment of dwelling units. The listing standard for SPDs is UL 1449; internationally, DC SPDs fall under IEC 61643-31. A device that carries the right listing for its side of the system is not a nice-to-have \u2014 it is what the code, and your insurer, expect to see.\n\nThe Type numbers describe the threat, not a quality ranking. Type 1 handles direct lightning current (the 10/350 \u00b5s waveform) and is used together with an external lightning protection system. Type 2 handles induced surges and switching transients (the 8/20 \u00b5s waveform) and is what a normal home without lightning rods needs. Type 1+2 combines both in one device for high-exposure sites.\n\nTwo paperwork points are worth checking before you need them. First, many inverter warranties exclude lightning damage as an \u201cact of God\u201d, so a failed inverter after a storm may not be a warranty claim at all. Second, check whether your homeowner's policy covers surge damage to solar equipment \u2014 and keep the receipts and photos of installed SPDs, because documented protection makes a claim much easier to settle."
+      },
+      {
+        "heading": "Choosing, installing and maintaining solar surge protection",
+        "body": "When choosing a DC SPD, match its Ucpv to your string Voc with margin to spare, pick a 40 kA Imax Type 2 unit for a typical home, confirm it is UL 1449 listed, and prefer replaceable modules with a visible status window. Remote-contact versions exist that report their status to the inverter or monitoring system, which is worth it on a system you cannot easily walk up to.\n\nInstallation is a job for a licensed electrician, and the reason is specific to solar: PV strings are live whenever there is daylight, typically 300\u20131,000 VDC, and there is no breaker that makes them safe the way an AC circuit can be switched off. DC arcs are also harder to extinguish than AC arcs, so opening a combiner box under load is genuinely dangerous. The SPD must bond to the grounding electrode system with short, straight leads \u2014 under 0.5 metres where possible. Long, coiled ground leads add inductance and can defeat the device entirely.\n\nMaintenance is simple but not optional. Check the status window at least once a year and after any nearby thunderstorm. SPDs are sacrificial: one large surge can exhaust them silently, and the window is the only tell. Budget for replacement every 5\u201310 years, or immediately after a strike or a red window, and watch the inverter's monitoring app for fault codes that can indicate SPD or inverter damage."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do solar panels attract lightning?",
+        "a": "No. Solar panels do not make a lightning strike more likely \u2014 they are flat, low-profile, and no more attractive to lightning than the roof itself. The real risk is exposure: panels sit outdoors and are wired to expensive electronics through long cable runs, so a nearby strike can induce a damaging surge even though the panels did not attract it."
+      },
+      {
+        "q": "Is the surge protection built into my inverter enough?",
+        "a": "Often not on its own. Many modern string inverters include a Type 2 SPD, usually on the AC side, but it is a last line of defence. An external DC SPD at the array absorbs the brunt of a PV-side surge before it reaches the inverter, and a whole-house SPD covers the grid side. Check your inverter's manual: if it lists an SPD, note which side it protects and add the missing layer."
+      },
+      {
+        "q": "How much does surge protection for a solar system cost?",
+        "a": "A Type 2 DC SPD costs roughly $25\u2013$80, a whole-house AC SPD $100\u2013$300, and a licensed electrician typically charges $150\u2013$400 to install both. All in, expect $200\u2013$600 for a typical home \u2014 against a $1,500\u2013$8,000 inverter replacement, plus days without solar generation while it is swapped."
+      },
+      {
+        "q": "Does a whole-house surge protector protect my solar panels?",
+        "a": "Only partly. A whole-house SPD protects the AC side \u2014 the inverter's grid connection and everything in the house \u2014 but it cannot see the DC strings between the panels and the inverter. Those need their own DC SPD. Both layers are needed for full coverage."
+      },
+      {
+        "q": "How do I know if my solar surge protector has failed?",
+        "a": "Check the status window on the device: green means healthy, red (or a popped flag) means the module is spent and must be replaced. Some SPDs have remote alarm contacts that report to the inverter or monitoring system. Inspect after any nearby thunderstorm, and treat a red window or a sudden inverter fault code as a replace-now signal."
+      }
+    ],
+    "parts": [
+      {
+        "name": "NanQue DC SPD Surge Protector for 100V-1000V PV Systems, 2-Pole 40kA Type 2",
+        "asin": "B0DZ267ZV4",
+        "why": "The DC-side protector this guide recommends: Type 2, 100\u20131,000 V range with 40 kA maximum discharge current and replaceable modules, sized for the residential PV strings covered here."
+      },
+      {
+        "name": "Siemens FS140 Whole House Surge Protection Device, 140 kA",
+        "asin": "B013WINMK6",
+        "why": "The AC-side layer: a 140 kA whole-house SPD at the main panel that protects the inverter's grid connection and every other circuit in the home \u2014 the site's verified pick from E028 and E030."
+      },
+      {
+        "name": "AstroAI Digital Clamp Meter TRMS 6000 Counts (CM600)",
+        "asin": "B0BRPP58LS",
+        "why": "Check string voltage and verify grounding before touching anything in the combiner box \u2014 a clamp meter is the safe way to confirm what is live and what is not."
+      }
+    ]
   }
 ]
