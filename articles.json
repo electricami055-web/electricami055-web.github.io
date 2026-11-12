@@ -2819,5 +2819,80 @@
         "why": "The solder this guide's numbers are built on: 63/37 eutectic melts at 183\u00b0C and its 3.3% rosin core handles fresh joints without extra flux."
       }
     ]
+  },
+  {
+    "id": "E047",
+    "title": "Do You Need a Surge Protector for Your Refrigerator?",
+    "subtitle": "No - a standard surge protector can cut power to your fridge and spoil your food. Here is why, and the whole-house protection that actually works.",
+    "category": "Safety Tips",
+    "date": "Nov 12, 2026",
+    "readTime": "8 min",
+    "image": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=1600&q=80",
+    "introduction": "No. Do not plug your refrigerator into a standard plug-in surge protector or power strip - plug it directly into a dedicated, grounded wall outlet. A refrigerator's compressor draws a brief startup surge of 10 to 15 amps every time it kicks on, and most plug-in surge protectors are not built for that repeated inrush: they can cut power to the fridge without warning, and a fridge that loses power for hours spoils hundreds of dollars of food. The protection that actually works for a refrigerator is installed at your electrical panel, not at the wall outlet - a whole-house surge protector guards the fridge and every other appliance in the home, and most refrigerator manufacturers say the same thing in their manuals: direct wall connection only.",
+    "sections": [
+      {
+        "heading": "Why a refrigerator is nothing like your TV or computer",
+        "body": "A TV or a computer draws a small, steady current and sits happily behind a surge protector for years. A refrigerator is a completely different kind of load. Its compressor cycles on and off many times a day, and every start pulls a short inrush current of 10 to 15 amps - five to ten times the 1 to 2 amps the fridge draws while running. That inrush lasts only a fraction of a second, but it happens over and over, 24 hours a day, for the 10 to 20 year life of the appliance.\n\nA refrigerator also has a job no other appliance has: keeping food cold without interruption. The US Department of Agriculture's food-safety rule is simple - a refrigerator must stay at or below 40\u00b0F (4\u00b0C), and perishable food held above 40\u00b0F for more than 2 hours should be thrown out. A computer that loses power reboots; a refrigerator that loses power quietly warms up, and by the time you notice, the whole fridge can be a loss. That is why the National Electrical Code puts the refrigerator on its own dedicated 15-amp or 20-amp circuit, and why manufacturers including Samsung, LG, GE and Whirlpool all instruct owners to plug the fridge directly into a grounded three-prong wall outlet - no extension cord, no adapter, and no power strip.\n\nPlug-in surge protectors were designed for electronics that switch on and off and draw modest, predictable power. They were never designed to sit between the wall and a motor that hammers them with a startup surge every hour. The mismatch is the whole story: the device you bought to protect the fridge is the device most likely to switch it off."
+      },
+      {
+        "heading": "What actually goes wrong with a fridge on a surge protector",
+        "body": "The most common failure is also the quietest one. Many plug-in surge protectors and power strips have overload protection that interprets the compressor's inrush current as a fault and trips - cutting power to the fridge. Some do it once and stay off until you notice and reset them; others cycle. Either way, the fridge can sit warm for hours before anyone opens the door and realizes the milk is at room temperature. The Association of Home Appliance Manufacturers (AHAM) warns against using plug-in surge protectors with major appliances for exactly this reason, noting that they can overheat and create additional safety risks.\n\nThe second problem is that the protector itself wears out. The metal-oxide varistors (MOVs) inside a plug-in strip absorb a little damage with every surge they clamp, and they degrade a little more with every compressor start. A strip that has been quietly absorbing surges for two years may offer no protection at all - and most cheap strips give you no warning when their protection is gone. Some keep passing power with a dead MOV inside, so you believe the fridge is protected when it is not.\n\nThen there is the warranty. If a control board fails and the manufacturer finds the fridge was connected through a surge protector or power strip against the manual's instructions, the repair can be denied as improper installation. And the strip does not even do the job you bought it for: a plug-in device rated at 1,000 to 2,000 joules can absorb small everyday spikes, but a serious surge - a nearby lightning strike or a utility switching event - carries far more energy than any strip can handle. The fridge's own control board, which is the part most vulnerable to surges, is still exposed."
+      },
+      {
+        "heading": "Your four options, compared",
+        "body": "There is no perfect plug-in answer for a refrigerator, because the appliance's needs - uninterrupted power, high startup current, and protection against rare large surges - pull in opposite directions. The table below compares the four realistic options on the things that actually matter: whether the fridge keeps running, whether the manufacturer approves, and what a serious surge does.\n\n| Option | Protects against big surges | Risk of cutting power to the fridge | Manufacturer-approved | Typical cost |\n|---|---|---|---|---|\n| Plug straight into the wall | No | None | Yes - the recommended setup | $0 |\n| Standard plug-in surge protector | Small surges only | High - inrush trips and MOV wear | No | $15-$40 |\n| Single-outlet fridge voltage protector | Over/under-voltage only | Medium - cuts power by design | Rarely | $25-$60 |\n| Whole-house SPD at the panel | Yes - whole home | None | Yes | $150-$400 installed |\n\nThe pattern is clear: every option that sits between the fridge and the wall either fails to protect it or risks switching it off. The only option that protects the fridge without ever touching its power supply is the one installed upstream, at the panel."
+      },
+      {
+        "heading": "The protection that actually works: a whole-house surge protector",
+        "body": "A whole-house surge protective device (SPD) is a Type 2 unit wired into your main electrical panel, usually on its own dedicated two-pole breaker. It clamps surges at the point where power enters the home, before they can travel down any branch circuit - so it protects the refrigerator, the air conditioner, the washing machine, the EV charger and every TV in the house at the same time, with no device plugged in behind the fridge at all. The two numbers that matter are the surge-current rating and the UL 1449 listing: look for 80,000 to 140,000 amps (80-140 kA) per phase and a voltage protection rating of 330 or 400 volts. The Siemens FS140 is rated at 140 kA with a 10-year product and connected-equipment warranty, and the Eaton CHSPT2ULTRA is rated at 108 kA - both are Type 2, UL 1449 listed, and install on any brand of panel.\n\nA whole-house SPD costs roughly $100 to $250 for the device plus $100 to $200 for a licensed electrician to install it, and it lasts 10 to 20 years depending on how many surges it absorbs. That is the whole cost of protecting every appliance in the house, including the ones a plug-in strip can never reach. The one hard rule is that panel work is not a DIY job: installing an SPD means working inside a live electrical panel, so turn off the main breaker and hire a licensed electrician if you are not qualified - and if you are ever unsure, call one.\n\nOne honest limit: no surge protector, whole-house or otherwise, stops a direct lightning strike. A direct hit carries millions of volts and will damage whatever it touches. What a whole-house SPD does stop is the far more common threat - the indirect surges from nearby strikes, utility switching and grid faults that quietly kill control boards over time."
+      },
+      {
+        "heading": "What about single-outlet protectors sold for refrigerators?",
+        "body": "You will find products marketed specifically as refrigerator surge protectors, and they are different from the power strips above - most are voltage monitors, not MOV strips. They watch the line voltage and disconnect the fridge when it drifts outside a safe band, typically below about 100 volts or above about 135 volts, then reconnect after a delay of 3 to 5 minutes so the compressor does not short-cycle. In a home with chronic brownouts or an unstable grid, that sounds like exactly the right device.\n\nThe problem is that it still cuts power to the fridge by design, and a voltage dip becomes a food-safety event instead of a shrug. A brownout that the fridge would have ridden out becomes a 5-minute outage, and repeated dips become repeated outages. Most refrigerator manuals still say to plug directly into the wall even when these devices exist, and the manufacturers' position is consistent: the compressor and its start relay are built to tolerate normal voltage variation, and the real risk is the power being interrupted, not a brief dip.\n\nIf your power is genuinely unstable - lights dimming every evening, frequent brownouts - the right conversation is with a licensed electrician, not a shelf product. A whole-house SPD for surge protection, plus a check of your service drop and panel connections, addresses the root cause instead of putting a cutoff switch between your food and the wall."
+      },
+      {
+        "heading": "What to do instead: a 5-step checklist",
+        "body": "First, plug the refrigerator directly into its own dedicated, grounded three-prong outlet on a 15-amp or 20-amp circuit - no power strip, no surge protector, no extension cord, and nothing else sharing that outlet. If the only outlet behind the fridge is a two-prong ungrounded one, have an electrician replace it; a refrigerator on an ungrounded outlet is a shock hazard, not just a code violation.\n\nSecond, verify that outlet is actually wired correctly. A $11 receptacle tester like the Klein RT210 plugs in and reads out open ground, reversed polarity, open neutral and other common wiring faults in seconds, and it also tests GFCI outlets. Older kitchens are full of outlets that look fine and are wired wrong, and a fridge is the worst appliance to discover that on.\n\nThird, get a whole-house SPD installed at the panel by a licensed electrician - it is the only surge protection that covers the fridge without ever interrupting it. Fourth, set your storm plan in advance: the AHAM guidance is to leave the refrigerator and freezer plugged in and running during a thunderstorm, and unplug other electronics instead; only unplug the fridge if you are evacuating or flooding is expected. Fifth, read your refrigerator's manual and follow its power instructions over any product marketing - if the manual says direct wall connection only, that instruction wins.\n\nOne last check: if your fridge outlet is GFCI-protected, which current electrical codes require in many kitchens, test that GFCI monthly. A GFCI that trips unnoticed is the same silent food-spoilage risk as a tripped surge protector, and it is the one protection device you cannot remove - so make sure it is a quality unit, test it, and talk to your electrician if it nuisance-trips on the compressor's startup current."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I plug my refrigerator into a surge protector?",
+        "a": "No. Refrigerator manufacturers and the Association of Home Appliance Manufacturers advise against it. The compressor's startup inrush of 10 to 15 amps can trip a plug-in surge protector, cutting power to the fridge without warning and spoiling food. Plug the refrigerator directly into a dedicated, grounded wall outlet instead."
+      },
+      {
+        "q": "Will a surge protector damage my refrigerator?",
+        "a": "It can, indirectly. A surge protector that trips on compressor startup leaves the fridge warm for hours, which spoils food, and cheap strips can overheat under a fridge's continuous cycling load. If a control-board failure is traced to a surge protector used against the manual's instructions, the manufacturer may also deny the warranty repair."
+      },
+      {
+        "q": "Do refrigerators have built-in surge protection?",
+        "a": "Many modern refrigerators have some protection built into their control boards, and the compressor itself is a rugged motor that tolerates voltage variation well. But the electronic control board - the part that runs the compressor, fans and ice maker - is still vulnerable to large surges, which is why whole-house protection at the panel is the recommended layer."
+      },
+      {
+        "q": "What is the best surge protection for a refrigerator?",
+        "a": "A whole-house surge protective device (SPD) installed at your main electrical panel, such as the Siemens FS140 (140 kA) or Eaton CHSPT2ULTRA (108 kA). It clamps surges before they reach any circuit, protects every appliance in the home, and never interrupts power to the fridge. It must be installed by a licensed electrician."
+      },
+      {
+        "q": "Should I unplug my refrigerator during a thunderstorm?",
+        "a": "No - leave the refrigerator and freezer plugged in and running during a storm, and unplug other electronics instead. That is the guidance from the Association of Home Appliance Manufacturers, because keeping food below 40\u00b0F matters more than the small surge risk. Only unplug the fridge if you are evacuating or flooding is expected."
+      }
+    ],
+    "parts": [
+      {
+        "name": "Siemens FS140 Whole House Surge Protection Device (140kA, Type 2)",
+        "asin": "B013WINMK6",
+        "why": "The protection this guide recommends: 140,000 amps per phase at the panel, UL 1449 listed, with a 10-year product and connected-equipment warranty - it guards the fridge without ever sitting between it and the wall."
+      },
+      {
+        "name": "Eaton CHSPT2ULTRA Ultimate Surge Protection Device (108kA, Type 2)",
+        "asin": "B01AQAKRSS",
+        "why": "The proven alternative whole-house SPD: 108 kA, Type 2, UL 1449 listed, and compatible with any brand of load center if your panel layout suits the Eaton form factor better."
+      },
+      {
+        "name": "Klein Tools RT210 GFCI Receptacle Tester",
+        "asin": "B01AKX8L0M",
+        "why": "Verify the outlet behind the fridge is actually wired correctly before trusting it: it flags open ground, reversed polarity and open neutral in seconds, and tests GFCI outlets too."
+      }
+    ]
   }
 ]
