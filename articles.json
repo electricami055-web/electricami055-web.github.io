@@ -2969,5 +2969,80 @@
     "why": "First layer of defense at the electrical panel - 140,000-amp rating knocks large external surges down before they reach any outlet in the house. Install by a licensed electrician."
    }
   ]
+ },
+ {
+  "id": "E049",
+  "title": "Do You Need a Surge Protector for Your Computer?",
+  "subtitle": "Yes - a desktop PC is one of the most surge-sensitive devices you own. Here is the joule rating, setup, and UPS option that actually protects it.",
+  "category": "Safety Tips",
+  "date": "Nov 15, 2026",
+  "readTime": "8 min",
+  "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1600&q=80",
+  "introduction": "Yes, your computer needs a surge protector - and a cheap power strip does not count. A desktop PC runs on delicate low-voltage electronics, draws 300 to 800 watts, and can be killed by a voltage spike that lasts less than a millisecond. A quality surge protector rated at 2,000 joules or more costs $25 to $50, and a small UPS with battery backup costs around $75 - cheap insurance for a $800 to $2,000 machine and the data on it. If your PC holds work, photos, or anything you cannot re-download, plug it into real surge protection today, not after the first dead power supply.",
+  "sections": [
+   {
+    "heading": "Why a computer is so vulnerable to surges",
+    "body": "A desktop PC looks solid, but electrically it is fragile. The power supply steps 120 volts from the wall down to the 3.3, 5, and 12 volts that run the motherboard, processor, graphics card, and drives. Those components are built to tolerate a few volts of variation, not a spike of several hundred or several thousand volts. A surge only needs to overwhelm the power supply once, and the excess energy can travel straight onto the motherboard.\n\nSurges come from more places than lightning. Utility grid switching, a transformer fault down the street, and large motors in your own home - an air conditioner compressor or refrigerator kicking on - can all push brief spikes onto your wiring. Most are small and invisible, but they add up: every spike stresses the metal-oxide varistors and capacitors inside your PC's power supply a little more. The big one, a nearby lightning strike or a utility fault, can deliver thousands of volts in under a microsecond. No consumer PC is built to absorb that on its own.\n\nSSDs make the stakes higher than they used to be. A spinning hard drive might survive a brownout with a corrupted file or two; an SSD's controller can be damaged in a way that makes the entire drive unreadable, with no warning and no recovery from the drive itself. That is why surge protection for a PC is really two problems at once: protecting the hardware, and protecting the data that lives on it."
+   },
+   {
+    "heading": "What actually happens when a surge hits your PC",
+    "body": "The most common outcome is a dead power supply. The PSU is designed to sacrifice itself first, and often it does - the PC simply will not turn on, and a $60 to $120 replacement PSU fixes it. That is the good outcome, and it is the one most people picture. But a strong surge does not always stop at the PSU. It can arc across the motherboard, burn traces around the memory slots, or damage the graphics card and the SSD controller in the same instant.\n\nThe sneakier outcome is latent damage. The PC still boots, passes its self-test, and seems fine - but a weakened capacitor or a partially damaged voltage regulator fails weeks later, seemingly at random. Technicians see this pattern constantly after storms: a machine that worked the morning after a lightning strike dies a month later, and nobody connects the two events. If your PC starts crashing, rebooting, or throwing disk errors after a storm or a flicker, treat the surge as a suspect, not a coincidence.\n\nThen there is the data. An abrupt power cut or spike during a write can corrupt the file being written, damage the file system, or brick an SSD outright. Cloud backup and an external drive are the only real answers to that risk - a surge protector guards the hardware, but only a backup guards the data. If your PC holds anything irreplaceable, set up automatic backups the same day you buy the protector."
+   },
+   {
+    "heading": "Surge protector vs UPS vs whole-house: which one you need",
+    "body": "Three products get confused here, and they do different jobs. A surge protector strip absorbs spikes and clamps the voltage that reaches your devices - nothing more. A UPS (uninterruptible power supply) does everything a surge strip does, plus it has a battery that keeps your PC running for a few minutes during an outage so you can save work and shut down cleanly. A whole-house surge protector, installed at your electrical panel by an electrician, knocks large external surges down before they reach any outlet in the house. The right setup for most homes is a whole-house device at the panel plus point-of-use protection at the PC - layered defense, because no single device clamps a surge to zero.\n\n| Option | Protects against | Best for | Typical cost |\n|---|---|---|---|\n| Surge protector strip | Surges and spikes only | Any desktop PC, monitor, and peripherals | $25-$50 |\n| UPS (battery backup) | Surges, outages, and brownouts | PCs with unsaved work, routers, NAS drives | $75-$200 |\n| Whole-house SPD | Large external surges at the panel | Every outlet in the home | $150-$300 plus install |\n\nFor a basic desktop with a monitor, a surge strip rated at 2,000 joules or more is the minimum. For any PC where losing unsaved work costs you time or money - and for a home office router and modem - a UPS is the better buy, because outages and brownouts corrupt data just as surely as surges damage hardware. A gaming PC with a 750-watt power supply needs a bigger UPS, in the 1,500 VA / 900-watt class, because a 600 VA unit will overload and shut down the moment the graphics card spins up. Size the UPS to your real load: add up the wattage of everything plugged into its battery outlets and keep the total under 80 percent of the UPS rating."
+   },
+   {
+    "heading": "The four specs that matter when you buy",
+    "body": "First, the joule rating: this is how much surge energy the device can absorb over its life. For a computer, 2,000 joules is the floor and 3,000 or more is the sensible target - a gaming rig with an expensive graphics card deserves 3,000-plus. Anything under 1,000 joules is a glorified power strip and belongs on a lamp, not a PC. Second, the clamping voltage, listed as VPR (voltage protection rating) under the UL 1449 standard: this is the voltage the protector lets through before it starts clamping. Lower is better - 330 volts is the best rating available for 120-volt circuits, 400 volts is good, and 500 volts is the maximum UL allows. A protector with a 330-volt VPR and a 3,000-joule rating is the sweet spot for a PC.\n\nThird, the UL 1449 listing itself. If the box does not say UL 1449, do not buy it - that listing is what proves the device was actually tested to clamp surges safely instead of catching fire while doing it. Look for the UL mark molded into the housing, not just printed on the packaging. Fourth, the connected-equipment warranty: reputable brands back their protectors with $50,000 to $300,000 of coverage for equipment damaged while properly connected. That warranty is a useful quality signal - manufacturers do not offer six-figure coverage on devices they expect to fail.\n\nTwo more details separate a good strip from a bad one. A response time under 1 nanosecond is standard for modern MOV-based protectors and is worth confirming on the spec sheet. And an indicator light matters more than it looks: surge protectors wear out as their MOVs absorb spikes, and when the protection is exhausted the strip keeps passing power with zero protection. If the 'protected' light goes out, replace the strip immediately - it is now just an expensive extension cord."
+   },
+   {
+    "heading": "How to set it up: the right way to plug in a PC",
+    "body": "Plug the PC tower and monitor into the battery-backed outlets of the UPS, or into the surge strip if that is what you have. Put the printer, speakers, and phone charger on surge-only outlets - a printer's startup surge can trip a small UPS, and it does not need battery backup anyway. Keep the total load on the battery outlets under 80 percent of the UPS rating, and leave the UPS plugged directly into the wall outlet: never plug a UPS into a surge strip, and never plug a surge strip into a UPS output, because the UPS can misread the strip's filtering as a fault and either refuse to run on battery or shut down. Never daisy-chain two strips together to get more outlets - that is a fire risk and a code violation in most workplaces.\n\nRoute your network cable through the protector too, if it has Ethernet protection. Surges travel along any copper wire into the house, and a spike that enters through the modem's Ethernet port can fry a motherboard's network chip just as easily as one through the power cord. The same applies to a coaxial cable feeding a cable modem. If your strip has coax and Ethernet passthrough, use it - it costs nothing and closes a real entry point.\n\nFinally, plan on replacement. A surge protector is a consumable: its MOVs degrade a little with every spike they absorb, and after a major event - a nearby lightning strike, or any surge that trips the breaker - replace it even if the light is still on. As a rule of thumb, replace a point-of-use protector every 3 to 5 years in a normal home, sooner if your area has frequent storms or flickering power. A UPS battery lasts 3 to 5 years as well; most models have a user-replaceable battery cartridge, so you replace a $30 to $50 battery instead of the whole unit."
+   },
+   {
+    "heading": "What about laptops - and the cost math that settles it",
+    "body": "A laptop is less exposed than a desktop, but not immune. Its battery acts as a buffer against outages and brownouts, and its compact power brick has some surge tolerance built in. But a strong spike can still kill the charger, the charging circuit, or the motherboard, and a laptop plugged in and charging is connected to the wall just like a desktop. If your laptop lives on a desk plugged in all day, a $25 surge strip is still worth it - the brick is the sacrificial part, and replacing a $40 charger beats replacing a $1,000 laptop.\n\nThe cost math is what ends the debate. A mid-range desktop PC costs $800 to $1,500, a gaming rig $1,500 to $2,500, and professional data recovery from a dead SSD runs $300 to $1,500 with no guarantee. Against that, a surge strip is $25 to $50, a UPS for an office PC is about $75, and a UPS for a gaming rig is roughly $170 to $200. One saved power supply pays for the protector several times over; one saved SSD pays for a decade of them. There is no cheaper insurance in a home office than the box between your PC and the wall.\n\nIf you do one thing after reading this, check what your PC is plugged into right now. If the answer is a $10 strip with no joule rating, no UL 1449 mark, and no indicator light, replace it this week. And if your PC is plugged straight into the wall - which is still how a surprising number of expensive machines are connected - that is the first thing to fix, before any upgrade, any new peripheral, or any cable management project."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Does a laptop need a surge protector?",
+    "a": "It is less urgent than for a desktop, because the battery buffers outages and brownouts, but a laptop plugged in all day is still connected to the wall and can be damaged by a strong spike through its charger. A surge strip rated at 2,000 joules or more costs about $25 and protects the charger, the charging circuit, and the motherboard - worth it for any laptop that lives on a desk."
+   },
+   {
+    "q": "Can a power surge damage a computer that is turned off?",
+    "a": "Yes, if it is still plugged in. A PC that is off but plugged in still has its power supply's standby circuit energized, so a surge can reach the PSU and the motherboard. Unplugging is the only way to fully isolate a computer, which is why unplugging during a severe lightning storm is still good advice even with a surge protector in place."
+   },
+   {
+    "q": "Is a power strip the same as a surge protector?",
+    "a": "No. A basic power strip only adds outlets - it passes surges straight through to your devices. A surge protector contains MOVs that absorb spikes and clamp the voltage, and it carries a joule rating, a UL 1449 listing, and usually an indicator light. If the box has no joule rating, it is not a surge protector, no matter what the packaging implies."
+   },
+   {
+    "q": "How many joules should a surge protector have for a gaming PC?",
+    "a": "At least 2,000 joules, and 3,000 or more is the sensible target for a gaming rig with an expensive graphics card and power supply. A gaming PC also benefits from a UPS in the 1,500 VA / 900-watt class, because a small 600 VA UPS will overload when a 750-watt PSU and a high-end GPU draw full power during a game."
+   },
+   {
+    "q": "How long does a surge protector last, and when should I replace it?",
+    "a": "A surge protector is a consumable - its MOVs wear out a little with every spike they absorb. Replace it every 3 to 5 years in normal use, immediately after a major surge or lightning strike nearby, and any time the 'protected' indicator light goes out. A UPS battery lasts 3 to 5 years too, but most models take a user-replaceable battery cartridge for $30 to $50 instead of a whole new unit."
+   }
+  ],
+  "parts": [
+   {
+    "name": "APC Back-UPS BE600M1 UPS Battery Backup & Surge Protector (600VA / 330W, 7 outlets)",
+    "asin": "B01FWAZEIU",
+    "why": "600VA/330W with 5 battery-backed outlets plus 2 surge-only outlets, 490 joules of surge protection, and a $75,000 connected-equipment policy - the right size for an office PC, monitor, and router, with about 23 minutes of runtime at a 100-watt load."
+   },
+   {
+    "name": "APC P11VNT3 SurgeArrest 11-Outlet Surge Protector (3,020 Joules, coax + Ethernet protection)",
+    "asin": "B0012YFXSW",
+    "why": "3,020 joules with coax, Ethernet, and phone-line protection - covers the PC, monitor, and modem in one strip, with a lifetime warranty and $150,000 connected-equipment policy."
+   },
+   {
+    "name": "CyberPower CP1500AVRLCD3 Intelligent LCD UPS (1500VA / 900W, 12 outlets, AVR)",
+    "asin": "B0BCMLLSHL",
+    "why": "1500VA/900W with automatic voltage regulation, 1,500 joules of surge protection, and 12 outlets - sized for a gaming PC with a 750-watt PSU and high-end GPU, with a $500,000 connected-equipment guarantee."
+   }
+  ]
  }
 ]
