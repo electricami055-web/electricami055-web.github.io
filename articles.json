@@ -3119,5 +3119,80 @@
   ],
   "subtitle": "Yes - a modern washer's control board costs $300 to $800 to replace, and one surge can kill it. Here is the joule rating and setup that actually protects it.",
   "title": "Do You Need a Surge Protector for Your Washing Machine?"
+ },
+ {
+  "category": "Safety Tips",
+  "date": "Nov 17, 2026",
+  "faqs": [
+   {
+    "a": "Yes, if your dishwasher has an electronic control board - which almost every model built in the last 15 years does. That board runs the wash cycles, the heating element, and the water-level sensors, and it costs $300 to $800 to replace when a voltage spike kills it. A whole-house surge protector at the panel costs $100 to $300 installed and shields the dishwasher along with every other appliance in your home.",
+    "q": "Do dishwashers really need surge protectors?"
+   },
+   {
+    "a": "Only if your dishwasher plugs into a standard outlet. Most built-in dishwashers are hardwired directly into a junction box, so there is no plug for a strip to protect - and a plug-in strip cannot be wired into a hardwired connection. If yours is a portable or countertop model with a regular plug, a UL 1449-listed protector rated for 15 amps and at least 1,000 joules works fine. For hardwired models, the only real option is a Type 2 whole-house SPD at the breaker panel.",
+    "q": "Can I plug my dishwasher into a regular surge protector strip?"
+   },
+   {
+    "a": "Yes. A Type 2 whole-house surge protector installed at the breaker panel protects every circuit in the home, including the hardwired dishwasher circuit. It is rated in kiloamps - 36 to 140 kA - rather than joules, and it catches the large surges from lightning and utility switching before they reach the appliance. For maximum protection, pair it with a plug-in protector at the outlet if your dishwasher model plugs in.",
+    "q": "Will a whole-house surge protector protect my dishwasher?"
+   },
+   {
+    "a": "A surge protector itself does not void a warranty, but using the wrong kind can create problems. Some manufacturers recommend a direct connection and warn that a cheap, underrated strip can interfere with the motor or overheat under the dishwasher's 10- to 12-amp load. Use a UL 1449-listed appliance protector rated for 15 amps, or a whole-house SPD at the panel, and check your manual's guidance first - neither of those options is what the warranty warnings are about.",
+    "q": "Can a surge protector void my dishwasher warranty?"
+   },
+   {
+    "a": "At least 1,000 joules, and 2,000 to 3,000 joules is better for a longer service life. The joule rating is the total energy the protector can absorb before it wears out, so a higher rating means it survives more surges. Also check the clamping voltage - 330 to 400 volts is ideal - and confirm UL 1449 certification. For a hardwired dishwasher, ignore joules entirely and look at the whole-house SPD's kiloamp rating instead: 80 to 140 kA is a solid range.",
+    "q": "How many joules should a dishwasher surge protector have?"
+   }
+  ],
+  "id": "E051",
+  "image": "https://images.unsplash.com/photo-1736390755053-f57997f7931b?w=1600&q=80",
+  "introduction": "Yes, your dishwasher needs surge protection - but probably not the way you think. A modern dishwasher is no longer a simple motor and timer: its electronic control board manages wash cycles, water temperature, the heating element, and leak sensors, and that board costs $300 to $800 to replace when a voltage spike kills it. The catch is that most built-in dishwashers are hardwired, so a plug-in power strip cannot protect them at all - the only real protection is a whole-house surge protector at the breaker panel, which costs $100 to $300 installed and shields every appliance in your home at once.",
+  "parts": [
+   {
+    "asin": "B013WINMK6",
+    "name": "Siemens FS140 Whole House Surge Protector, Type 2, 140 kA",
+    "why": "The best single layer of protection for a hardwired dishwasher: a Type 2 SPD that mounts at the panel, fits any brand of load center, and shields the dishwasher plus every other appliance in the home with 140,000 amps of surge capacity."
+   },
+   {
+    "asin": "B0012YFXSW",
+    "name": "APC P11VNT3 11-Outlet Surge Protector, 3,020 Joules",
+    "why": "For portable or countertop dishwashers that plug into a standard outlet: 3,020 joules, a 15-amp rating, and a lifetime warranty with $100,000 connected-equipment coverage."
+   },
+   {
+    "asin": "B01AKX8L0M",
+    "name": "Klein Tools RT210 GFCI Receptacle Tester",
+    "why": "Check the outlet under your sink before you trust it: this $11 tester confirms the dishwasher receptacle is wired correctly and that its GFCI protection actually trips."
+   }
+  ],
+  "readTime": "8 min",
+  "sections": [
+   {
+    "body": "A dishwasher looks like a simple machine, but open one up and you will find a small computer. The main control board - a printed circuit board with a microprocessor, relays, and sensor inputs - decides when to fill, when to heat, when to spray, and when to drain. It runs the heating element that brings wash water to 120 to 155 degrees Fahrenheit, it reads the turbidity sensor that judges how dirty the water is, and on many models it manages Wi-Fi, a leak sensor in the base pan, and a delay-start timer. Every one of those functions depends on low-voltage electronics that were never designed to survive a 6,000-volt spike. A modern dishwasher costs $700 to $1,500, and the control board alone runs $300 to $800 with labor - often enough that owners of older machines simply replace the whole appliance. Surges reach the dishwasher from three directions: lightning-induced spikes that travel in through the utility lines, utility switching and power restoration after an outage, and internal surges generated inside your own home when large motors switch off. Your air conditioner's compressor, the well pump, and the dishwasher's own circulation pump can all throw spikes of 1,000 volts or more back onto the branch circuit when they cycle. The dishwasher is a quiet victim because the damage is invisible: a board can be weakened by one surge and fail weeks later, so the dead dishwasher gets blamed on age instead of the spike that actually killed it.",
+    "heading": "Why Your Dishwasher Is More Vulnerable Than You Think"
+   },
+   {
+    "body": "Here is the detail that decides everything, and it is the one most surge-protector articles skip: most built-in dishwashers in the United States are hardwired. Instead of a plug, the installer runs a short length of NM cable from a junction box under the sink - or from a dedicated 15- or 20-amp circuit - straight into the dishwasher's own terminal box. There is no outlet, no plug, and therefore nothing for a plug-in surge strip to connect to. Portable and countertop dishwashers are the exception: they plug into a standard kitchen outlet, usually with a faucet adapter for water, and those can use a plug-in protector like any other small appliance. To find out which kind you have, open the cabinet under your kitchen sink and look for the dishwasher's connection. If you see a cord plugged into a receptacle, you have a plug-in model. If you see a metal junction box with a cable entering it, or a flexible conduit running to the back of the dishwasher, yours is hardwired. This matters because it completely changes the answer: a plug-in strip protects a plug-in dishwasher and is useless for a hardwired one, while a whole-house surge protector at the panel protects both. If you are buying a new dishwasher, the plug-in versus hardwired question is also worth asking the installer - a plug-in model with a proper receptacle is easier to service and easier to protect, though many local codes still require or prefer a hardwired connection.",
+    "heading": "Hardwired vs Plug-In: The Detail That Decides Everything"
+   },
+   {
+    "body": "For a hardwired dishwasher, there is exactly one practical layer of protection: a Type 2 whole-house surge protective device (SPD) installed at the main breaker panel. It sits between the utility supply and your home's circuits and diverts a spike to ground before it can spread through the branch wiring. These devices are rated in kiloamps, not joules - 36 to 140 kA is the common range - and a good one costs $100 to $300 installed, including the electrician's labor if you hire it out. It protects the dishwasher, the refrigerator, the HVAC control board, and every other appliance at the same time, which is why it is the best value in the entire surge-protection world. For a plug-in dishwasher, a Type 3 point-of-use protector is the second layer: a UL 1449-listed strip rated for 15 amps and at least 1,000 joules, with the dishwasher as the only large load on it. Look for a clamping voltage of 330 to 400 volts and an indicator light that shows protection is still active - when the light goes out, the MOVs inside are spent and the strip is just an expensive power strip. The layered approach is the gold standard: whole-house SPD at the panel plus a plug-in protector at the outlet catches both the large external surges and the small leftover spikes that slip past the panel device. One thing never to use is a cheap, unlisted power strip. A dishwasher draws 10 to 12 amps during the heated-dry cycle, and a strip rated for light electronics can overheat, trip repeatedly, or melt under that load. If a protector feels warm to the touch during a wash cycle, unplug the dishwasher and replace the strip with a heavy-duty appliance-rated model.",
+    "heading": "What Kind of Surge Protection Actually Works for a Dishwasher"
+   },
+   {
+    "body": "| Protection option | Works for hardwired? | Works for plug-in? | Typical cost | What it stops |\n|---|---|---|---|---|\n| Whole-house SPD (Type 2) | Yes | Yes | $100-$300 installed | Large surges from lightning and utility switching |\n| Plug-in protector (Type 3) | No | Yes | $25-$60 | Leftover spikes at the outlet |\n| Cheap power strip | No | No (unsafe) | $10-$15 | Nothing - no real surge components |\n| Nothing | No | No | $0 | Nothing - a $300-$800 board is at risk |\n\nThe table makes the decision simple. If your dishwasher is hardwired, the whole-house SPD is the only option, and it is also the best one. If your dishwasher plugs in, the whole-house SPD is still the best single purchase, and a plug-in protector adds a useful second layer. A cheap power strip is worse than nothing in one respect: it gives you the false confidence that the appliance is protected while offering no surge components at all, and it can be a fire risk under a 10- to 12-amp motor load. There is one more option worth mentioning for homes with frequent outages or lightning: a Type 1 SPD installed at the meter or service entrance, which handles the largest surges before they even reach the panel. It costs $200 to $400 plus installation and is overkill for most homes, but in lightning-heavy regions like Florida and the Gulf Coast it is a sensible upgrade on top of a Type 2 device. Whatever you choose, remember that surge protection is a consumable, not a one-time purchase: the metal-oxide varistors inside absorb energy with every spike and gradually wear out. A whole-house SPD typically lasts 5 to 10 years, and most models have an indicator light or an audible alarm that tells you when it has sacrificed itself and needs replacing.",
+    "heading": "Comparing Your Options at a Glance"
+   },
+   {
+    "body": "Start by finding the connection, as described above: look under the sink for a receptacle or a junction box, and check the breaker panel for a dedicated 15- or 20-amp breaker labeled dishwasher. If it is a plug-in model, pull the plug and test the receptacle with a Klein RT210 or a similar receptacle tester - about $11, and it takes ten seconds. It will tell you whether the outlet is wired correctly and whether its GFCI protection trips, which matters because dishwashers in many jurisdictions are now required to be on GFCI-protected circuits. A missing ground or reversed polarity on that outlet is a problem an electrician should fix regardless of surge protection, because a surge protector is useless if the ground path it diverts spikes into does not exist. If the dishwasher is hardwired, the only honest DIY check is the breaker: turn it off, confirm the dishwasher is dead, and inspect the junction box for scorch marks, melted wire nuts, or a smell of burnt plastic, which are signs of past surge damage. Do not open the dishwasher's terminal box or work inside the breaker panel unless you are comfortable with electrical work - this is the point to call a licensed electrician. A Type 2 SPD installation is a 30- to 60-minute job for a pro: they mount the device next to the panel, wire it to a dedicated two-pole breaker, and confirm the indicator light shows green. The total bill is typically $200 to $400 including the device, and it protects every circuit in the house. While the electrician is there, ask them to check the grounding electrode system too - a surge protector can only divert a spike if the ground path is solid, and a corroded ground rod is the most common reason a good SPD underperforms.",
+    "heading": "How to Check Your Dishwasher's Connection and Protect It"
+   },
+   {
+    "body": "The math is straightforward. A surge that kills a dishwasher's control board costs $300 to $800 in parts and labor, and if the board is discontinued - common for models more than 8 to 10 years old - the whole $700 to $1,500 appliance becomes scrap. A whole-house SPD costs $100 to $300 installed and protects the dishwasher plus the refrigerator, the air conditioner, the washing machine, and every other appliance in the home for 5 to 10 years. Even if it only ever saves one appliance, it has paid for itself several times over. The hidden costs are the ones people forget: a dead dishwasher means a week of hand-washing or takeout while the part is ordered, a service call fee of $75 to $150 just for the diagnosis, and on a high-end model with a $500 board the repair bill can approach the price of a new mid-range machine. There is also the warranty nuance. Some dishwasher manuals recommend a direct wall connection and warn against cheap surge strips, because an underrated strip can interfere with the motor or overheat. That warning is about cheap strips, not about surge protection itself - a UL 1449-listed appliance protector rated for 15 amps, or a whole-house SPD at the panel, is not what the warning describes. If you are unsure, check your manual's exact wording and follow it. One final note on safety: anything involving the breaker panel or a hardwired connection is mains-voltage work. Turn off the breaker before you touch any wiring, verify it is dead with a non-contact voltage tester, and call a licensed electrician if you are unsure about anything. A $200 electrician visit is always cheaper than a hospital visit, and it is the only part of this project you should never DIY.",
+    "heading": "What a Surge Can Actually Cost You"
+   }
+  ],
+  "subtitle": "Most dishwashers are hardwired, so a plug-in strip can't protect them. Here's what actually works - and what a surge can cost you.",
+  "title": "Do You Need a Surge Protector for Your Dishwasher?"
  }
 ]
