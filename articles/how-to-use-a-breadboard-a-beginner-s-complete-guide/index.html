@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>How to Use a Breadboard: A Beginner&#x27;s Complete Guide | ElectricTechs</title>
+<meta name="description" content="Learn how a solderless breadboard works, what each row and rail connects to, and build your first LED circuit — no soldering required."/>
+<link rel="canonical" href="https://electrictechsusa.com/articles/how-to-use-a-breadboard-a-beginner-s-complete-guide/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="How to Use a Breadboard: A Beginner&#x27;s Complete Guide | ElectricTechs"/>
+<meta property="og:description" content="Learn how a solderless breadboard works, what each row and rail connects to, and build your first LED circuit — no soldering required."/>
+<meta property="og:url" content="https://electrictechsusa.com/articles/how-to-use-a-breadboard-a-beginner-s-complete-guide/"/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1553406830-ef2513450d76?w=1600&q=80"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="How to Use a Breadboard: A Beginner&#x27;s Complete Guide | ElectricTechs"/>
+<meta name="twitter:description" content="Learn how a solderless breadboard works, what each row and rail connects to, and build your first LED circuit — no soldering required."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0b0f14;--card:#121924;--txt:#e8edf3;--mut:#9aa7b8;--acc:#fbbf24;--line:#1f2a3a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,-apple-system,sans-serif;line-height:1.75}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header.site{border-bottom:1px solid var(--line);padding:14px 0;margin-bottom:28px}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:20px;color:var(--txt);text-decoration:none}
+.logo span{color:var(--acc)}
+nav a{color:var(--mut);text-decoration:none;margin-left:18px;font-size:14px}
+nav a:hover{color:var(--acc)}
+.crumb{font-size:13px;color:var(--mut);margin-bottom:14px}
+.crumb a{color:var(--mut);text-decoration:none}.crumb a:hover{color:var(--acc)}
+.cat{display:inline-block;background:#1a2433;color:var(--acc);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:20px;margin-bottom:12px}
+h1{font-size:clamp(26px,5vw,38px);line-height:1.25;font-weight:800;margin-bottom:10px}
+.meta{color:var(--mut);font-size:14px;margin-bottom:20px}
+.hero{width:100%;border-radius:12px;margin:6px 0 26px}
+.lede{font-size:18px;color:#cdd6e2;border-left:3px solid var(--acc);padding-left:16px;margin-bottom:26px}
+h2{font-size:23px;margin:34px 0 12px;font-weight:700}
+p{margin-bottom:16px;color:#d5dce6}
+ul,ol{margin:0 0 18px 22px;color:#d5dce6}li{margin-bottom:8px}
+.disclaimer{background:#171208;border:1px solid #5a4413;border-radius:10px;padding:14px 18px;font-size:14px;color:#e8cf8f;margin:30px 0}
+.author{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:34px 0;display:flex;gap:14px;align-items:center}
+.author .av{width:48px;height:48px;border-radius:50%;background:var(--acc);color:#111;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px}
+.pn{display:flex;justify-content:space-between;gap:12px;margin:30px 0;flex-wrap:wrap}
+.pn a{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;color:var(--txt);text-decoration:none;font-size:14px;flex:1;min-width:200px}
+.pn a:hover{border-color:var(--acc)}.pn small{display:block;color:var(--mut);font-size:12px}
+.partsbox{background:#0f1a12;border:1px solid #2c5a34;border-radius:12px;padding:20px 22px;margin:30px 0}
+.partsbox h3{margin:0 0 6px;font-size:19px;color:#7de08a}
+.partsbox p.sub{margin:0 0 14px;font-size:14px;color:#9aa7b8}
+.partsbox ul{list-style:none;margin:0;padding:0}
+.partsbox li{margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #1d3524}
+.partsbox li:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
+.partsbox a.prod{color:#ffd479;font-weight:700;text-decoration:none;font-size:16px}
+.partsbox a.prod:hover{text-decoration:underline}
+.partsbox .why{display:block;font-size:14px;color:#c6d2de;margin-top:2px}
+.partsbox .affdisc{margin-top:14px;font-size:12px;color:#9aa7b8}
+.cards{display:grid;gap:16px;margin:20px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--txt);display:block}
+.card:hover{border-color:var(--acc)}.card img{width:100%;height:180px;object-fit:cover}
+.card .b{padding:16px}.card h3{font-size:18px;margin:6px 0}.card p{font-size:14px;color:var(--mut);margin:0}
+footer.site{border-top:1px solid var(--line);margin-top:44px;padding:26px 0 60px;color:var(--mut);font-size:14px}
+footer.site a{color:var(--mut);text-decoration:none;margin-right:16px}footer.site a:hover{color:var(--acc)}
+.faq{margin:34px 0}
+.faq h3{font-size:18px;margin:20px 0 6px;font-weight:700}
+.faq p{margin-bottom:12px}
+table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:#1a2433;color:var(--txt)}
+td{color:#d5dce6}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "How to Use a Breadboard: A Beginner's Complete Guide", "description": "Learn how a solderless breadboard works, what each row and rail connects to, and build your first LED circuit \u2014 no soldering required.", "image": "https://images.unsplash.com/photo-1553406830-ef2513450d76?w=1600&q=80", "datePublished": "2026-11-19", "dateModified": "2026-11-19", "author": {"@type": "Organization", "name": "ElectricTechs", "url": "https://electrictechsusa.com"}, "publisher": {"@type": "Organization", "name": "ElectricTechs", "url": "https://electrictechsusa.com"}, "mainEntityOfPage": "https://electrictechsusa.com/articles/how-to-use-a-breadboard-a-beginner-s-complete-guide/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you need to solder anything on a breadboard?", "acceptedAnswer": {"@type": "Answer", "text": "No. A breadboard is a solderless prototyping board: spring-metal clips under the plastic grip component legs and jumper wires and make the electrical connection, so you build circuits by pushing parts into holes and change them by pulling parts out. Soldering only comes later, when a tested circuit moves to a permanent perfboard or printed circuit board."}}, {"@type": "Question", "name": "What voltage can a breadboard handle?", "acceptedAnswer": {"@type": "Answer", "text": "Breadboards are for low-voltage DC only, typically up to about 36 volts and 1 to 2 amps per contact. They are designed for batteries, USB power, and microcontroller pins at 3.3 or 5 volts. Never connect a breadboard to a wall socket or mains wiring, and never use it to switch a mains-powered load \u2014 the plastic body and spring clips are not rated for mains voltage, and it is a genuine fire and shock risk."}}, {"@type": "Question", "name": "Why is my breadboard circuit not working?", "acceptedAnswer": {"@type": "Answer", "text": "Work through the five most common causes in order: the LED or capacitor is backwards, since both are polarized; a power rail is split in the middle and the far half has no power; a jumper landed in the wrong column; a wire or leg is not pushed in far enough to grip the clip; or a component is shorted because both legs sit in the same five-hole group. A multimeter on continuity mode settles each of these in seconds."}}, {"@type": "Question", "name": "What size breadboard should a beginner buy?", "acceptedAnswer": {"@type": "Answer", "text": "A full-size 830-point board is the best first buy. It has 630 tie points in the terminal area plus four power rails, which is enough room for an Arduino, several sensors, and a display at once, and it costs only a few dollars more than a half-size 400-point board. Keep a 170-point mini board as well for single-sensor tests. Buying a 3-pack of 830-point boards is good value because you can leave finished circuits assembled."}}, {"@type": "Question", "name": "Can you reuse a breadboard for many projects?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 that is the point of the tool. A good board survives thousands of insertions, and pulling parts out to start the next project takes seconds. Replace a board when holes feel loose, components wobble, or circuits fail intermittently for no other reason: worn spring clips make poor contact, and a fresh board costs less than the hours a flaky one wastes."}}]}]}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-THL3MKP9E0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-THL3MKP9E0');</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="https://electrictechsusa.com/">&#9889; <span>Electric</span>Techs</a>
+<nav><a href="https://electrictechsusa.com/">Home</a><a href="https://electrictechsusa.com/articles/">Articles</a><a href="https://electrictechsusa.com/about/">About</a></nav>
+</div></header>
+<div class="wrap">
+<div class="crumb"><a href="https://electrictechsusa.com/">Home</a> &rsaquo; <a href="https://electrictechsusa.com/articles/">Articles</a> &rsaquo; Electrical Tools</div>
+<div class="cat">Electrical Tools</div>
+<h1>How to Use a Breadboard: A Beginner&#x27;s Complete Guide</h1>
+<div class="meta">Nov 19, 2026 &middot; 9 min read &middot; By ElectricTechs Team</div>
+<img class="hero" src="https://images.unsplash.com/photo-1553406830-ef2513450d76?w=1600&q=80" alt="How to Use a Breadboard: A Beginner&#x27;s Complete Guide" loading="eager"/>
+<div class="lede">A breadboard is a solderless prototyping board that lets you build and test circuits by pushing component legs and jumper wires into holes — no soldering, no permanent connections, and any mistake takes seconds to undo. Under the plastic, spring-metal clips join the holes into groups: each numbered column connects five holes on one side of the centre gap, and the long red and blue rails along the edges carry power across the whole board. Once you know those two rules, you can wire your first LED circuit in about ten minutes with a 5 V supply, one 220-ohm resistor, and three jumper wires.</div>
+<h2>What is a breadboard, and how does it work?</h2>
+<p>A breadboard — also called a solderless breadboard or protoboard — is a reusable plastic board covered in a grid of small holes that lets you build temporary circuits without soldering a single joint. You push component legs and jumper wires into the holes, spring-metal clips underneath grip them and make the electrical connection, and when you want to change the circuit you just pull the parts out and start again. That reversibility is the whole point: a breadboard is where a circuit gets tested, debugged, and understood before it is soldered permanently or built on a printed circuit board.</p>
+<p>The holes are spaced 2.54 mm apart, which is 0.1 inch — the standard pitch for DIP integrated circuits, pin headers, resistors, LEDs, push buttons, and most sensor modules. That is why almost every through-hole part you buy drops straight into a breadboard. The clips are sized for solid-core wire between about 20 and 29 AWG, and 22 AWG solid-core jumper wire is the sweet spot: stiff enough to push in cleanly, thin enough not to stretch the clips. Stranded wire frays, makes weak contact, and is the cause of a surprising number of &quot;my circuit does not work&quot; mysteries.</p>
+<p>One hard limit to learn on day one: breadboards are for low-voltage DC only. The contacts in a typical board are rated for about 36 volts and 1 to 2 amps, and even that is generous for a plastic prototyping board. Never connect a breadboard to a wall socket or to mains wiring, and never use it to switch mains-powered loads. Power it from a battery, a USB supply, or a microcontroller board&#x27;s 5 V or 3.3 V pins, and it will serve you safely for years.</p>
+<h2>Breadboard anatomy: rows, rails, and the centre gap</h2>
+<p>Hold a full-size breadboard with its long edge horizontal and look at the printed markings. Along the edges run the power rails, usually marked with a red line for positive and a blue or black line for negative. Every hole along one rail is connected together underneath, so one wire from your power supply feeds the whole rail, and any component can tap 5 V or ground from any point along it. Most full-size boards have two rails on the top edge and two on the bottom, giving you four rails in total.</p>
+<p>The middle of the board is the terminal area, divided into numbered columns. In each column, the five holes on the left side (labelled a through e) are connected together by one metal strip, and the five holes on the right side (f through j) are connected by a separate strip. Nothing connects the two sides of a column to each other — that separation is the centre gap, a channel 7.62 mm wide that runs down the middle of the board. Chips in DIP packages are designed for exactly this: the two rows of pins sit 7.62 mm apart, so the chip straddles the gap with one row of pins on each side and no pin shorted to its opposite number.</p>
+<p>Two practical consequences follow. First, the two legs of any component must go into different connected groups, or the part is shorted out and does nothing — a resistor with both legs in the same five-hole group is just a wire to nowhere. Second, many full-size boards split each power rail in the middle, so the left half of a rail is not connected to the right half; if a circuit works on one side of the board and not the other, bridge the gap with a short jumper wire. Check your board with a multimeter on the continuity setting before assuming the rails run end to end.</p>
+<table><thead><tr><th>Size</th><th>Tie points</th><th>Power rails</th><th>Best for</th></tr></thead><tbody><tr><td>Mini</td><td>170</td><td>None</td><td>A single sensor or a quick test</td></tr>
+<tr><td>Half-size</td><td>400</td><td>2 rails</td><td>Beginner projects, Arduino Nano and Raspberry Pi Pico</td></tr>
+<tr><td>Full-size</td><td>830</td><td>4 rails</td><td>Larger builds, ESP32, multi-sensor projects</td></tr>
+</tbody></table>
+<h2>What you need for your first breadboard circuit</h2>
+<p>You need surprisingly little: a full-size 830-point breadboard, a handful of jumper wires, one LED, one 220-ohm resistor, and a 5 V power source. A 9 V battery with a snap connector also works if you size the resistor for 9 V, but an Arduino Uno board is the better first power source because its 5 V and GND pins plug straight into the rails and it can run the blink project in the next section. If you are starting from zero, an Arduino starter kit is the cheapest way to get all of this in one box — board, breadboard, wires, LEDs, resistors, sensors, and a tutorial — for about 46 to 60 dollars.</p>
+<p>Buy preformed jumper wires rather than cutting your own at first. Preformed wires come in fixed lengths with bent ends that push in cleanly and lie flat, which keeps the board readable; a 65-piece set costs a few dollars and lasts for years. If you cut your own, use 22 AWG solid-core wire, strip about 6 mm from each end, and bend the bare ends at a right angle before pushing them in. Push wires straight down, about 5 to 6 mm deep — if a leg will not go in, do not force it, because thick legs stretch the spring clips and loosen that hole for everything you plug in later.</p>
+<p>Add a cheap digital multimeter to the bench, even a 15-dollar one. When a breadboard circuit misbehaves, the fastest diagnosis is measuring: 5 V present on the rail, continuity between two holes that should be joined, and no continuity where there should be none. Guessing wastes hours; measuring takes seconds.</p>
+<h2>Your first circuit: light an LED in five steps</h2>
+<p>Step 1: connect power to the rails. Run a red jumper from the Arduino 5 V pin to the red rail and a black jumper from a GND pin to the blue rail. On an Arduino Uno the 5 V pin sits beside the 3.3 V pin on the power header, and there are three GND pins to choose from. Leave the USB cable unplugged until the circuit is checked — it is a good habit that saves boards.</p>
+<p>Step 2: place the resistor and the LED. Push one leg of a 220-ohm resistor into a hole in the terminal area, for example column 10, row a, and the other leg into column 15, row a — the two legs sit in different columns so current must flow through the resistor. Then push the LED&#x27;s longer leg (the anode, positive) into column 15, row b, and its shorter leg (the cathode, negative) into column 20, row b. The resistor and the LED now share column 15, which connects them together, while the LED&#x27;s other leg waits in column 20.</p>
+<p>Step 3: wire the circuit to the rails. Connect a jumper from the red power rail to column 10, where the resistor starts, and another jumper from column 20, where the LED&#x27;s short leg sits, to the blue ground rail. The path is now complete: 5 V flows from the rail, through the resistor, through the LED, and back to ground.</p>
+<p>Step 4: check the resistor math before you power up, because it is the difference between a bright LED and a dead one. A standard red LED drops about 2 volts and is happiest at 10 to 20 milliamps. With a 5 V supply, the resistor must drop the remaining 3 volts, so 3 volts divided by 0.015 amps gives 200 ohms — a 220-ohm resistor gives about 14 milliamps, bright and safe. Never connect an LED straight across a power supply without a resistor: with nothing to limit the current, it draws far more than its 20-milliamp rating and burns out in a second. On a 9 V battery the same math gives about 470 ohms for roughly 15 milliamps.</p>
+<p>Step 5: plug in the USB cable and the LED should light. If it does not, flip the LED around — LEDs only conduct in one direction, and a backwards LED is the most common first-circuit failure. If it still does not light, check that the jumpers land in the intended columns, that the resistor legs are fully seated, and that your board&#x27;s power rail is not split in the middle.</p>
+<h2>Next step: add a push button and make it blink with Arduino</h2>
+<p>A push button is the second circuit every beginner should build, because it teaches the most useful breadboard skill: reading a component&#x27;s pins. Most small tactile buttons have four legs, but they are really two pairs joined inside; the pairs are on opposite sides of the button, so the button straddles the centre gap with one pair on each side. Pressing it connects the pairs. Place it across the gap, connect one side to the 5 V rail, and connect the other side to an Arduino digital pin — and also from that pin through a 10-kilohm resistor down to the ground rail. The resistor is a pull-down: it holds the pin at LOW when the button is open, so the pin reads HIGH only while the button is pressed, instead of floating and picking up noise.</p>
+<p>The blink project ties it all together. Keep the LED and resistor from the first circuit, but move the jumper that fed the resistor from the red rail to Arduino digital pin 9. Upload a sketch that sets pin 9 as an output and alternates it HIGH for one second and LOW for one second, and the LED blinks once per second with no extra parts. Change the delay values and the blink rate follows — 200 milliseconds on and 200 off gives a fast strobe that is hard to miss. This is the same circuit, with the Arduino replacing your hand on the power switch.</p>
+<p>From here the path is wide open: the same breadboard, the same rails, and the same five-hole groups can host a temperature sensor on an analog pin, a servo motor on a PWM pin, or an LCD display across the centre gap. Every sensor tutorial you meet for the next year will assume you can do exactly this — put a part on a breadboard, power the rails, and read the result on an Arduino pin. That is why the breadboard, not the soldering iron, is the right first tool.</p>
+<h2>Seven beginner mistakes — and when to move to a soldered board</h2>
+<p>Mistake one is putting both legs of a component in the same connected group, which shorts it out. Mistake two is a backwards LED or electrolytic capacitor — both are polarized and only work one way round. Mistake three is skipping the current-limiting resistor, which kills LEDs. Mistake four is trusting a power rail that is split in the middle without checking. Mistake five is using stranded wire, which frays and makes intermittent contact that looks exactly like a broken component. Mistake six is leaving long jumper wires draped across the board, where they snag, pull out, and hide the layout. Mistake seven is the dangerous one: powering a breadboard from anything above low-voltage DC, or using it to switch a mains load — a breadboard is a prototyping tool, not a mains device.</p>
+<p>Even a perfect breadboard circuit has limits. Spring clips add a little resistance and capacitance, so high-frequency signals and fast digital edges degrade; currents above about 1 amp per contact heat the clips and loosen them; and nothing on a breadboard is mechanically secure, so a circuit that gets moved, shaken, or installed permanently belongs on a soldered perfboard or a printed circuit board. The rule is simple: prototype on the breadboard, prove the circuit works, then solder the final version. That workflow — breadboard first, solder second — is how almost every electronics project you admire was built.</p>
+<div class="faq"><h2>Frequently Asked Questions</h2>
+<h3>Do you need to solder anything on a breadboard?</h3>
+<p>No. A breadboard is a solderless prototyping board: spring-metal clips under the plastic grip component legs and jumper wires and make the electrical connection, so you build circuits by pushing parts into holes and change them by pulling parts out. Soldering only comes later, when a tested circuit moves to a permanent perfboard or printed circuit board.</p>
+<h3>What voltage can a breadboard handle?</h3>
+<p>Breadboards are for low-voltage DC only, typically up to about 36 volts and 1 to 2 amps per contact. They are designed for batteries, USB power, and microcontroller pins at 3.3 or 5 volts. Never connect a breadboard to a wall socket or mains wiring, and never use it to switch a mains-powered load — the plastic body and spring clips are not rated for mains voltage, and it is a genuine fire and shock risk.</p>
+<h3>Why is my breadboard circuit not working?</h3>
+<p>Work through the five most common causes in order: the LED or capacitor is backwards, since both are polarized; a power rail is split in the middle and the far half has no power; a jumper landed in the wrong column; a wire or leg is not pushed in far enough to grip the clip; or a component is shorted because both legs sit in the same five-hole group. A multimeter on continuity mode settles each of these in seconds.</p>
+<h3>What size breadboard should a beginner buy?</h3>
+<p>A full-size 830-point board is the best first buy. It has 630 tie points in the terminal area plus four power rails, which is enough room for an Arduino, several sensors, and a display at once, and it costs only a few dollars more than a half-size 400-point board. Keep a 170-point mini board as well for single-sensor tests. Buying a 3-pack of 830-point boards is good value because you can leave finished circuits assembled.</p>
+<h3>Can you reuse a breadboard for many projects?</h3>
+<p>Yes — that is the point of the tool. A good board survives thousands of insertions, and pulling parts out to start the next project takes seconds. Replace a board when holes feel loose, components wobble, or circuits fail intermittently for no other reason: worn spring clips make poor contact, and a fresh board costs less than the hours a flaky one wastes.</p>
+</div><div class="partsbox"><h3>&#128722; Parts you'll need for this project</h3>
+<p class="sub">Hand-picked gear that matches this guide — buying through these links supports the site at no extra cost to you.</p>
+<ul><li><a class="prod" href="https://www.amazon.com/dp/B01CZTLHGE?tag=nomanahmad0e-20" target="_blank" rel="nofollow sponsored noopener">ELEGOO UNO R3 Project Most Complete Starter Kit with Tutorial (200+ Components)</a><span class="why">The best single-box start: an UNO R3 board, an 830-point breadboard, 200+ components and a 33-project tutorial, so every circuit in this guide can be built the same afternoon. Around $60.</span></li>
+<li><a class="prod" href="https://www.amazon.com/dp/B01D8KOZF4?tag=nomanahmad0e-20" target="_blank" rel="nofollow sponsored noopener">ELEGOO UNO Project Super Starter Kit with Tutorial and UNO R3 Board</a><span class="why">The budget route to the same first circuits: UNO R3 board, breadboard, sensors and a 24-lesson tutorial for about $46.</span></li>
+<li><a class="prod" href="https://www.amazon.com/dp/B0BTHLML16?tag=nomanahmad0e-20" target="_blank" rel="nofollow sponsored noopener">Miuzei Electronics Component Fun Kit with 830 Tie-Points Breadboard and Power Supply Module</a><span class="why">A breadboard-first kit with an 830-point board, a 3.3 V/5 V power supply module, 65 flexible jumpers plus 140 preformed wires, resistors, LEDs and potentiometers — everything except the controller board.</span></li>
+<li><a class="prod" href="https://www.amazon.com/dp/B0F2HW479J?tag=nomanahmad0e-20" target="_blank" rel="nofollow sponsored noopener">YUNFOOK Solderless Breadboard Ultimate Kit — 4 Boards (830/400 Tie Points) + 130 Jumper Wires</a><span class="why">Two full-size 830-point boards, two half-size 400-point boards and 130 jumper wires, so you can keep several finished circuits assembled at once instead of tearing each one down.</span></li>
+</ul>
+<p class="affdisc">As an Amazon Associate we earn from qualifying purchases.</p></div><div class="disclaimer">&#9888;&#65039; <strong>Safety first:</strong> Electrical work can be dangerous. Always turn off power at the breaker, verify with a tester, and follow local codes. When in doubt, call a licensed electrician.</div><div class="author"><div class="av">E</div><div><strong>ElectricTechs Team</strong><br/><span style="color:#9aa7b8;font-size:14px">Hands-on electricians sharing practical, real-world tips.</span></div></div><div class="pn"><a href="https://electrictechsusa.com/articles/do-you-need-a-surge-protector-for-your-microwave/"><small>&larr; Previous</small>Do You Need a Surge Protector for Your Microwave?</a></div>
+</div>
+<footer class="site"><div class="wrap">
+<a href="https://electrictechsusa.com/about/">About</a><a href="https://electrictechsusa.com/contact/">Contact</a><a href="https://electrictechsusa.com/privacy-policy/">Privacy Policy</a><a href="https://electrictechsusa.com/articles/">All Articles</a>
+<p style="margin-top:12px">&copy; 2026 ElectricTechs. As an Amazon Associate we earn from qualifying purchases.</p>
+</div></footer>
+<script src="https://pl29415251.profitablecpmratenetwork.com/bc/c9/c1/bcc9c1f2044fb1a300b55a62c069a50e.js"></script>
+</body>
+</html>
