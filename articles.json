@@ -3349,5 +3349,80 @@
   ],
   "subtitle": "Learn how a solderless breadboard works, what each row and rail connects to, and build your first LED circuit \u2014 no soldering required.",
   "title": "How to Use a Breadboard: A Beginner's Complete Guide"
+ },
+ {
+  "category": "Safety Tips",
+  "date": "Nov 21, 2026",
+  "faqs": [
+   {
+    "a": "Yes. A modern electric dryer has an electronic control board, moisture sensors, and often Wi-Fi, and a single surge can destroy the board - a $200 to $400 repair. Because dryers run on 240-volt, 30-amp circuits, the only effective protection is a whole-house Type 2 SPD installed at the breaker panel.",
+    "q": "Do electric dryers need surge protection?"
+   },
+   {
+    "a": "No. Plug-in surge strips are 120-volt, 15-amp devices with NEMA 5-15 plugs, while an electric dryer uses a NEMA 14-30 or 10-30 plug on a 240-volt, 30-amp circuit. The plugs do not fit, and forcing the dryer's 5,400-watt load through a 120-volt strip is a fire risk. Never use an adapter, extension cord, or power tap on a dryer circuit.",
+    "q": "Can I plug my dryer into a regular surge protector power strip?"
+   },
+   {
+    "a": "Yes. A Type 2 whole-house SPD is wired into your panel on a dedicated two-pole breaker and clamps surges on both hot legs of your 240-volt service, so it protects the dryer circuit and every other circuit in the house. Look for a UL 1449-listed unit rated at 80 kA or higher, and have it installed by a licensed electrician.",
+    "q": "Will a whole-house surge protector protect my dryer?"
+   },
+   {
+    "a": "A whole-house SPD install typically costs $220 to $450 total: a $70 to $150 device plus $150 to $300 in electrician labor. The device lasts 5 to 10 years. That is roughly the cost of one control-board replacement, and the same install also protects the washer, refrigerator, HVAC, and TV.",
+    "q": "How much does it cost to surge-protect a dryer?"
+   },
+   {
+    "a": "The dryer will not start, the display is dead or flickering, it shows an error code that will not clear after a hard reset, it tumbles without heat, or it heats without tumbling. A burnt-electronics smell or scorch marks near the control panel are also telltale signs, especially if the problem appeared right after a storm, a flicker, or a power outage.",
+    "q": "What are the signs a power surge damaged my dryer?"
+   }
+  ],
+  "id": "E054",
+  "image": "https://images.unsplash.com/photo-1638949493140-edb10b7be2f3?w=1600&q=80",
+  "introduction": "Yes, your dryer needs surge protection - but not the kind you plug into the wall. An electric dryer runs on a 240-volt, 30-amp circuit, and no standard plug-in surge strip fits that outlet or that voltage, so the only protection that actually covers a dryer is a whole-house Type 2 surge protective device (SPD) installed at your breaker panel. A typical unit costs $70 to $150, plus $150 to $300 of electrician labor, and it protects every circuit in the house, not just the dryer. That matters because a single surge can destroy a dryer's electronic control board - a $200 to $400 repair on a $600 to $1,200 appliance - and modern dryers are far more electronic than the machines they replaced.",
+  "parts": [
+   {
+    "asin": "B013WINMK6",
+    "name": "Siemens FS140 Whole House Surge Protector, Type 2, 140 kA",
+    "why": "The premium whole-house pick from our buying guide: 140kA capacity, LED plus audible status alerts, NEMA 4X enclosure, and it fits any brand of panel - the unit that actually protects a 240V dryer circuit."
+   },
+   {
+    "asin": "B01AQAKRSS",
+    "name": "Eaton CHSPT2ULTRA Whole-House Surge Protector, Type 2, 108 kA",
+    "why": "The value benchmark for this guide: a 108kA Type 2 SPD that mounts on any manufacturer's load center, usually under $120 - the device most electrician quotes are priced against."
+   },
+   {
+    "asin": "B0012YFXSW",
+    "name": "APC P11VNT3 11-Outlet Surge Protector, 3,020 Joules",
+    "why": "Not for the dryer itself - it is 120V only - but it protects the rest of the laundry room: the washer's electronics, a smart plug, or a Wi-Fi-connected laundry sensor, with 11 outlets and phone/coax line protection."
+   }
+  ],
+  "readTime": "8 min",
+  "sections": [
+   {
+    "body": "A dryer from 30 years ago was mostly a motor, a heating element, and a mechanical timer dial. There was almost nothing in it for a voltage spike to kill. A modern dryer is a different machine: an electronic control board runs the cycle logic, moisture sensors measure the load, a digital display shows error codes, and many models add Wi-Fi, a touch panel, and a steam generator. Every one of those components runs on low-voltage electronics fed by the board, and a surge that reaches the board can punch straight through it.\n\nThe numbers explain the exposure. An electric dryer pulls about 5,400 watts through a dedicated 240-volt, 30-amp circuit (NEMA 14-30 receptacle on new installs, NEMA 10-30 on older three-prong ones). That is the highest-power circuit in most laundry rooms, and it connects directly to the two hot legs of your panel - exactly where a surge arriving from the utility enters the house. A gas dryer is a different story: its burner runs on gas and its motor and controls run on an ordinary 120-volt, 15-amp plug, so it behaves like any other 120-volt appliance. But roughly two-thirds of US homes dry with electric machines, and those are the ones with the 240-volt problem.\n\nSurges are also more common than most homeowners think. Lightning does not have to strike your house - a strike a mile away can push thousands of volts onto utility lines. Utility switching, a transformer fault, a downed line, and the power restoration after an outage all create spikes. The US sees tens of millions of lightning strikes a year, and the average home experiences several smaller surges annually from grid events alone. Your dryer's board only has to lose once.",
+    "heading": "Why a modern dryer is more vulnerable than the old one"
+   },
+   {
+    "body": "A surge is a brief spike of voltage - often 1,000 to 6,000 volts lasting microseconds - riding on top of your normal 240-volt supply. The dryer's heating element and motor are rugged coils of wire and will usually shrug it off. The control board will not. Its microprocessor, relays, and sensor inputs are designed for a few volts, and the spike arcs across traces, welds relay contacts, or silently degrades the board so it fails weeks later, long after you have forgotten the storm.\n\nThe symptoms are usually obvious once you know what to look for. The dryer will not start at all, or the display is dead or flickering. It starts but shows an error code that no amount of resetting clears. It tumbles but produces no heat, because the board can no longer energize the heating element relay. Or it heats but the drum will not turn, because the motor relay is welded shut or burned open. In the worst case you will smell burnt electronics or see scorch marks around the control panel. Any of these after a storm, a flicker, or a power restoration is a strong sign the board took a hit.\n\nThe repair bill is what makes this a money question, not just a technical one. A replacement control board for a mid-range dryer runs $200 to $400 for the part alone, and a service call adds $100 to $200 in labor. A motor is $150 to $300. If the dryer is more than 10 years old, many technicians will tell you the repair is not worth it, and you are shopping for a $600 to $1,200 replacement instead. One surge, one dead board, and the cost of protection suddenly looks small.",
+    "heading": "What a power surge actually does to a dryer"
+   },
+   {
+    "body": "This is the question almost everyone asks first, and the answer is no - not with any product you can buy off the shelf. Every plug-in surge protector strip sold in stores is a 120-volt device with NEMA 5-15 plugs: the familiar three-prong plug that fits a standard wall outlet. Your electric dryer has a NEMA 14-30 (four-prong) or NEMA 10-30 (three-prong) plug, a much larger plug on a 30-amp, 240-volt circuit. The plugs physically do not fit, and no adapter makes it safe.\n\nDo not try to work around this. A 120-volt surge strip is rated for 15 amps at 120 volts - about 1,800 watts. Your dryer draws 5,400 watts at 240 volts. Forcing that load through a strip, an adapter, or a modified cord is a fire risk: the strip's internal wiring and its metal-oxide varistors are not rated for the voltage or the current, and they can overheat, melt, or catch fire long before the breaker's 30-amp trip point. The same warning applies to extension cords, multi-outlet adapters, and relocatable power taps in the laundry room - none of them belong on a dryer circuit.\n\nThere is also no practical consumer plug-in SPD made for a 30-amp dryer circuit. Type 3 point-of-use SPDs are built for 120-volt, 15- or 20-amp loads - computers, TVs, and microwaves. The dryer simply lives in a different electrical world, and the protection has to live there too: at the panel, on the 240-volt circuit itself, where the surge first enters the house.",
+    "heading": "Can you plug a dryer into a surge protector?"
+   },
+   {
+    "body": "A whole-house surge protective device is a Type 2 SPD wired into your breaker panel on a dedicated two-pole breaker. It sits across both hot legs of your 240-volt service, so it clamps surges on every circuit in the house - the dryer, the washer, the HVAC, the TV, all of it - before they reach any appliance. Good residential units are rated at 80,000 to 140,000 amps (80 to 140 kA) of surge current, carry a UL 1449 listing, and include LED status lights (and on better models, an audible alarm) that tell you when the unit has absorbed a big hit and needs replacing.\n\nInstallation is a job for a licensed electrician, and the work is straightforward: the SPD mounts next to the panel, wires into a spare two-pole breaker (usually 20 or 30 amps), and takes 30 to 60 minutes. Total cost is typically $220 to $450 - a $70 to $150 device plus $150 to $300 in labor, depending on your area and whether the panel has a spare breaker slot. The device lasts 5 to 10 years in normal service, and most carry a 10-year product warranty plus a connected-equipment warranty in the $25,000 to $75,000 range.\n\n| Option | Voltage it covers | Protects the dryer? | Typical cost |\n|---|---|---|---|\n| Whole-house Type 2 SPD (80-140 kA) | 120/240V, whole panel | Yes - every circuit | $70-$150 device + $150-$300 install |\n| Type 1 SPD (service entrance) | 120/240V, whole home | Yes - strongest option | $150-$300 + install |\n| Plug-in surge strip (120V) | 120V only | No - wrong plug and voltage | $25-$60 |\n| Nothing | - | No | $0 now, $200-$400 board later |\n\nIf your panel has no spare breaker slots, your electrician can use a breaker-style SPD that replaces an existing breaker, or a unit that mounts externally on the panel. And if you have a gas dryer, the 120-volt plug means a quality plug-in strip does technically work - but whole-house protection is still the better buy, because it also covers the washer, the furnace board, and everything else on the panel for roughly the same money.",
+    "heading": "The protection that actually works: a whole-house SPD"
+   },
+   {
+    "body": "Start with the simplest checks before you call anyone. Make sure the dryer breaker has not tripped - a surge can trip it, and flipping it back off and on once is safe. Check that the outlet is delivering power: if the drum light or display is completely dead, test the receptacle with a multimeter (you should read about 240 volts between the two hot slots and 120 volts from each hot to neutral) or plug in another 240-volt load if you have one. If the breaker is fine and the outlet has power but the dryer is dead, the problem is inside the machine.\n\nNext, look at what the dryer does rather than what it does not. A dryer that powers on but shows a persistent error code, runs the drum without heat, or heats without tumbling has usually lost one relay or one section of the board. Unplug the dryer for five minutes and plug it back in - a hard reset clears some electronic faults, and if the problem returns immediately, it is hardware. Look and sniff around the control panel for scorch marks or a burnt-electronics smell, and check whether the damage appeared right after a storm, a flicker, or a power restoration. That timing is the best evidence you will get.\n\nThe repair-or-replace decision follows a simple rule: if the dryer is under 10 years old and the repair is under half the cost of a comparable new machine, repair it. A $250 board on a $900 dryer that is five years old is worth fixing. A $400 board on a 12-year-old dryer is not - put the money toward a new machine, and install a whole-house SPD at the same time so the new dryer does not meet the same fate.",
+    "heading": "How to tell if a surge already damaged your dryer"
+   },
+   {
+    "body": "An electric dryer cannot use a plug-in surge protector, full stop - the 240-volt, 30-amp circuit rules that out. But it absolutely deserves surge protection, because a $200 to $400 control board is the most expensive single failure a surge can cause in the laundry room, and modern dryers are full of the low-voltage electronics that surges destroy. The fix is a whole-house Type 2 SPD at the panel: $220 to $450 installed, protecting the dryer plus every other circuit in the house for 5 to 10 years.\n\nThat is the cost-benefit math that settles it. One dead board costs about the same as the entire protection install, and the SPD also guards the washer, the refrigerator board, the HVAC controls, and the TV - appliances whose combined replacement cost runs into the thousands. If you already have whole-house protection, check its status lights once a year: a dark or red LED means it has absorbed its last big surge and is no longer protecting anything, and it needs replacing.\n\nSafety note: never open your breaker panel or wire an SPD yourself unless you are a qualified electrician. The panel contains live bus bars that stay energized even with the main breaker off, and a mistake there can kill. Turn off the dryer breaker before inspecting the outlet, and hire a licensed electrician for the SPD install and for any dryer repair that involves opening the machine. Protection is cheap; a hospital visit is not.",
+    "heading": "The verdict: protect the whole house, not just the dryer"
+   }
+  ],
+  "subtitle": "Yes - but a plug-in strip will not work on a 240V dryer circuit. Whole-house protection is the only real option, and here is what it costs.",
+  "title": "Do You Need a Surge Protector for Your Dryer?"
  }
 ]
