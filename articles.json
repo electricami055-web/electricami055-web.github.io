@@ -3424,5 +3424,80 @@
   ],
   "subtitle": "Yes - but a plug-in strip will not work on a 240V dryer circuit. Whole-house protection is the only real option, and here is what it costs.",
   "title": "Do You Need a Surge Protector for Your Dryer?"
+ },
+ {
+  "id": "E055",
+  "title": "Do You Need a Surge Protector for Your RV? A Camper's Guide",
+  "subtitle": "Yes \u2014 every RV that plugs into shore power should use a surge protector or EMS. Campground pedestals are the most common source of RV electrical damage, and a $150-$300 device can save a $1,000+ repair.",
+  "category": "Safety Tips",
+  "date": "Nov 22, 2026",
+  "readTime": "8 min",
+  "image": "https://images.unsplash.com/photo-1781211901352-390b93468b01?w=1600&q=80",
+  "introduction": "Yes. Every RV that plugs into shore power should use a surge protector \u2014 or better, an electrical management system (EMS). The danger is not lightning: it is the campground pedestal itself, an outdoor outlet you did not install, cannot inspect, and share with dozens of other rigs. A single miswired pedestal or a brownout on a hot afternoon can destroy your converter, air conditioner, and every circuit board in the coach, with repair bills of $500 to $2,000. A good portable protector costs $150 to $350, plugs in between the pedestal and your shore cord in under a minute, and watches the power for you every second you are connected.",
+  "sections": [
+   {
+    "heading": "Why campground power is riskier than power at home",
+    "body": "At home, your RV plugs into an outlet wired by a licensed electrician and protected by a breaker panel you control. At a campground, the pedestal sits outside in rain, dust, and summer heat, gets yanked on by heavy shore cords, and is maintained by seasonal staff. Terminals loosen, receptacles corrode, and wiring mistakes happen. A pedestal that tests fine with a cheap outlet tester at noon can sag 15 volts the moment your air conditioner compressor kicks on, because the park feeder is undersized for the evening load.\n\nThe numbers explain the exposure. A 30-amp RV pulls up to 3,600 watts through a single 120-volt leg, and a 50-amp rig pulls up to 12,000 watts across two 120-volt legs. Loads that size find every weak connection in the system. On a 50-amp pedestal, a lost neutral is the nightmare fault: one leg can climb toward 200 volts while the other collapses, and every 120-volt appliance on the high leg \u2014 converter, TVs, the residential fridge inverter board \u2014 dies within seconds. Only a device that physically opens a contactor stops that.\n\nLow voltage is the most common killer, not lightning. When park voltage drops below about 104 volts, your air conditioner compressor draws more current to do the same work, overheats, and burns out its windings. Compressor replacement typically runs $800 to $2,000, and most RV insurance policies do not cover it as an electrical failure. A surge-only device cannot help here: it only clamps short voltage spikes. That is why the rest of this guide keeps coming back to the EMS, which disconnects the rig whenever voltage leaves the safe band."
+   },
+   {
+    "heading": "Surge protector vs EMS: what each one actually does",
+    "body": "A surge-only protector absorbs brief voltage spikes \u2014 lightning nearby, a utility switching transient \u2014 using metal-oxide varistors (MOVs). It clamps the spike and sacrifices a little of its own capacity each time. It does nothing about sustained low voltage, high voltage, open ground, open neutral, or reverse polarity. It is cheap, typically $60 to $120, and better than nothing.\n\nAn EMS (electrical management system) is a surge protector plus a brain. It measures the pedestal continuously and disconnects your RV when the power goes out of range, then reconnects automatically once conditions stabilize. Typical cutoffs are below 102 to 104 volts and above 132 volts, plus open ground, open neutral, reverse polarity, miswired pedestal, accidental 240 volts on a 30-amp outlet, and AC frequency faults. After a fault clears, most units wait 90 to 128 seconds before reconnecting, which protects the air conditioner compressor from short-cycling.\n\n| Feature | Surge-only protector | EMS (electrical management system) |\n|---|---|---|\n| Absorbs voltage spikes | Yes, until its joule capacity is used up | Yes |\n| Disconnects on low voltage (brownout) | No | Yes, below 102-104 V |\n| Disconnects on high voltage | No, only clamps short spikes | Yes, above 132 V |\n| Detects open ground or open neutral | No | Yes |\n| Detects reverse polarity or miswired pedestal | No | Yes |\n| Typical price | $60-$120 | $150-$400 |\n| Best for | Occasional campers on well-kept parks | Anyone who camps more than a few nights a year |\n\nIf you camp at campgrounds more than a few nights a year, buy an EMS. The surge part is useful, but the faults that actually destroy RV appliances most often are low voltage, high voltage, and wiring errors, and only an EMS handles those. A surge-only unit is a reasonable budget choice for someone who mostly boondocks and plugs in rarely, or as a backup unit for a second cord."
+   },
+   {
+    "heading": "30 amp or 50 amp: match the plug on your shore cord",
+    "body": "Buy the protector that matches your RV's shore power cord, not the pedestal. A 30-amp RV uses a TT-30 plug: three prongs, one 120-volt hot leg, 3,600 watts total. A 50-amp RV uses a NEMA 14-50 plug: four prongs, two 120-volt legs plus neutral and ground, 12,000 watts total. Look at your cord end \u2014 3 prongs means 30 amp, 4 prongs means 50 amp \u2014 or check your owner's manual.\n\nA 30-amp protector will not fit a 50-amp pedestal, and a 50-amp protector on a 30-amp rig is wasted money and extra weight. If you sometimes plug a 30-amp rig into a 50-amp pedestal with a dogbone adapter, put the protector between the adapter and the RV cord, so it sees the same 30-amp service your rig uses. Never adapt a 50-amp rig down to a 15-amp household outlet and expect the protector to make it safe: the adapter limits you to about 1,800 watts, and running two air conditioners through it will trip the house breaker or melt the adapter.\n\nFor 50-amp owners, the lost-neutral protection matters most. A 50-amp EMS monitors both legs independently and watches for high neutral current, which is the signature of a failing neutral. On a 30-amp rig, a lost neutral mostly means the RV stops working; on a 50-amp rig, it is the fault that kills everything on one leg. If you own a 50-amp coach, do not buy a surge-only unit: the EMS is the whole point."
+   },
+   {
+    "heading": "How to use a portable RV surge protector in 5 minutes",
+    "body": "Portable units are plug-and-play, and the whole setup takes about five minutes. First, with the pedestal breaker OFF, plug the protector into the pedestal receptacle, then plug your shore cord into the protector. Turn the pedestal breaker on and wait for the protector's startup delay \u2014 usually about 10 seconds \u2014 while it tests the wiring. Read the display or the LED indicators: a normal readout is roughly 115 to 125 volts on each leg, with no fault codes.\n\nIf the unit shows a fault \u2014 open ground, reverse polarity, low voltage \u2014 do not bypass it. The protector is doing its job. Turn the pedestal breaker off, unplug, and ask the campground for a different site or pedestal. If you must use that site, run on your generator or stay unplugged; overriding a fault warning is how a $300 device turns into a $1,500 converter replacement. Some parks have a handful of known-bad pedestals, and the office usually knows which ones they are.\n\nWhen you leave, turn the pedestal breaker off before unplugging \u2014 never pull a live 30- or 50-amp plug under load, because the arcing pits the contacts and shortens the life of both the plug and the receptacle. Lock the unit to the pedestal with a cable or the built-in lock ring: portable protectors are a known theft target, and a $20 padlock is cheap insurance. Keep the unit out of standing water even if it is rated weather-resistant, and store it indoors between trips. Surge protectors typically last 3 to 5 years of regular use, and the MOVs wear out a little with every surge they absorb."
+   },
+   {
+    "heading": "Hardwired vs portable: which one should you buy?",
+    "body": "A portable unit plugs in at the pedestal and moves with you from rig to rig; a hardwired unit mounts inside the RV, usually near the transfer switch or breaker panel, and protects the coach permanently. Portable is the right choice for most owners: it costs less, needs no installation, and you can take it with you when you sell the RV. Its downsides are theft risk and one more thing to carry and connect at every stop.\n\nHardwired units cost about the same as their portable siblings but add $150 to $300 of electrician labor, because you are working inside the RV's AC panel. The payoff is convenience \u2014 protection is always on, nothing to steal, nothing to forget \u2014 and some models add a remote display inside the coach. Hardwired makes sense if you full-time, own the RV long-term, or have already had a pedestal incident and never want to think about it again.\n\nEither way, check the joule rating and the warranty before you buy. For shore power, 1,000 to 4,000 joules is enough, and the enormous joule numbers printed on budget units are the least useful specification on the box \u2014 what matters is the cutoff voltages, the fault detection, and whether the unit tells you when its surge module is used up. The three units in the parts box below are the established names in the RV community: Progressive Industries and Southwire for track record, Hughes for the phone app and replaceable surge module. All three carry lifetime or multi-year warranties, and Southwire adds connected-equipment coverage on its full-protection models."
+   },
+   {
+    "heading": "What it costs \u2014 and what it saves",
+    "body": "A surge-only portable for a 30-amp rig starts around $60 to $120. A portable EMS runs about $170 to $400 depending on amperage and features: 30-amp models sit near the bottom of that range, 50-amp models near the top. A hardwired EMS adds $150 to $300 in installation labor. Expect the device to last 3 to 5 years before the surge components are worn enough to replace, so the annualized cost of a $250 EMS is roughly $50 to $80 a year.\n\nCompare that with the repair bills it prevents. A converter replacement runs $500 to $1,500 with labor. An air conditioner compressor is $800 to $2,000. A residential fridge inverter board is $300 to $600, and a microwave control board is $200 to $400. One bad pedestal on one weekend can easily cost more than a decade of EMS ownership, and that is before counting a ruined trip. Campground electrical damage is also one of the most commonly denied insurance claims, because adjusters treat it as a maintenance issue rather than an accident.\n\nThe honest counterargument: if you camp six weekends a year at the same well-maintained municipal park with a modern pedestal, a $60 surge-only unit plus a $12 outlet tester covers most of your exposure. But if you move weekly, stay at older parks, or run two air conditioners on 50-amp service, the EMS is the cheaper item over five years. Either way, never plug a modern RV \u2014 converter, air conditioner, circuit boards \u2014 into a pedestal you have not tested. The protector is the test."
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Do you need a surge protector for your RV?",
+    "a": "Yes. Every RV that plugs into shore power should use a surge protector or, better, an EMS. Campground pedestals are outdoor outlets you did not install and cannot inspect, and they deliver the miswired power, low voltage, and surges that destroy converters, air conditioners, and circuit boards. A $150 to $350 device can prevent a $500 to $2,000 repair."
+   },
+   {
+    "q": "Is an EMS better than a surge protector for an RV?",
+    "a": "Yes, for most owners. A surge-only protector only clamps brief voltage spikes, while an EMS also disconnects your RV on low voltage (below 102-104 V), high voltage (above 132 V), open ground, open neutral, and reverse polarity. Low voltage and wiring faults destroy more RV appliances than lightning does, and only an EMS stops them."
+   },
+   {
+    "q": "Do I need a 30 amp or 50 amp RV surge protector?",
+    "a": "Match the protector to your RV's shore power cord, not the pedestal. A 30-amp RV has a 3-prong TT-30 plug (120 V, 3,600 W); a 50-amp RV has a 4-prong NEMA 14-50 plug (120/240 V, 12,000 W). Check the plug on your cord or your owner's manual \u2014 the wrong amperage either will not fit or wastes money."
+   },
+   {
+    "q": "Can I plug my RV into a campground pedestal without a surge protector?",
+    "a": "You can, but you should not. Without a protector, a miswired pedestal, a lost neutral on 50-amp service, or a brownout can destroy your converter and appliances within seconds, and most RV insurance policies do not cover the damage. At minimum, test the pedestal with an outlet tester and a voltmeter before connecting \u2014 a protector does that test automatically, every time."
+   },
+   {
+    "q": "How long does an RV surge protector last?",
+    "a": "Most RV surge protectors last 3 to 5 years of regular use. The surge components (MOVs) wear out a little each time they absorb a spike, and many units show a warning or stop passing power when the module is spent. The Hughes Power Watchdog has a user-replaceable surge module, so you replace the module instead of the whole unit. Replace any unit after a major nearby lightning strike or when its fault indicator says the surge protection is gone."
+   }
+  ],
+  "parts": [
+   {
+    "name": "Progressive Industries EMS-PT30X Portable RV Surge Protector (30 Amp)",
+    "asin": "B01N0W4CZ8",
+    "why": "The RV community standard: full EMS with over/under-voltage, open ground/neutral, reverse polarity and accidental 240V detection, 1,790 joules, 44,000A max spike, lifetime warranty. Best for 30-amp rigs that want the broadest fault coverage."
+   },
+   {
+    "name": "Southwire Surge Guard 34930 Portable RV Surge Protector (30 Amp)",
+    "asin": "B07BNVKS9F",
+    "why": "Full-protection portable with a plain-English LCD showing volts and amps, 2,450 joules, cutoffs below 102V and above 132V, a 128-second reset delay to protect the A/C compressor, and connected-equipment coverage."
+   },
+   {
+    "name": "Hughes Power Watchdog PWD30-EPO Smart RV Surge Protector (30 Amp)",
+    "asin": "B07PRS5NPB",
+    "why": "3,000 joules with Bluetooth monitoring of volts, amps, and watts on your phone, a user-replaceable surge module so one big spike does not mean buying a new unit, and an IP65 weather-resistant housing."
+   }
+  ]
  }
 ]
