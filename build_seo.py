@@ -24,6 +24,7 @@ def slug_for(a):
     return re.sub(r"-{2,}", "-", s)[:70]
 
 SLUGS = {
+    "E018": "how-to-install-a-dimmer-switch-a-beginner-s-step-by-step-guide",  # pinned 2026-11-22: title changed but URL kept — page holds 1,120 impressions/mo of ranking history
     "E000": "building-diy-rc-car-transmitter-receiver-from-scratch",
     "E001": "house-wiring-101-complete-beginners-guide",
     "E002": "top-electrical-mistakes-to-avoid-at-home",
