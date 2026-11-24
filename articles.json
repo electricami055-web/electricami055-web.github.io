@@ -3574,5 +3574,80 @@
   ],
   "subtitle": "Your furnace's control board is a computer \u2014 and one power surge can fry it. Here's how whole-house and dedicated HVAC surge protectors keep your heat running.",
   "title": "Do You Need a Surge Protector for Your Furnace?"
+ },
+ {
+  "category": "Safety Tips",
+  "date": "Nov 24, 2026",
+  "faqs": [
+   {
+    "a": "Yes, if your water heater has electronic controls \u2014 which includes nearly all tankless heaters, power-vent tank heaters, and modern electric tanks. A surge from lightning, utility switching, or power restoration can destroy a control board that costs $300\u2013$900 to replace. Because most water heaters are hardwired, protection must come from a whole-house SPD at your electrical panel, not a plug-in strip.",
+    "q": "Do I need a surge protector for my water heater?"
+   },
+   {
+    "a": "Yes. Surges enter through your home's wiring and can burn out a tankless control board, ignition module, fan motor, or thermostat. Tankless heaters are the most vulnerable because they pack dense electronics into the unit; electric tanks are moderately vulnerable through their thermostats and elements. Old gas tank heaters with a standing pilot and mechanical gas valve have almost no electronics and are the least affected.",
+    "q": "Can a power surge damage a water heater?"
+   },
+   {
+    "a": "Yes \u2014 a Type 2 whole-house SPD installed at your main panel protects every hardwired appliance in the home, including your water heater, furnace, and air conditioner. It clamps surges at the panel before they spread to branch circuits. For the best protection on a tankless heater, pair it with a dedicated SPD wired at the heater's disconnect switch to catch residual voltage.",
+    "q": "Will a whole-house surge protector protect my water heater?"
+   },
+   {
+    "a": "Only if it has a standard 120-volt plug \u2014 that applies to gas tankless heaters and power-vent gas tanks, which plug in for their controls and fan. A quality plug-in SPD on that outlet does help. But electric tank and electric tankless heaters are hardwired directly into a 240-volt circuit with no plug, so a power strip cannot protect them at all; they need a hardwired SPD at the panel or disconnect.",
+    "q": "Can I plug my water heater into a surge protector power strip?"
+   },
+   {
+    "a": "A whole-house SPD professionally installed costs roughly $250\u2013$500, and adding a dedicated SPD at the water heater's disconnect adds about $150\u2013$300, for a total of $400\u2013$800. That is less than a single tankless control board replacement ($300\u2013$900) and far less than a new tankless unit ($1,000\u2013$3,000 installed). A quality SPD lasts 10\u201315 years.",
+    "q": "How much does it cost to protect a water heater from surges?"
+   }
+  ],
+  "id": "E057",
+  "image": "https://images.pexels.com/photos/28479466/pexels-photo-28479466.jpeg?auto=compress&cs=tinysrgb&w=1600",
+  "introduction": "Yes \u2014 if your water heater has electronic controls, it needs surge protection, and because most water heaters are hardwired, that protection has to come from a whole-house surge protector at your electrical panel, not a plug-in power strip. A single surge from lightning, utility switching, or power coming back after an outage can fry a tankless control board ($300\u2013$900 to replace) or an electric tank's thermostats and elements, while a whole-house SPD costs roughly $250\u2013$500 installed and protects every appliance in your home. This guide explains which heaters are most at risk, how surges reach them, and the two layers of protection worth installing.",
+  "parts": [
+   {
+    "asin": "B013WINMK6",
+    "name": "Siemens FS140 Whole House Surge Protection Device (140kA)",
+    "why": "The premium pick for this job: 140kA of surge capacity, UL 1449 listed, NEMA 4X enclosure for indoor or outdoor mounting, and a three-stage notification system (audible alarm plus status LEDs) so you always know the heater is still protected."
+   },
+   {
+    "asin": "B01AQAKRSS",
+    "name": "Eaton CHSPT2ULTRA Ultimate Surge Protection Device (Type 2, 108kA)",
+    "why": "The value benchmark: a 108kA Type 2 SPD that fits any brand of load center and connects through a dedicated two-pole breaker \u2014 the unit most electrician quotes for whole-house protection are priced against."
+   },
+   {
+    "asin": "B00CONA1OQ",
+    "name": "Square D HEPD80 Whole House Surge Protective Device (Type 1, 80kA)",
+    "why": "The budget entry point at around $100: an 80kA Type 1 SPD with a NEMA 4X enclosure and LED status indicator that mounts beside any residential load center \u2014 enough capacity to guard a water heater and the rest of the panel."
+   }
+  ],
+  "readTime": "8 min",
+  "sections": [
+   {
+    "body": "A power surge is a brief spike in voltage \u2014 often thousands of volts for a fraction of a second \u2014 riding in on your home's wiring. Your water heater runs on 120 or 240 volts, and its electronic parts are designed for that narrow band. When a surge hits, the excess voltage punches through the delicate traces and chips on a control board, welds relay contacts shut, or burns out thermostat sensors. The damage is usually invisible from outside: the tank looks fine, the pipes are fine, but the heater simply never fires again.\n\nThe most common surge sources are closer to home than most people think. Lightning is the dramatic one, but utility switching \u2014 the grid rerouting power after a fault \u2014 and the surge that follows a power restoration after an outage are far more frequent. Your own home contributes too: large motors such as an air conditioner compressor or well pump switching on and off create small internal surges dozens of times a day. Individually these are minor, but over years they degrade electronic components until one final spike finishes the job.\n\nThe repair bill is what makes this worth caring about. A replacement control board for a modern gas tankless heater typically costs $300\u2013$900 with labor, and a failed board on a unit that is out of warranty can push the total toward half the cost of a new heater. Even a basic electric tank heater can run $200\u2013$400 in parts and labor if both thermostats and an element are damaged. A surge protector, by comparison, is a one-time purchase that guards the heater for a decade.",
+    "heading": "What a power surge actually does to a water heater"
+   },
+   {
+    "body": "Not all water heaters are equally exposed. The deciding factor is how much electronics sits between the power line and the burner or heating element. Old-style gas tank heaters with a standing pilot light and a mechanical gas valve have almost no electronics at all \u2014 a surge has very little to destroy, and these units are the least vulnerable. But they are a shrinking minority: nearly every water heater sold in the last 20 years has at least some electronic controls.\n\nElectric tank heaters sit in the middle. A standard 40- or 50-gallon electric tank runs on 240 volts, draws about 18.75 amps through its 4,500-watt elements, and is protected by a 30-amp double-pole breaker. Its electronics are simple \u2014 upper and lower thermostats, a high-limit safety switch, and the elements themselves \u2014 but a strong surge can burn out a thermostat or arc across an element terminal. The repair is usually cheap ($20\u2013$50 for a thermostat), yet a surge strong enough to damage the heater often damages other appliances at the same time.\n\nTankless heaters \u2014 gas or electric \u2014 are the most vulnerable by a wide margin, because they are essentially computers that happen to heat water. A gas tankless unit has a control board, an electronic ignition module, a modulating gas valve, a combustion fan, and flow and temperature sensors. An electric tankless unit is even more exposed: a 27 kW model pulls over 110 amps through three or four 40-amp double-pole breakers and uses multiple solid-state relays or triacs to switch its heating elements. That dense, expensive electronics package is exactly what a surge destroys first, and it is why tankless owners have the most to gain from protection.\n\n| Heater type | Power connection | Vulnerable electronics | Surge risk |\n| --- | --- | --- | --- |\n| Old gas tank (standing pilot) | 120V plug or none | Almost none | Low |\n| Modern gas tank (power vent) | 120V plug | Control board, blower fan | Medium |\n| Electric tank (40\u201350 gal) | Hardwired 240V, 30A breaker | Thermostats, elements | Medium |\n| Gas tankless | 120V plug | Control board, ignition, fan, sensors | High |\n| Electric tankless | Hardwired 240V, 100\u2013150A total | Control board, solid-state relays | High |",
+    "heading": "Tank vs tankless: which water heater is most at risk?"
+   },
+   {
+    "body": "Surges arrive through three paths, and understanding them explains why a plug-in strip is usually the wrong answer. The first and biggest path is the service entrance: a surge from lightning or the utility enters through the overhead service drop or underground service lateral, travels through your meter, and spreads across every circuit in the panel \u2014 including the water heater's dedicated circuit. This is the path a whole-house surge protector is designed to block, because it sits at the panel where all circuits branch out.\n\nThe second path is the water heater's own circuit. Even a surge that starts inside your home \u2014 say, from a compressor kicking on \u2014 propagates along the branch wiring. Because a water heater is hardwired on its own dedicated circuit with no plug to unplug, there is no easy place to insert a point-of-use device. The only protection point is at the panel or at the heater's disconnect switch, which is why this job belongs to a hardwired surge protective device (SPD), not a power strip.\n\nThe third path applies only to gas tankless and power-vent tank heaters: the 120-volt plug. These units plug into a standard wall outlet for their controls, fan, and ignition. That outlet is the one place a plug-in surge protector can genuinely help \u2014 a quality plug-in SPD on that outlet will absorb smaller surges before they reach the control board. But it is a second line of defense, not a substitute for whole-house protection, because a large surge will overwhelm a plug-in device rated for a few hundred joules. The layered approach \u2014 whole-house SPD at the panel plus a plug-in SPD at the outlet for gas units \u2014 covers all three paths.",
+    "heading": "How surges reach your water heater"
+   },
+   {
+    "body": "The single most effective step is a Type 2 whole-house surge protective device installed at your main electrical panel. A Type 2 SPD wires into a dedicated two-pole breaker and clamps surges to a safe voltage \u2014 a good unit holds the voltage protection rating (VPR) to 600 volts line-to-neutral and 1,000 volts line-to-line \u2014 before they can spread to any circuit. Units are rated by surge current capacity per phase: 80 kA is a solid baseline, 108 kA is a strong mid-range choice, and 140 kA is the premium tier. Look for UL 1449 listing and an LED status indicator that tells you when the device has absorbed its last surge and needs replacing.\n\nFor maximum protection, add a second layer: a dedicated hardwired SPD at the water heater's disconnect switch. The whole-house unit catches the big surge at the panel; the dedicated unit catches whatever residual voltage makes it down the branch circuit. This two-layer setup is the same approach electricians use for furnaces and air conditioners, and it matters most for tankless heaters, where a single control board costs more than both SPDs combined.\n\nInstallation is not a DIY job for most homeowners. A Type 2 SPD connects inside a live electrical panel, so the work means turning off the main breaker, verifying the panel is dead with a non-contact voltage tester, and landing wires on a dedicated two-pole breaker exactly as the manufacturer instructs. If you are not completely comfortable working inside a panel, hire a licensed electrician \u2014 an incorrect SPD install can leave the device useless or create a fire hazard. Budget $250\u2013$500 installed for a whole-house SPD and $150\u2013$300 installed for a dedicated unit at the heater disconnect. Both are one-time costs, and a quality SPD lasts 10\u201315 years.",
+    "heading": "The protection that actually works: whole-house SPD plus a dedicated unit"
+   },
+   {
+    "body": "The maths strongly favors protection. A whole-house SPD professionally installed runs $250\u2013$500, and a dedicated SPD at the heater adds $150\u2013$300, so the full two-layer setup lands around $400\u2013$800. Compare that with the cost of surge damage: a tankless control board is $300\u2013$900, a full tankless replacement is $1,000\u2013$3,000 installed, and a new 50-gallon electric tank heater is $800\u2013$1,500 installed. One bad storm can easily cost more than a decade of protection.\n\nThere is also the hidden cost of being without hot water. A fried control board is not a same-day fix: the part often has to be ordered, and in the meantime the household has no hot water for showers, laundry, or dishes. During a storm week, when electricians are booked solid with emergency calls, that wait can stretch to days. A surge protector does not just save money \u2014 it saves a cold, inconvenient week.\n\nInsurance rarely makes the numbers work in your favor either. A homeowner's policy may cover lightning damage, but claims come with a deductible \u2014 often $500\u2013$1,000 \u2014 and a claim can raise your premium. An SPD costs less than most deductibles and prevents the damage entirely. And unlike insurance, it protects the heater again the next time a surge hits.",
+    "heading": "What protection costs vs what a fried heater costs"
+   },
+   {
+    "body": "Surge damage is not always obvious. The clearest warning sign is a water heater that stops working right after a thunderstorm, a power outage, or the power coming back on \u2014 especially if other electronics in the house also failed at the same time. On a gas tankless unit, look for an error code on the display, a control board that will not power on, or a fan that runs but never ignites. On an electric tank, check for tripped breakers, a tripped high-limit reset button (the red button behind the upper access panel), or water that never gets hot even though the breaker is on.\n\nIf you suspect surge damage, start with the safe checks: confirm the breaker is on, press the high-limit reset button once, and look for a burnt smell or scorch marks around the control panel or junction box. Do not keep resetting a breaker that trips immediately, and do not open the control board compartment on a gas unit \u2014 if you smell gas, leave the house and call your gas utility. Call a licensed plumber or electrician and tell them you suspect surge damage; they will test the control board, thermostats, and elements rather than guessing.\n\nAfter any surge event, check your surge protector's status light too. A whole-house SPD that has absorbed a large surge may have sacrificed itself \u2014 its LED turns off or changes color to show it is no longer protecting anything. That is the device doing its job, but it needs replacing before the next storm. Check the light once a year and after every major storm; a dead SPD looks identical to a working one until you look at the indicator.",
+    "heading": "Signs your water heater was hit by a surge \u2014 and what to do next"
+   }
+  ],
+  "subtitle": "Your water heater's electronics are one surge away from a $400+ repair. Here's which heaters are at risk and the protection that actually works.",
+  "title": "Do You Need a Surge Protector for Your Water Heater?"
  }
 ]
