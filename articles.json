@@ -3874,5 +3874,76 @@
     ],
     "subtitle": "A $35 surge protector can save a $500 PS5 from a single power spike. Here is what to buy, what to avoid, and when a UPS is worth it.",
     "title": "Do You Need a Surge Protector for Your Gaming Console?"
+  },
+  {
+    "category": "Safety Tips",
+    "date": "Nov 28, 2026",
+    "faqs": [
+      {
+        "a": "You can, but a plain power strip only adds outlets \u2014 it does nothing against voltage spikes. If the box does not say \"surge protector\" and list a joule rating plus a UL 1449 rating, it is not protecting anything. A real surge protector for network gear costs $25 to $50, so there is no reason to leave a $150 modem and a $200 router hanging off an unprotected strip.",
+        "q": "Can I plug my router and modem into a regular power strip?"
+      },
+      {
+        "a": "No. A surge protector sits on the power side of your equipment and has no effect on your internet speed, Wi-Fi signal, or latency. The coax pass-through on a good strip is rated to about 2.2 GHz, far above the frequencies cable internet uses. If your speed drops right after installing one, the coax cable is probably loose, or the IN and OUT coax ports are reversed \u2014 swap them and re-tighten.",
+        "q": "Will a surge protector slow down my internet or Wi-Fi?"
+      },
+      {
+        "a": "A surge protector is enough if you only care about preventing hardware damage. A UPS is worth it when the internet itself must stay up during an outage \u2014 remote work calls, VoIP phones, security cameras, or a smart home that goes blind without Wi-Fi. A compact 425VA UPS costs around $60, keeps a modem and router running for 15 minutes or more, and includes the same surge protection as a strip, so it replaces the strip rather than adding to it.",
+        "q": "Do I need a UPS for my router, or is a surge protector enough?"
+      },
+      {
+        "a": "Look for at least 2,000 joules for network gear, and 2,880 to 3,940 joules is a comfortable target \u2014 the protectors recommended in this guide sit in that range. The joule rating is about how much surge energy the device can absorb before its protective components wear out, not about how much power your router draws, since a modem and router together pull only 15 to 30 watts. Replace the strip when its protection indicator light goes out, because a dead light means the protection is gone even though the outlets still work.",
+        "q": "How many joules do I need for a router and modem?"
+      },
+      {
+        "a": "If you have no whole-house surge protector and lightning is striking nearby, unplugging both the power cord and the coax or phone line is the only 100% certain protection \u2014 but do it before the storm arrives, not by reaching behind your equipment mid-storm. With a good point-of-use protector, and ideally a whole-house SPD at the panel as well, most people stay plugged in through ordinary storms. Never unplug gear while standing in water or touching a wet floor.",
+        "q": "Should I unplug my router during a thunderstorm?"
+      }
+    ],
+    "id": "E061",
+    "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1600&q=80",
+    "introduction": "Yes \u2014 your router and modem should be plugged into a real surge protector, not a plain power strip and never straight into the wall. These two small boxes run 24 hours a day, 7 days a week, their cheap wall-wart power adapters have almost no surge tolerance, and a single voltage spike can kill a $150 modem, corrupt your router's firmware, or take your entire home network offline for days. The fix costs $40 to $65, takes five minutes to install, and is the cheapest insurance your home internet will ever get. The one catch most people miss: for cable internet, the coax line into your modem is a second surge path, so protecting the power cord alone is only half the job.",
+    "parts": [
+      {
+        "asin": "B0035PQGKU",
+        "name": "Eaton Tripp Lite TLP1208TELTV Surge Protector, 12 Outlets, 2880 Joules",
+        "why": "Coax and RJ11 line protection covers cable and DSL modems \u2014 the surge path most strips ignore \u2014 with 2,880 joules, 12 outlets, an 8-foot cord, and a $150,000 connected-equipment warranty."
+      },
+      {
+        "asin": "B01HDC236Q",
+        "name": "APC Back-UPS BE425M UPS Battery Backup, 425VA / 255W, 6 Outlets",
+        "why": "Keeps a modem and router online through short blackouts \u2014 up to 15 minutes at a 100W load \u2014 with four battery-backed outlets plus surge protection, for about $62."
+      },
+      {
+        "asin": "B0012YFXSW",
+        "name": "APC SurgeArrest P11VNT3 Surge Protector, 11 Outlets, 3020 Joules",
+        "why": "3,020 joules with coax and Ethernet line protection \u2014 the right pick when your router feeds wired devices or an outdoor access point \u2014 backed by a lifetime warranty."
+      }
+    ],
+    "readTime": "9 min",
+    "sections": [
+      {
+        "body": "A router and modem are the only electronics in most homes that never get switched off. A TV runs maybe four hours a day; your network gear runs all 8,760 hours of the year. Every one of those hours is exposure to whatever rides in on your home's wiring, and the gear itself is fragile: a typical modem draws 5 to 12 watts and a router 6 to 20 watts through small switched-mode power adapters that have almost no filtering and no headroom for spikes.\n\nThe stakes are higher than the price of the boxes. When a modem dies, everything downstream dies with it: laptops, phones, the smart TV, security cameras, the thermostat, the video doorbell, and any work call in progress. A replacement modem costs $100 to $250, a decent router $80 to $200, and if you rent from your ISP you are waiting two to four days for a swap while paying $10 to $15 a month for the privilege. Worse, a surge does not have to kill outright \u2014 repeated small spikes degrade flash memory and capacitors until the router starts dropping connections for no apparent reason, months after the surge that caused it.\n\nThe spikes themselves are ordinary events, not freak accidents. Utility switching, a neighbour's air conditioner cycling on, and the surge when power returns after a blackout \u2014 the most common killer \u2014 can briefly push line voltage into the hundreds or even thousands of volts. A nearby lightning strike, even a mile away, can induce a surge in overhead lines and buried cable. Your router sits at the end of all of it, powered on, all the time.",
+        "heading": "Why your router and modem are the most exposed gear in the house"
+      },
+      {
+        "body": "Cable internet brings a second entry path that a power-only protector cannot touch. The coax cable from the street is a long copper wire that acts like an antenna for lightning and utility surges, and it runs straight into your modem's tuner. DSL is the same story over the phone line. Long Ethernet runs to outdoor cameras and access points are a third path: a strike near the yard can travel down an outdoor Ethernet cable and into the router's ports.\n\nFibre internet is different, and in a good way. The glass fibre itself cannot conduct electricity, so no surge comes down the fibre. But the ONT \u2014 the fibre box on the wall \u2014 still plugs into mains power, and so does the router, so their power adapters are exactly as exposed as a cable modem's. Fibre removes one path, not the whole problem.\n\nThere is also a hidden requirement most people never check: a surge protector can only divert a spike if the outlet it plugs into is properly grounded. A $10 outlet tester from the hardware store will tell you in seconds. If the outlet is ungrounded, the protector cannot do its job, and that is a call-an-electrician problem, not a buy-a-better-strip problem. For the full picture, a whole-house SPD at the main panel is the outer layer and a point-of-use protector at the router is the inner layer \u2014 the two are designed to work together.",
+        "heading": "Surges don't only come through the power cord"
+      },
+      {
+        "body": "A surge protector clamps voltage spikes and sacrifices itself doing it. It does nothing when the power goes out: the router shuts off instantly, the modem takes two to five minutes to re-register with your ISP, mesh nodes have to rebuild, VPN tunnels drop, and video calls die. A UPS adds a battery behind the same surge protection. When utility power drops, it switches to battery in 4 to 8 milliseconds \u2014 fast enough that the router never notices \u2014 and keeps your network running for 10 to 30 minutes.\n\n| Option | What it does | Keeps internet on in a blackout? | Typical cost | Best for |\n|---|---|---|---|---|\n| Surge protector strip | Clamps voltage spikes | No | $25\u2013$50 | Basic protection on a tight budget |\n| Small UPS (425\u2013600VA) | Surge protection + battery backup | Yes, 10\u201330 minutes | $60\u2013$100 | Remote work, cameras, smart home |\n| Whole-house SPD (Type 2) | Protects every circuit at the panel | No | $150\u2013$400 installed | Outer layer for the whole home |\n\nThe rule of thumb is simple: if the internet going down mid-call costs you money, or your security cameras must stay up, buy the UPS. A modem and router together draw only 15 to 30 watts, so a small UPS goes a long way \u2014 APC rates the BE425M at up to 15 minutes on a 100-watt load, and at the 20-odd watts of real network gear the runtime stretches well past that. The UPS replaces the surge strip rather than adding to it, so the cost difference over a good strip is only about $20.",
+        "heading": "Surge protector vs UPS: which one your network actually needs"
+      },
+      {
+        "body": "Start with joules. Look for at least 2,000 joules for network gear, and 2,880 to 3,940 joules is a comfortable target \u2014 the protectors recommended below sit in that range. Higher joules means the device can absorb more surge energy over its life before its protective components wear out. Next, check the clamping voltage, also called let-through voltage: under the UL 1449 standard, 330 volts line-to-neutral is the best commonly available rating, and lower is better.\n\nThen match the line protection to your internet type. Cable internet needs coax ports on the protector; DSL needs RJ11 phone-line ports; fibre needs neither, so spend that money on joules instead. If you have long outdoor Ethernet runs, add an in-line Ethernet surge protector at the point where the cable enters the house \u2014 a power strip cannot protect a data line it never touches.\n\nFinally, check the fine print. The protector should be listed to UL 1449 for surge suppression, not just UL 1363 for the strip itself, and it should have a protection-status indicator light you can actually see. A connected-equipment warranty \u2014 $150,000 to $300,000 on the picks below \u2014 is the manufacturer putting money behind its claims. Practical details matter too: an 8-foot cord with a flat plug, and a few widely spaced outlets so the modem and router's chunky adapters do not block the neighbouring sockets.",
+        "heading": "How to pick the right protector: the four numbers that matter"
+      },
+      {
+        "body": "The whole job takes five minutes. First, plug the protector directly into a properly grounded wall outlet \u2014 never into another power strip or an extension cord. Second, plug the modem and router adapters into the protected outlets, using the battery-backed outlets if you bought a UPS. Third, route the signal line through the protector: wall coax into the coax IN port, then a short coax cable from coax OUT to the modem; for DSL, the phone line goes through the RJ11 IN and OUT the same way. Fourth, check the protection light is green before you walk away.\n\nThe mistakes to avoid are the ones that undo the protection. Daisy-chaining power strips is a fire risk and voids the warranty. Never plug a space heater or a laser printer into a surge strip \u2014 a 1,500-watt heater will trip the strip's 15-amp breaker and can damage it. Do not use a two-prong cheater plug to defeat the ground pin, and do not hide the strip where you can never see its indicator light. The most common failure is invisible: the MOVs inside wear out absorbing small surges, the protection light goes out, and the outlets keep working with zero protection.\n\nAfter a big event, treat the strip as disposable \u2014 that is what it is designed to be. If the protection light is out, or the strip took a nearby lightning strike, replace it rather than resetting it and hoping. And remember the layering: a whole-house SPD at the panel catches the big spikes before they enter your home, and the point-of-use protector at the router catches what gets through. Together they are the setup electricians recommend, and the router \u2014 the one box your entire home depends on \u2014 ends up the best-protected device in the house.",
+        "heading": "Setting it up in five minutes (and the mistakes to avoid)"
+      }
+    ],
+    "subtitle": "Your router and modem are the most surge-exposed gear in your home. Here is how to protect them \u2014 including the cable line most people forget.",
+    "title": "Do You Need a Surge Protector for Your Router and Modem?"
   }
 ]
